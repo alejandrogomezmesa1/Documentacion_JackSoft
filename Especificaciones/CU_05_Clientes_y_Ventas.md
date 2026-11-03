@@ -21,7 +21,7 @@ related:
 # 📌 CU-05: Módulo de Clientes y Ventas
 
 ## 📌 Descripción General
-Gestión de clientes, cotización, registro y administración de suscripciones corporativas e individuales.
+Gestión de clientes, cotización, registro y administración de suscripciones, y programación del menú que reciben los clientes (consultable desde la app móvil).
 
 ---
 
@@ -44,7 +44,7 @@ Gestión de clientes, cotización, registro y administración de suscripciones c
 
 ---
 
-### Subproceso 2: SUSCRIPCIONES (9 Casos de Uso)
+### Subproceso 2: SUSCRIPCIONES (10 Casos de Uso)
 * **Actor Principal:** `Gestor Comercial`
 * **Nodo Principal:** `Gestión de suscripciones`
 
@@ -60,5 +60,25 @@ Gestión de clientes, cotización, registro y administración de suscripciones c
 7. **Subir comprobante de suscripción**
 8. **Consultar comprobante de suscripción**
 9. **Buscar/Filtrar suscripciones**
+10. **Aprobar solicitud fuera de límite**
+
+---
+
+### Subproceso 3: MENU (9 Casos de Uso)
+* **Actor Principal:** `Administrador / Cliente`
+* **Nodo Principal:** `Gestión de menú`
+
+![Diagrama de Casos de Uso - MENU](../Diagramas_PNG/MENU.png)
+
+#### Casos de Uso Oficiales:
+1. **Crear menú**
+2. **Listar menús**
+3. **Ver detalle del menú**
+4. **Editar menú**
+5. **Cambiar estado del menú**
+6. **Programar menú semanal**
+7. **Buscar/Filtrar menús**
+8. **Consultar menú de la semana (app móvil)**
+9. **Ver detalle del almuerzo del día (app móvil)**
 
 ---

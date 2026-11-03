@@ -19,7 +19,7 @@ related:
 # 📌 CU-03: Módulo de Producción y Recetas
 
 ## 📌 Descripción General
-Control de personal de cocina, categorías y catálogo de productos, fichas técnicas (recetas), órdenes de producción y producto terminado.
+Categorías y catálogo de productos, fichas técnicas (recetas), órdenes de producción y producto terminado. El personal de cocina se gestiona como usuarios con rol.
 
 ---
 
@@ -59,25 +59,7 @@ Control de personal de cocina, categorías y catálogo de productos, fichas téc
 
 ---
 
-### Subproceso 3: EMPLEADOS (8 Casos de Uso)
-* **Actor Principal:** `Administrador`
-* **Nodo Principal:** `Gestión de empleados`
-
-![Diagrama de Casos de Uso - EMPLEADOS](../Diagramas_PNG/EMPLEADOS.png)
-
-#### Casos de Uso Oficiales:
-1. **Crear empleado**
-2. **Listar empleados**
-3. **Generar reporte de empleados**
-4. **Ver detalle del empleado**
-5. **Editar empleado**
-6. **Cambiar estado del empleado**
-7. **Eliminar empleado**
-8. **Buscar empleados**
-
----
-
-### Subproceso 4: PRODUCCION (7 Casos de Uso)
+### Subproceso 3: PRODUCCION (7 Casos de Uso)
 * **Actor Principal:** `Jefe de Cocina`
 * **Nodo Principal:** `Gestión de producción`
 
@@ -94,7 +76,7 @@ Control de personal de cocina, categorías y catálogo de productos, fichas téc
 
 ---
 
-### Subproceso 5: FICHA TECNICA "PRODUCTO" (7 Casos de Uso)
+### Subproceso 4: FICHA TECNICA "PRODUCTO" (7 Casos de Uso)
 * **Actor Principal:** `Jefe de Cocina`
 * **Nodo Principal:** `Gestión de fichas técnicas`
 
@@ -111,7 +93,7 @@ Control de personal de cocina, categorías y catálogo de productos, fichas téc
 
 ---
 
-### Subproceso 6: PRODUCTO TERMINADO (6 Casos de Uso)
+### Subproceso 5: PRODUCTO TERMINADO (6 Casos de Uso)
 * **Actor Principal:** `Jefe de Cocina`
 * **Nodo Principal:** `Gestión de producto terminado`
 

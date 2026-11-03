@@ -1,21 +1,21 @@
 # Especificación General de Casos de Uso - JackSoft (Versión Canónica v3)
 
-**Total de Subprocesos:** 22  
-**Total de Casos de Uso Oficiales:** 146  
+**Total de Subprocesos:** 23  
+**Total de Casos de Uso Oficiales:** 155  
 **Diseño y Estandarización:** Sistema de Diseño Corporativo JackSoft (La Coca de Jacks)
 
 | Nº | Subproceso | Macro-Proceso | Actor Principal | Cantidad de Casos de Uso |
 | :--- | :--- | :--- | :--- | :---: |
-| 1 | **ROLES** | Configuración y Seguridad | `Administrador` | 7 |
+| 1 | **ROLES** | Configuración y Seguridad | `Administrador` | 6 |
 | 2 | **USUARIOS** | Configuración y Seguridad | `Administrador` | 8 |
 | 3 | **ACCESO** | Configuración y Seguridad | `Usuario / Admin` | 5 |
-| 4 | **CATEGORIA DE INSUMOS** | Compras e Inventario | `Administrador` | 7 |
-| 5 | **INSUMOS** | Compras e Inventario | `Administrador` | 8 |
-| 6 | **CATEGORIA PRODUCTOS** | Producción y Recetas | `Jefe de Cocina` | 7 |
-| 7 | **PRODUCTOS** | Producción y Recetas | `Jefe de Cocina` | 7 |
-| 8 | **PROVEEDORES** | Compras e Inventario | `Administrador` | 7 |
-| 9 | **COMPRAS** | Compras e Inventario | `Administrador` | 8 |
-| 10 | **EMPLEADOS** | Producción y Recetas | `Administrador` | 8 |
+| 4 | **CONFIGURACIONES DEL SISTEMA** | Configuración y Seguridad | `Administrador` | 8 |
+| 5 | **CATEGORIA DE INSUMOS** | Compras e Inventario | `Administrador` | 7 |
+| 6 | **INSUMOS** | Compras e Inventario | `Administrador` | 8 |
+| 7 | **CATEGORIA PRODUCTOS** | Producción y Recetas | `Jefe de Cocina` | 7 |
+| 8 | **PRODUCTOS** | Producción y Recetas | `Jefe de Cocina` | 7 |
+| 9 | **PROVEEDORES** | Compras e Inventario | `Administrador` | 7 |
+| 10 | **COMPRAS** | Compras e Inventario | `Administrador` | 8 |
 | 11 | **PRODUCCION** | Producción y Recetas | `Jefe de Cocina` | 7 |
 | 12 | **FICHA TECNICA "PRODUCTO"** | Producción y Recetas | `Jefe de Cocina` | 7 |
 | 13 | **PRODUCTO TERMINADO** | Producción y Recetas | `Jefe de Cocina` | 6 |
@@ -23,11 +23,12 @@
 | 15 | **SERVICIO** | Servicios y Operación | `Gestor Comercial` | 7 |
 | 16 | **CALENDARIO** | Servicios y Operación | `Administrador` | 4 |
 | 17 | **CLIENTES** | Clientes y Ventas | `Gestor Comercial` | 7 |
-| 18 | **SUSCRIPCIONES** | Clientes y Ventas | `Gestor Comercial` | 9 |
-| 19 | **RUTA Y DOMICILIARIOS** | Logística y Domicilios | `Domiciliario` | 5 |
-| 20 | **MONITOREO DE ENTREGA "TIEMPO REAL"** | Logística y Domicilios | `Logística` | 7 |
-| 21 | **INCIDENCIAS** | Logística y Domicilios | `Logística` | 6 |
-| 22 | **DASHBOARD** | Analítica y Métricas | `Administrador` | 4 |
+| 18 | **SUSCRIPCIONES** | Clientes y Ventas | `Gestor Comercial` | 10 |
+| 19 | **MENU** | Clientes y Ventas | `Administrador / Cliente` | 9 |
+| 20 | **RUTA Y DOMICILIARIOS** | Logística y Domicilios | `Domiciliario` | 5 |
+| 21 | **MONITOREO DE ENTREGA "TIEMPO REAL"** | Logística y Domicilios | `Logística` | 7 |
+| 22 | **INCIDENCIAS** | Logística y Domicilios | `Logística` | 6 |
+| 23 | **DASHBOARD** | Analítica y Métricas | `Administrador` | 4 |
 
 ---
 
@@ -41,9 +42,8 @@
 2. Listar roles
 3. Ver detalle del rol
 4. Editar rol
-5. Asignar permisos
-6. Cambiar estado
-7. Eliminar rol
+5. Cambiar estado
+6. Eliminar rol
 
 ---
 
@@ -75,6 +75,23 @@
 3. Consultar estado de la cuenta
 4. Cerrar sesión
 5. Generar reporte
+
+---
+
+## Subproceso: CONFIGURACIONES DEL SISTEMA
+* **Macro-Proceso:** Configuración y Seguridad (SEGURIDAD Y ACCESO)
+* **Actor:** Administrador
+* **Nodo Principal:** Gestión de configuraciones
+
+### Casos de Uso:
+1. Registrar configuración
+2. Listar configuraciones
+3. Ver detalle de la configuración
+4. Editar valor de configuración
+5. Activar/desactivar funcionalidad
+6. Consultar historial de cambios
+7. Restablecer valor por defecto
+8. Buscar/Filtrar configuraciones
 
 ---
 
@@ -173,23 +190,6 @@
 6. Anular compra
 7. Generar reporte de compras
 8. Buscar compras
-
----
-
-## Subproceso: EMPLEADOS
-* **Macro-Proceso:** Producción y Recetas (PRODUCCIÓN Y RECETAS)
-* **Actor:** Administrador
-* **Nodo Principal:** Gestión de empleados
-
-### Casos de Uso:
-1. Crear empleado
-2. Listar empleados
-3. Generar reporte de empleados
-4. Ver detalle del empleado
-5. Editar empleado
-6. Cambiar estado del empleado
-7. Eliminar empleado
-8. Buscar empleados
 
 ---
 
@@ -314,6 +314,25 @@
 7. Subir comprobante de suscripción
 8. Consultar comprobante de suscripción
 9. Buscar/Filtrar suscripciones
+10. Aprobar solicitud fuera de límite
+
+---
+
+## Subproceso: MENU
+* **Macro-Proceso:** Clientes y Ventas (CLIENTES Y VENTAS)
+* **Actor:** Administrador / Cliente
+* **Nodo Principal:** Gestión de menú
+
+### Casos de Uso:
+1. Crear menú
+2. Listar menús
+3. Ver detalle del menú
+4. Editar menú
+5. Cambiar estado del menú
+6. Programar menú semanal
+7. Buscar/Filtrar menús
+8. Consultar menú de la semana (app móvil)
+9. Ver detalle del almuerzo del día (app móvil)
 
 ---
 

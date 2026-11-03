@@ -1,11 +1,11 @@
 # Macro-Proceso: Configuración y Seguridad
 
-Gestión de roles, permisos, usuarios y mecanismos de autenticación y acceso al sistema.
+Gestión de roles, usuarios, mecanismos de autenticación y acceso al sistema, y configuraciones generales (valores del negocio y funcionalidades activables).
 
 ## Subprocesos Integrados
 
 ### Subproceso: ROLES
-- **Total de Casos de Uso / Acciones:** 7
+- **Total de Casos de Uso / Acciones:** 6
 - **Actor Principal:** Administrador
 - **Nodo Principal:** Gestión de roles
 
@@ -14,9 +14,8 @@ Gestión de roles, permisos, usuarios y mecanismos de autenticación y acceso al
 2. Listar roles
 3. Ver detalle del rol
 4. Editar rol
-5. Asignar permisos
-6. Cambiar estado
-7. Eliminar rol
+5. Cambiar estado
+6. Eliminar rol
 
 #### Diagrama PlantUML
 ```plantuml
@@ -52,9 +51,8 @@ rectangle "SISTEMA JACKSOFT — SEGURIDAD Y ACCESO (ROLES)" {
   usecase "Crear rol" as UC_Top1
   usecase "Ver detalle del rol" as UC_R1
   usecase "Editar rol" as UC_R2
-  usecase "Asignar permisos" as UC_R3
-  usecase "Cambiar estado" as UC_R4
-  usecase "Eliminar rol" as UC_R5
+  usecase "Cambiar estado" as UC_R3
+  usecase "Eliminar rol" as UC_R4
 }
 
 actor_user --> UC_Hub
@@ -65,7 +63,6 @@ UC_R1 ..> UC_Central : <<extend>>
 UC_R2 ..> UC_Central : <<extend>>
 UC_R3 ..> UC_Central : <<extend>>
 UC_R4 ..> UC_Central : <<extend>>
-UC_R5 ..> UC_Central : <<extend>>
 @enduml
 ```
 
@@ -198,6 +195,77 @@ UC_Estado ..> UC_Login : <<extend>>
 UC_Logout ..> UC_Login : <<extend>>
 UC_Reporte ..> UC_Hub : <<extend>>
 UC_Reporte .> UC_Login : <<include>>
+@enduml
+```
+
+---
+
+### Subproceso: CONFIGURACIONES DEL SISTEMA
+- **Total de Casos de Uso / Acciones:** 8
+- **Actor Principal:** Administrador
+- **Nodo Principal:** Gestión de configuraciones
+
+#### Listado de Casos de Uso
+1. Registrar configuración
+2. Listar configuraciones
+3. Ver detalle de la configuración
+4. Editar valor de configuración
+5. Activar/desactivar funcionalidad
+6. Consultar historial de cambios
+7. Restablecer valor por defecto
+8. Buscar/Filtrar configuraciones
+
+#### Diagrama PlantUML
+```plantuml
+@startuml
+left to right direction
+skinparam packageStyle rectangle
+skinparam nodesep 50
+skinparam ranksep 70
+skinparam shadowing true
+skinparam defaultFontName "Inter, Arial, sans-serif"
+
+skinparam actor {
+  BorderColor #0f172a
+  BackgroundColor #fff7ed
+}
+
+skinparam usecase {
+  BackgroundColor #ffffff
+  BorderColor #0f172a
+  ArrowColor #ea580c
+}
+
+skinparam usecase<<hub>> {
+  BackgroundColor #fff7ed
+  BorderColor #ea580c
+}
+
+actor "Administrador" as actor_user
+
+rectangle "SISTEMA JACKSOFT — SEGURIDAD Y ACCESO (CONFIGURACIONES DEL SISTEMA)" {
+  usecase "Gestión de configuraciones" as UC_Hub <<hub>>
+  usecase "Listar configuraciones" as UC_Central <<hub>>
+  usecase "Registrar configuración" as UC_Top1
+  usecase "Buscar/Filtrar configuraciones" as UC_Bot1
+  usecase "Ver detalle de la configuración" as UC_R1
+  usecase "Editar valor de configuración" as UC_R2
+  usecase "Activar/desactivar funcionalidad" as UC_R3
+  usecase "Consultar historial de cambios" as UC_R4
+  usecase "Restablecer valor por defecto" as UC_R5
+}
+
+actor_user --> UC_Hub
+UC_Hub .> UC_Central : <<include>>
+UC_Top1 ..> UC_Hub : <<extend>>
+UC_Top1 .> UC_Central : <<include>>
+UC_Bot1 ..> UC_Hub : <<extend>>
+UC_Bot1 .> UC_Central : <<include>>
+UC_R1 ..> UC_Central : <<extend>>
+UC_R2 ..> UC_Central : <<extend>>
+UC_R3 ..> UC_Central : <<extend>>
+UC_R4 ..> UC_Central : <<extend>>
+UC_R5 ..> UC_Central : <<extend>>
 @enduml
 ```
 

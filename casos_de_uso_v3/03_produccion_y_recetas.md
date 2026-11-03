@@ -1,6 +1,6 @@
 # Macro-Proceso: Producción y Recetas
 
-Control de personal de cocina, categorías y catálogo de productos, fichas técnicas (recetas), órdenes de producción y producto terminado.
+Categorías y catálogo de productos, fichas técnicas (recetas), órdenes de producción y producto terminado. El personal de cocina se gestiona como usuarios con rol.
 
 ## Subprocesos Integrados
 
@@ -129,77 +129,6 @@ actor_user --> UC_Hub
 UC_Hub .> UC_Central : <<include>>
 UC_Top1 ..> UC_Hub : <<extend>>
 UC_Top1 .> UC_Central : <<include>>
-UC_Bot1 ..> UC_Hub : <<extend>>
-UC_Bot1 .> UC_Central : <<include>>
-UC_R1 ..> UC_Central : <<extend>>
-UC_R2 ..> UC_Central : <<extend>>
-UC_R3 ..> UC_Central : <<extend>>
-UC_R4 ..> UC_Central : <<extend>>
-@enduml
-```
-
----
-
-### Subproceso: EMPLEADOS
-- **Total de Casos de Uso / Acciones:** 8
-- **Actor Principal:** Administrador
-- **Nodo Principal:** Gestión de empleados
-
-#### Listado de Casos de Uso
-1. Crear empleado
-2. Listar empleados
-3. Generar reporte de empleados
-4. Ver detalle del empleado
-5. Editar empleado
-6. Cambiar estado del empleado
-7. Eliminar empleado
-8. Buscar empleados
-
-#### Diagrama PlantUML
-```plantuml
-@startuml
-left to right direction
-skinparam packageStyle rectangle
-skinparam nodesep 50
-skinparam ranksep 70
-skinparam shadowing true
-skinparam defaultFontName "Inter, Arial, sans-serif"
-
-skinparam actor {
-  BorderColor #0f172a
-  BackgroundColor #fff7ed
-}
-
-skinparam usecase {
-  BackgroundColor #ffffff
-  BorderColor #0f172a
-  ArrowColor #ea580c
-}
-
-skinparam usecase<<hub>> {
-  BackgroundColor #fff7ed
-  BorderColor #ea580c
-}
-
-actor "Administrador" as actor_user
-
-rectangle "SISTEMA JACKSOFT — PRODUCCIÓN Y RECETAS (EMPLEADOS)" {
-  usecase "Gestión de empleados" as UC_Hub <<hub>>
-  usecase "Listar empleados" as UC_Central <<hub>>
-  usecase "Crear empleado" as UC_Top1
-  usecase "Generar reporte de empleados" as UC_Top2
-  usecase "Buscar empleados" as UC_Bot1
-  usecase "Ver detalle del empleado" as UC_R1
-  usecase "Editar empleado" as UC_R2
-  usecase "Cambiar estado del empleado" as UC_R3
-  usecase "Eliminar empleado" as UC_R4
-}
-
-actor_user --> UC_Hub
-UC_Hub .> UC_Central : <<include>>
-UC_Top1 ..> UC_Hub : <<extend>>
-UC_Top1 .> UC_Central : <<include>>
-UC_Top2 .> UC_Central : <<include>>
 UC_Bot1 ..> UC_Hub : <<extend>>
 UC_Bot1 .> UC_Central : <<include>>
 UC_R1 ..> UC_Central : <<extend>>

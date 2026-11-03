@@ -12,8 +12,8 @@ from actualizar_casos_uso_canonicos import canonical_subprocesses
 macro_groups = {
     "01_configuracion_y_seguridad.md": {
         "title": "Configuración y Seguridad",
-        "desc": "Gestión de roles, permisos, usuarios y mecanismos de autenticación y acceso al sistema.",
-        "subs": ["ROLES", "USUARIOS", "ACCESO"],
+        "desc": "Gestión de roles, usuarios, mecanismos de autenticación y acceso al sistema, y configuraciones generales (valores del negocio y funcionalidades activables).",
+        "subs": ["ROLES", "USUARIOS", "ACCESO", "CONFIGURACIONES DEL SISTEMA"],
         "espec_file": "CU_01_Configuracion_y_Seguridad.md"
     },
     "02_compras_e_inventario.md": {
@@ -24,8 +24,8 @@ macro_groups = {
     },
     "03_produccion_y_recetas.md": {
         "title": "Producción y Recetas",
-        "desc": "Control de personal de cocina, categorías y catálogo de productos, fichas técnicas (recetas), órdenes de producción y producto terminado.",
-        "subs": ["CATEGORIA PRODUCTOS", "PRODUCTOS", "EMPLEADOS", "PRODUCCION", "FICHA TECNICA \"PRODUCTO\"", "PRODUCTO TERMINADO"],
+        "desc": "Categorías y catálogo de productos, fichas técnicas (recetas), órdenes de producción y producto terminado. El personal de cocina se gestiona como usuarios con rol.",
+        "subs": ["CATEGORIA PRODUCTOS", "PRODUCTOS", "PRODUCCION", "FICHA TECNICA \"PRODUCTO\"", "PRODUCTO TERMINADO"],
         "espec_file": "CU_03_Produccion_y_Recetas.md"
     },
     "04_servicios_y_operacion.md": {
@@ -36,8 +36,8 @@ macro_groups = {
     },
     "05_clientes_y_ventas.md": {
         "title": "Clientes y Ventas",
-        "desc": "Gestión de clientes, cotización, registro y administración de suscripciones corporativas e individuales.",
-        "subs": ["CLIENTES", "SUSCRIPCIONES"],
+        "desc": "Gestión de clientes, cotización, registro y administración de suscripciones, y programación del menú que reciben los clientes (consultable desde la app móvil).",
+        "subs": ["CLIENTES", "SUSCRIPCIONES", "MENU"],
         "espec_file": "CU_05_Clientes_y_Ventas.md"
     },
     "06_logistica_y_domicilios.md": {

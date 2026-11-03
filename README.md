@@ -36,7 +36,8 @@ CasosDeUsoJackSoft/
 │   ├── ROLES.png
 │   ├── USUARIOS.png
 │   ├── CLIENTES.png
-│   ├── EMPLEADOS.png
+│   ├── CONFIGURACIONES_DEL_SISTEMA.png
+│   ├── MENU.png
 │   ├── MAPA_GENERAL_CASOS_DE_USO.png
 │   └── ... (23 archivos PNG)
 │
@@ -76,7 +77,6 @@ CasosDeUsoJackSoft/
 ├── Visor_Interactivo/          # Espejo y recursos estáticos del visor interactivo
 │   ├── index.html
 │   ├── mapa_interactivo.html
-│   └── mapa_interactivo.svg
 │
 └── scripts/                    # Scripts Python de automatización y generación
     ├── generar_mapa_interactivo.py
@@ -91,14 +91,15 @@ CasosDeUsoJackSoft/
 
 | Macro-Proceso | Subproceso Canónico | CUs / Acciones | Actor Principal | Diagrama HD |
 | :--- | :--- | :---: | :--- | :---: |
-| **1. Configuración y Seguridad** | `ROLES` | 7 | Administrador | [Ver PNG](./Diagramas_PNG/ROLES.png) |
+| **1. Configuración y Seguridad** | `ROLES` | 6 | Administrador | [Ver PNG](./Diagramas_PNG/ROLES.png) |
 | | `USUARIOS` | 7 | Administrador | [Ver PNG](./Diagramas_PNG/USUARIOS.png) |
 | | `ACCESO` | 5 | Todos los Roles | [Ver PNG](./Diagramas_PNG/ACCESO.png) |
 | **2. Compras e Inventario** | `CATEGORIA DE INSUMOS` | 6 | Administrador | [Ver PNG](./Diagramas_PNG/CATEGORIA_DE_INSUMOS.png) |
 | | `INSUMOS` | 7 | Administrador | [Ver PNG](./Diagramas_PNG/INSUMOS.png) |
 | | `PROVEEDORES` | 6 | Administrador | [Ver PNG](./Diagramas_PNG/PROVEEDORES.png) |
 | | `COMPRAS` | 7 | Administrador | [Ver PNG](./Diagramas_PNG/COMPRAS.png) |
-| **3. Producción y Recetas** | `EMPLEADOS` | 7 | Administrador | [Ver PNG](./Diagramas_PNG/EMPLEADOS.png) |
+| **1. Configuración y Seguridad** | `CONFIGURACIONES DEL SISTEMA` | 8 | Administrador | [Ver PNG](./Diagramas_PNG/CONFIGURACIONES_DEL_SISTEMA.png) |
+| **5. Clientes y Ventas** | `MENU` | 9 | Administrador / Cliente | [Ver PNG](./Diagramas_PNG/MENU.png) |
 | | `CATEGORIA PRODUCTOS` | 7 | Administrador | [Ver PNG](./Diagramas_PNG/CATEGORIA_PRODUCTOS.png) |
 | | `PRODUCTOS` | 6 | Administrador | [Ver PNG](./Diagramas_PNG/PRODUCTOS.png) |
 | | `FICHA TECNICA "PRODUCTO"` | 7 | Administrador / Cocinero | [Ver PNG](./Diagramas_PNG/FICHA_TECNICA__PRODUCTO_.png) |
@@ -108,7 +109,7 @@ CasosDeUsoJackSoft/
 | | `SERVICIO` | 6 | Administrador | [Ver PNG](./Diagramas_PNG/SERVICIO.png) |
 | | `CALENDARIO` | 5 | Administrador | [Ver PNG](./Diagramas_PNG/CALENDARIO.png) |
 | **5. Clientes y Ventas** | `CLIENTES` | 7 | Administrador | [Ver PNG](./Diagramas_PNG/CLIENTES.png) |
-| | `SUSCRIPCIONES` | 9 | Administrador / Cliente | [Ver PNG](./Diagramas_PNG/SUSCRIPCIONES.png) |
+| | `SUSCRIPCIONES` | 10 | Administrador / Cliente | [Ver PNG](./Diagramas_PNG/SUSCRIPCIONES.png) |
 | **6. Logística y Domicilios** | `RUTA Y DOMICILIARIOS` | 6 | Domiciliario | [Ver PNG](./Diagramas_PNG/RUTA_Y_DOMICILIARIOS.png) |
 | | `MONITOREO DE ENTREGA "TIEMPO REAL"` | 7 | Administrador / Cliente | [Ver PNG](./Diagramas_PNG/MONITOREO_DE_ENTREGA__TIEMPO_REAL_.png) |
 | | `INCIDENCIAS` | 6 | Domiciliario / Administrador | [Ver PNG](./Diagramas_PNG/INCIDENCIAS.png) |

@@ -1,0 +1,407 @@
+@startuml C4_Nivel4_Codigo_Clases
+skinparam classAttributeIconSize 0
+skinparam roundcorner 8
+skinparam defaultFontName sans-serif
+hide circle
+hide methods
+left to right direction
+
+title Nivel 4: Modelo de Dominio — JackSoft (36 clases generadas desde bd.uml v3.6; 8. Dashboard no tiene clases propias)
+
+package "1. Acceso y configuración" #EEF2FA {
+  class Rol {
+    + id: integer [PK]
+    + nombre: varchar
+    + estado: estado_general
+  }
+  class Usuario {
+    + id: integer [PK]
+    + rol_id: integer [FK]
+    + nombre_completo: varchar
+    + documento: varchar
+    + correo: varchar
+    + password: varchar
+    + telefono: varchar
+    + intentos_fallidos_consecutivos: integer
+    + bloqueado_hasta: timestamp
+    + estado: estado_general
+  }
+  class Acceso {
+    + id: integer [PK]
+    + usuario_id: integer [FK]
+    + fecha_hora: timestamp
+    + ip: varchar
+    + resultado: resultado_acceso
+  }
+  class ConfiguracionSistema {
+    + id: integer [PK]
+    + clave: varchar
+    + nombre: varchar
+    + categoria: varchar
+    + tipo_valor: tipo_valor_configuracion
+    + valor: varchar
+    + valor_por_defecto: varchar
+    + valor_minimo: varchar
+    + valor_maximo: varchar
+    + descripcion: text
+    + estado: estado_general
+    + updated_at: timestamp
+    + updated_by_usuario_id: integer [FK]
+  }
+  class HistorialConfiguracion {
+    + id: integer [PK]
+    + configuracion_id: integer [FK]
+    + valor_anterior: varchar
+    + valor_nuevo: varchar
+    + usuario_id: integer [FK]
+    + fecha: timestamp
+  }
+}
+
+package "2. Inventario y compras" #FBF3E4 {
+  class CategoriaInsumo {
+    + id: integer [PK]
+    + nombre: varchar
+    + estado: estado_general
+  }
+  class Insumo {
+    + id: integer [PK]
+    + categoria_id: integer [FK]
+    + nombre: varchar
+    + unidad_medida: varchar
+    + cantidad_disponible: decimal
+    + stock_minimo: decimal
+    + precio_unitario_referencia: decimal
+    + estado: estado_general
+    + created_at: timestamp
+    + updated_at: timestamp
+  }
+  class MovimientoInventario {
+    + id: integer [PK]
+    + insumo_id: integer [FK]
+    + tipo_movimiento: tipo_movimiento_inventario
+    + cantidad: decimal
+    + fecha: timestamp
+    + motivo: motivo_movimiento
+    + observacion: varchar
+    + compra_detalle_id: integer [FK]
+    + orden_produccion_id: integer [FK]
+    + usuario_id: integer [FK]
+  }
+  class Proveedor {
+    + id: integer [PK]
+    + nombre: varchar
+    + documento: varchar
+    + contacto: varchar
+    + direccion: varchar
+    + estado: estado_general
+    + created_at: timestamp
+  }
+  class InsumoProveedor {
+    + id: integer [PK]
+    + insumo_id: integer [FK]
+    + proveedor_id: integer [FK]
+    + precio_unitario: decimal
+    + tiempo_entrega_dias: integer
+    + es_proveedor_principal: boolean
+    + estado: estado_general
+    + created_at: timestamp
+  }
+  class Compra {
+    + id: integer [PK]
+    + proveedor_id: integer [FK]
+    + fecha_compra: date
+    + fecha_recepcion: timestamp
+    + estado: estado_compra
+    + created_at: timestamp
+  }
+  class CompraDetalle {
+    + id: integer [PK]
+    + compra_id: integer [FK]
+    + insumo_id: integer [FK]
+    + cantidad: decimal
+    + precio_unitario: decimal
+    + subtotal: decimal
+  }
+}
+
+package "3. Producción" #FBEDE8 {
+  class CategoriaProducto {
+    + id: integer [PK]
+    + nombre: varchar
+    + estado: estado_general
+  }
+  class Producto {
+    + id: integer [PK]
+    + categoria_id: integer [FK]
+    + nombre: varchar
+    + descripcion: varchar
+    + estado: estado_general
+  }
+  class FichaTecnica {
+    + id: integer [PK]
+    + producto_id: integer [FK]
+    + tiempo_preparacion_min: integer
+    + procedimiento: text
+    + numero_porciones: integer
+    + estado: estado_general
+  }
+  class FichaTecnicaDetalle {
+    + id: integer [PK]
+    + ficha_tecnica_id: integer [FK]
+    + insumo_id: integer [FK]
+    + cantidad_requerida: decimal
+  }
+  class OrdenProduccion {
+    + id: integer [PK]
+    + menu_id: integer [FK]
+    + usuario_responsable_id: integer [FK]
+    + estado: estado_orden_produccion
+    + created_at: timestamp
+  }
+  class ProductoTerminado {
+    + id: integer [PK]
+    + orden_produccion_id: integer [FK]
+    + producto_id: integer [FK]
+    + cantidad_planificada: integer
+    + cantidad_producida: integer
+    + fecha_elaboracion: timestamp
+    + estado: estado_preparacion
+  }
+}
+
+package "4. Servicios y calendario" #F0F5F2 {
+  class CategoriaServicio {
+    + id: integer [PK]
+    + nombre: varchar
+    + estado: estado_general
+  }
+  class Servicio {
+    + id: integer [PK]
+    + categoria_id: integer [FK]
+    + nombre: varchar
+    + tipo_plan: tipo_plan
+    + descripcion: varchar
+    + valor: decimal
+    + duracion_dias: integer
+    + estado: estado_general
+  }
+  class Calendario {
+    + id: integer [PK]
+    + fecha: date
+    + es_habil: boolean
+    + es_festivo: boolean
+    + descripcion: varchar
+    + capacidad_maxima_diaria: integer
+  }
+}
+
+package "5. Clientes, suscripciones y menú" #E6F4F1 {
+  class MenuDiario {
+    + id: integer [PK]
+    + calendario_id: integer [FK]
+    + semana_inicio: date
+    + nombre: varchar
+    + descripcion: text
+    + estado: estado_general
+    + created_at: timestamp
+  }
+  class MenuItem {
+    + id: integer [PK]
+    + menu_id: integer [FK]
+    + tipo_recipiente_id: integer [FK]
+    + producto_id: integer [FK]
+    + variante: tipo_variante_menu
+  }
+  class Cliente {
+    + id: integer [PK]
+    + usuario_id: integer [FK]
+    + modalidad_entrega: modalidad_entrega
+    + restricciones_alimentarias: varchar
+    + alergias_alimentarias: varchar
+    + estado: estado_general
+  }
+  class DireccionCliente {
+    + id: integer [PK]
+    + cliente_id: integer [FK]
+    + zona_cobertura_id: integer [FK]
+    + dia_semana: dia_semana
+    + direccion: varchar
+    + latitud: decimal
+    + longitud: decimal
+    + estado: estado_general
+  }
+  class Suscripcion {
+    + id: integer [PK]
+    + cliente_id: integer [FK]
+    + servicio_id: integer [FK]
+    + tipo_menu: tipo_menu
+    + tipo_venta: tipo_venta
+    + fecha_inicio: date
+    + fecha_vencimiento: date
+    + dias_facturables: integer
+    + descuento_festivos: decimal
+    + valor_plan: decimal
+    + recargo_menu_personalizado: decimal
+    + cobro_cocas: decimal
+    + valor_total: decimal
+    + fecha_solicitud: timestamp
+    + fuera_de_limite: boolean
+    + aprobacion_fuera_limite: estado_registro
+    + aprobada_por_usuario_id: integer [FK]
+    + estado: estado_suscripcion
+  }
+  class Pago {
+    + id: integer [PK]
+    + suscripcion_id: integer [FK]
+    + valor: decimal
+    + comprobante_url: varchar
+    + estado: estado_registro
+    + fecha_pago: timestamp
+    + validado_por_usuario_id: integer [FK]
+    + fecha_validacion: timestamp
+  }
+  class SuspensionEntrega {
+    + id: integer [PK]
+    + suscripcion_id: integer [FK]
+    + calendario_id: integer [FK]
+    + motivo: varchar
+    + fecha_notificacion: timestamp
+    + estado: estado_general
+  }
+}
+
+package "6. Logística y monitoreo" #F1ECF8 {
+  class ZonaCobertura {
+    + id: integer [PK]
+    + nombre: varchar
+    + poligono: text
+    + estado: estado_general
+  }
+  class Ruta {
+    + id: integer [PK]
+    + zona_cobertura_id: integer [FK]
+    + domiciliario_id: integer [FK]
+    + fecha: date
+    + estado: estado_general
+  }
+  class RutaCliente {
+    + id: integer [PK]
+    + ruta_id: integer [FK]
+    + suscripcion_id: integer [FK]
+    + fecha: date
+    + direccion_cliente_id: integer [FK]
+    + domiciliario_entrega_id: integer [FK]
+    + orden_entrega: integer
+    + estado_entrega: estado_entrega
+    + hora_entrega: timestamp
+    + juego_entregado_id: integer [FK]
+    + juego_recogido_id: integer [FK]
+  }
+  class Geolocalizacion {
+    + id: integer [PK]
+    + ruta_id: integer [FK]
+    + domiciliario_id: integer [FK]
+    + latitud: decimal
+    + longitud: decimal
+    + hora_ubicacion: timestamp
+  }
+  class TipoRecipiente {
+    + id: integer [PK]
+    + nombre: varchar
+    + estado: estado_general
+  }
+  class JuegoCocas {
+    + id: integer [PK]
+    + cliente_id: integer [FK]
+    + numero_juego: integer
+    + ubicacion: ubicacion_juego_cocas
+    + fecha_asignacion: date
+    + estado: estado_general
+  }
+  class Recipiente {
+    + id: integer [PK]
+    + juego_id: integer [FK]
+    + tipo_recipiente_id: integer [FK]
+    + estado_fisico: estado_fisico_recipiente
+    + estado: estado_general
+  }
+}
+
+package "7. Incidencias" #FBEFF0 {
+  class Incidencia {
+    + id: integer [PK]
+    + tipo_reportante: tipo_reportante
+    + cliente_id: integer [FK]
+    + domiciliario_id: integer [FK]
+    + ruta_cliente_id: integer [FK]
+    + recipiente_id: integer [FK]
+    + tipo_incidencia: tipo_incidencia
+    + descripcion: text
+    + foto_url: varchar
+    + estado: estado_incidencia
+    + respuesta: text
+    + gestionada_por_usuario_id: integer [FK]
+    + fecha_creacion: timestamp
+    + fecha_resolucion: timestamp
+  }
+}
+
+Rol "1" -- "0..N" Usuario : rol_id
+Usuario "1" -- "0..N" Acceso : usuario_id
+Usuario "1" -- "0..1" Cliente : usuario_id
+Usuario "1" -- "0..N" ConfiguracionSistema : updated_by_usuario_id
+ConfiguracionSistema "1" -- "0..N" HistorialConfiguracion : configuracion_id
+Usuario "1" -- "0..N" HistorialConfiguracion : usuario_id
+CategoriaInsumo "1" -- "0..N" Insumo : categoria_id
+Insumo "1" -- "0..N" MovimientoInventario : insumo_id
+CompraDetalle "1" -- "0..N" MovimientoInventario : compra_detalle_id
+OrdenProduccion "1" -- "0..N" MovimientoInventario : orden_produccion_id
+Usuario "1" -- "0..N" MovimientoInventario : usuario_id
+CategoriaProducto "1" -- "0..N" Producto : categoria_id
+Insumo "1" -- "0..N" InsumoProveedor : insumo_id
+Proveedor "1" -- "0..N" InsumoProveedor : proveedor_id
+Proveedor "1" -- "0..N" Compra : proveedor_id
+Compra "1" -- "0..N" CompraDetalle : compra_id
+Insumo "1" -- "0..N" CompraDetalle : insumo_id
+Calendario "1" -- "0..1" MenuDiario : calendario_id
+MenuDiario "1" -- "0..N" MenuItem : menu_id
+TipoRecipiente "1" -- "0..N" MenuItem : tipo_recipiente_id
+Producto "1" -- "0..N" MenuItem : producto_id
+MenuDiario "1" -- "0..N" OrdenProduccion : menu_id
+Usuario "1" -- "0..N" OrdenProduccion : usuario_responsable_id
+Producto "1" -- "0..N" FichaTecnica : producto_id
+FichaTecnica "1" -- "0..N" FichaTecnicaDetalle : ficha_tecnica_id
+Insumo "1" -- "0..N" FichaTecnicaDetalle : insumo_id
+OrdenProduccion "1" -- "0..N" ProductoTerminado : orden_produccion_id
+Producto "1" -- "0..N" ProductoTerminado : producto_id
+CategoriaServicio "1" -- "0..N" Servicio : categoria_id
+Cliente "1" -- "0..N" DireccionCliente : cliente_id
+ZonaCobertura "1" -- "0..N" DireccionCliente : zona_cobertura_id
+Cliente "1" -- "0..N" Suscripcion : cliente_id
+Servicio "1" -- "0..N" Suscripcion : servicio_id
+Suscripcion "1" -- "0..N" Pago : suscripcion_id
+Usuario "1" -- "0..N" Suscripcion : aprobada_por_usuario_id
+Usuario "1" -- "0..N" Pago : validado_por_usuario_id
+Cliente "1" -- "0..N" JuegoCocas : cliente_id
+JuegoCocas "1" -- "0..N" Recipiente : juego_id
+TipoRecipiente "1" -- "0..N" Recipiente : tipo_recipiente_id
+ZonaCobertura "1" -- "0..N" Ruta : zona_cobertura_id
+Usuario "1" -- "0..N" Ruta : domiciliario_id
+Ruta "1" -- "0..N" RutaCliente : ruta_id
+Suscripcion "1" -- "0..N" RutaCliente : suscripcion_id
+DireccionCliente "1" -- "0..N" RutaCliente : direccion_cliente_id
+Usuario "1" -- "0..N" RutaCliente : domiciliario_entrega_id
+JuegoCocas "1" -- "0..N" RutaCliente : juego_entregado_id
+JuegoCocas "1" -- "0..N" RutaCliente : juego_recogido_id
+Ruta "1" -- "0..N" Geolocalizacion : ruta_id
+Usuario "1" -- "0..N" Geolocalizacion : domiciliario_id
+Cliente "1" -- "0..N" Incidencia : cliente_id
+Usuario "1" -- "0..N" Incidencia : domiciliario_id
+RutaCliente "1" -- "0..N" Incidencia : ruta_cliente_id
+Recipiente "1" -- "0..N" Incidencia : recipiente_id
+Usuario "1" -- "0..N" Incidencia : gestionada_por_usuario_id
+Suscripcion "1" -- "0..N" SuspensionEntrega : suscripcion_id
+Calendario "1" -- "0..N" SuspensionEntrega : calendario_id
+
+@enduml

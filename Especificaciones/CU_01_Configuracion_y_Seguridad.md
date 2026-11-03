@@ -19,13 +19,13 @@ related:
 # 📌 CU-01: Módulo de Configuración y Seguridad
 
 ## 📌 Descripción General
-Gestión de roles, permisos, usuarios y mecanismos de autenticación y acceso al sistema.
+Gestión de roles, usuarios, mecanismos de autenticación y acceso al sistema, y configuraciones generales (valores del negocio y funcionalidades activables).
 
 ---
 
 ## 📋 Subprocesos y Especificación Funcional
 
-### Subproceso 1: ROLES (7 Casos de Uso)
+### Subproceso 1: ROLES (6 Casos de Uso)
 * **Actor Principal:** `Administrador`
 * **Nodo Principal:** `Gestión de roles`
 
@@ -36,9 +36,8 @@ Gestión de roles, permisos, usuarios y mecanismos de autenticación y acceso al
 2. **Listar roles**
 3. **Ver detalle del rol**
 4. **Editar rol**
-5. **Asignar permisos**
-6. **Cambiar estado**
-7. **Eliminar rol**
+5. **Cambiar estado**
+6. **Eliminar rol**
 
 ---
 
@@ -72,5 +71,23 @@ Gestión de roles, permisos, usuarios y mecanismos de autenticación y acceso al
 3. **Consultar estado de la cuenta**
 4. **Cerrar sesión**
 5. **Generar reporte**
+
+---
+
+### Subproceso 4: CONFIGURACIONES DEL SISTEMA (8 Casos de Uso)
+* **Actor Principal:** `Administrador`
+* **Nodo Principal:** `Gestión de configuraciones`
+
+![Diagrama de Casos de Uso - CONFIGURACIONES DEL SISTEMA](../Diagramas_PNG/CONFIGURACIONES_DEL_SISTEMA.png)
+
+#### Casos de Uso Oficiales:
+1. **Registrar configuración**
+2. **Listar configuraciones**
+3. **Ver detalle de la configuración**
+4. **Editar valor de configuración**
+5. **Activar/desactivar funcionalidad**
+6. **Consultar historial de cambios**
+7. **Restablecer valor por defecto**
+8. **Buscar/Filtrar configuraciones**
 
 ---

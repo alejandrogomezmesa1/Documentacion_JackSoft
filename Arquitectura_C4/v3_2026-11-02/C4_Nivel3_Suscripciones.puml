@@ -1,0 +1,70 @@
+@startuml C4_Nivel3_Suscripciones
+!include <C4/C4_Component>
+
+LAYOUT_WITH_LEGEND()
+
+title Nivel 3: Detalle del módulo Clientes, suscripciones y menú — JackSoft
+
+Container(apps, "Aplicaciones Web y Móvil", "React / Flutter", "Consumen la API REST.")
+ContainerDb(bd, "Base de Datos", "PostgreSQL", "clientes, direcciones_cliente, suscripciones, pagos, menus_diarios, menu_items.")
+System_Ext(maps, "Google Maps Platform", "Geocodificación.")
+System_Ext(cloudinary, "Cloudinary", "Comprobantes de pago.")
+System_Ext(fcm, "Firebase Cloud Messaging", "Notificaciones push.")
+
+Container_Boundary(mod, "Módulo Clientes, suscripciones y menú (NestJS)") {
+    Component(cc, "ClientesController", "Controlador", "Recibe las solicitudes de clientes y direcciones.")
+    Component(sc, "SuscripcionesController", "Controlador", "Recibe cotizaciones, compras, renovaciones y suspensiones.")
+    Component(pc, "PagosController", "Controlador", "Recibe comprobantes y su validación.")
+    Component(mnc, "MenuController", "Controlador", "Recibe la programación del menú y su consulta desde la app.")
+
+    Component(cs, "ClientesService", "Servicio", "Registra clientes y valida la cobertura de la dirección.")
+    Component(ss, "SuscripcionesService", "Servicio", "Controla el ciclo de vida: pendiente, activa, cancelada o vencida.")
+    Component(ls, "LiquidacionService", "Servicio", "Calcula días facturables, descuento por festivos, recargo, cobro de cocas y total.")
+    Component(ps, "PagosService", "Servicio", "Registra el comprobante y activa el plan cuando el administrador lo aprueba.")
+    Component(mns, "MenuService", "Servicio", "Programa menús solo en días hábiles y entrega a cada cliente la variante de su suscripción.")
+
+    Component(cr, "ClientesRepository", "Repositorio", "Lee y escribe clientes y direcciones.")
+    Component(sr, "SuscripcionesRepository", "Repositorio", "Lee y escribe suscripciones y suspensiones.")
+    Component(pr, "PagosRepository", "Repositorio", "Lee y escribe pagos.")
+    Component(mnr, "MenuRepository", "Repositorio", "Lee y escribe menús y sus platos.")
+
+    Component(mc, "MapasClient", "Cliente externo", "Conexión con Google Maps.")
+    Component(ac, "ArchivosClient", "Cliente externo", "Conexión con Cloudinary.")
+    Component(nc, "NotificacionesClient", "Cliente externo", "Conexión con Firebase.")
+}
+
+Component_Ext(cal, "Servicios y calendario", "Módulo NestJS", "Tarifas, días hábiles y festivos.")
+Component_Ext(cfg, "Acceso y configuración", "Módulo NestJS", "Valores del negocio (cobro de cocas, recargo) y funcionalidades activas.")
+
+Rel(apps, cc, "Gestiona clientes", "HTTPS")
+Rel(apps, sc, "Gestiona suscripciones", "HTTPS")
+Rel(apps, pc, "Envía y valida comprobantes", "HTTPS")
+Rel(apps, mnc, "Programa y consulta el menú", "HTTPS")
+
+Rel(cc, cs, "Delega")
+Rel(sc, ss, "Delega")
+Rel(pc, ps, "Delega")
+Rel(mnc, mns, "Delega")
+
+Rel(cs, cr, "Persiste")
+Rel(cs, mc, "Geocodifica la dirección")
+Rel(ss, sr, "Persiste")
+Rel(ss, ls, "Solicita la liquidación")
+Rel(ls, cal, "Consulta tarifa y festivos")
+Rel(ls, cfg, "Lee cobro de cocas y recargo vigentes")
+Rel(mns, mnr, "Persiste")
+Rel(mns, cal, "Valida días hábiles")
+Rel(ps, pr, "Persiste")
+Rel(ps, ac, "Guarda el comprobante")
+Rel(ps, ss, "Activa la suscripción")
+Rel(ps, nc, "Notifica el resultado")
+
+Rel(cr, bd, "SQL")
+Rel(sr, bd, "SQL")
+Rel(pr, bd, "SQL")
+Rel(mnr, bd, "SQL")
+Rel(mc, maps, "HTTPS")
+Rel(ac, cloudinary, "HTTPS")
+Rel(nc, fcm, "HTTPS")
+
+@enduml

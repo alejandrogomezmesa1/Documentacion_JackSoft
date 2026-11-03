@@ -32,8 +32,8 @@
   <text x="220" y="52" font-family="'Inter', -apple-system, sans-serif" font-size="15" font-weight="700" fill="#f8fafc" letter-spacing="0.5">
     SISTEMA JACKSOFT — LOGÍSTICA Y DOMICILIOS
   </text>
-  <rect x="785" y="33" width="175" height="26" rx="13" fill="#ea580c" />
-  <text x="872" y="50" font-family="'Inter', -apple-system, sans-serif" font-size="12" font-weight="600" fill="#ffffff" text-anchor="middle">
+  <rect x="696" y="33" width="264" height="26" rx="13" fill="#ea580c" />
+  <text x="828" y="50" font-family="'Inter', -apple-system, sans-serif" font-size="12" font-weight="600" fill="#ffffff" text-anchor="middle">
     Subproceso: RUTA Y DOMICILIARIOS
   </text>
 

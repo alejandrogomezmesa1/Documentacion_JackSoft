@@ -25,7 +25,6 @@ canonical_subprocesses = [
             "Listar roles",
             "Ver detalle del rol",
             "Editar rol",
-            "Asignar permisos",
             "Cambiar estado",
             "Eliminar rol"
         ]
@@ -61,6 +60,24 @@ canonical_subprocesses = [
             "Consultar estado de la cuenta",
             "Cerrar sesión",
             "Generar reporte"
+        ]
+    },
+    {
+        "title": "CONFIGURACIONES DEL SISTEMA",
+        "safe_title": "CONFIGURACIONES_DEL_SISTEMA",
+        "macro": "Configuración y Seguridad",
+        "macro_full": "SEGURIDAD Y ACCESO",
+        "actor": "Administrador",
+        "hub": "Gestión de configuraciones",
+        "actions": [
+            "Registrar configuración",
+            "Listar configuraciones",
+            "Ver detalle de la configuración",
+            "Editar valor de configuración",
+            "Activar/desactivar funcionalidad",
+            "Consultar historial de cambios",
+            "Restablecer valor por defecto",
+            "Buscar/Filtrar configuraciones"
         ]
     },
     {
@@ -165,24 +182,6 @@ canonical_subprocesses = [
             "Anular compra",
             "Generar reporte de compras",
             "Buscar compras"
-        ]
-    },
-    {
-        "title": "EMPLEADOS",
-        "safe_title": "EMPLEADOS",
-        "macro": "Producción y Recetas",
-        "macro_full": "PRODUCCIÓN Y RECETAS",
-        "actor": "Administrador",
-        "hub": "Gestión de empleados",
-        "actions": [
-            "Crear empleado",
-            "Listar empleados",
-            "Generar reporte de empleados",
-            "Ver detalle del empleado",
-            "Editar empleado",
-            "Cambiar estado del empleado",
-            "Eliminar empleado",
-            "Buscar empleados"
         ]
     },
     {
@@ -314,7 +313,27 @@ canonical_subprocesses = [
             "Cambiar estado de la suscripción",
             "Subir comprobante de suscripción",
             "Consultar comprobante de suscripción",
-            "Buscar/Filtrar suscripciones"
+            "Buscar/Filtrar suscripciones",
+            "Aprobar solicitud fuera de límite"
+        ]
+    },
+    {
+        "title": "MENU",
+        "safe_title": "MENU",
+        "macro": "Clientes y Ventas",
+        "macro_full": "CLIENTES Y VENTAS",
+        "actor": "Administrador / Cliente",
+        "hub": "Gestión de menú",
+        "actions": [
+            "Crear menú",
+            "Listar menús",
+            "Ver detalle del menú",
+            "Editar menú",
+            "Cambiar estado del menú",
+            "Programar menú semanal",
+            "Buscar/Filtrar menús",
+            "Consultar menú de la semana (app móvil)",
+            "Ver detalle del almuerzo del día (app móvil)"
         ]
     },
     {
@@ -401,6 +420,9 @@ def wrap_text(text, max_chars=22):
 def generate_svg(sp):
     title = sp["title"]
     clean_title = title.replace('"', '').strip()
+    badge_w = max(175, int(7.4 * len('Subproceso: ' + clean_title)) + 28)
+    badge_x = 960 - badge_w
+    badge_cx = badge_x + badge_w // 2
     actions = sp["actions"]
     macro_name = sp["macro_full"]
     actor_name = sp["actor"]
@@ -447,8 +469,8 @@ def generate_svg(sp):
   <text x="220" y="52" font-family="'Inter', -apple-system, sans-serif" font-size="15" font-weight="700" fill="#f8fafc" letter-spacing="0.5">
     SISTEMA JACKSOFT — {macro_name}
   </text>
-  <rect x="805" y="33" width="155" height="26" rx="13" fill="#ea580c" />
-  <text x="882" y="50" font-family="'Inter', -apple-system, sans-serif" font-size="12" font-weight="600" fill="#ffffff" text-anchor="middle">
+  <rect x="{badge_x}" y="33" width="{badge_w}" height="26" rx="13" fill="#ea580c" />
+  <text x="{badge_cx}" y="50" font-family="'Inter', -apple-system, sans-serif" font-size="12" font-weight="600" fill="#ffffff" text-anchor="middle">
     Subproceso: {clean_title}
   </text>
 
@@ -611,8 +633,8 @@ def generate_svg(sp):
   <text x="220" y="52" font-family="'Inter', -apple-system, sans-serif" font-size="15" font-weight="700" fill="#f8fafc" letter-spacing="0.5">
     SISTEMA JACKSOFT — {macro_name}
   </text>
-  <rect x="785" y="33" width="175" height="26" rx="13" fill="#ea580c" />
-  <text x="872" y="50" font-family="'Inter', -apple-system, sans-serif" font-size="12" font-weight="600" fill="#ffffff" text-anchor="middle">
+  <rect x="{badge_x}" y="33" width="{badge_w}" height="26" rx="13" fill="#ea580c" />
+  <text x="{badge_cx}" y="50" font-family="'Inter', -apple-system, sans-serif" font-size="12" font-weight="600" fill="#ffffff" text-anchor="middle">
     Subproceso: {clean_title}
   </text>
 
@@ -891,10 +913,10 @@ for sp in canonical_subprocesses:
     print(f"Generated SVG & PUML for: {safe_name}")
 
 # Remove obsolete PERMISOS files if present
-for obsolete in ["PERMISOS.svg", "PERMISOS.puml", "PERMISOS.png"]:
+for obsolete in ["PERMISOS.svg", "PERMISOS.puml", "PERMISOS.png", "EMPLEADOS.svg", "EMPLEADOS.puml", "EMPLEADOS.png"]:
     fpath = os.path.join(base_dir, "Diagramas_" + obsolete.split('.')[1].upper(), obsolete)
     if os.path.exists(fpath):
         os.remove(fpath)
         print(f"Removed deprecated: {obsolete}")
 
-print("All 22 canonical subprocesses successfully generated!")
+print(f"All {len(canonical_subprocesses)} canonical subprocesses successfully generated!")

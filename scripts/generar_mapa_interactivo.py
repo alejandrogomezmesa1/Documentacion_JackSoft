@@ -10,20 +10,20 @@ output_html = os.path.join(base_dir, "Visor_Interactivo", "mapa_interactivo.html
 # Grouping Subprocesses by Macro-Process
 macro_processes = {
     "Configuración y Seguridad": [
-        "ROLES", "USUARIOS", "ACCESO"
+        "ROLES", "USUARIOS", "ACCESO", "CONFIGURACIONES DEL SISTEMA"
     ],
     "Compras e Inventario": [
         "CATEGORIA DE INSUMOS", "INSUMOS", "PROVEEDORES", "COMPRAS"
     ],
     "Producción y Recetas": [
-        "EMPLEADOS", "CATEGORIA PRODUCTOS", "PRODUCTOS", 
+        "CATEGORIA PRODUCTOS", "PRODUCTOS", 
         "FICHA TECNICA \"PRODUCTO\"", "PRODUCTO TERMINADO", "PRODUCCION"
     ],
     "Servicios y Operación": [
         "CATEGORIA DE SERVICIOS", "SERVICIO", "CALENDARIO"
     ],
     "Clientes y Ventas": [
-        "CLIENTES", "SUSCRIPCIONES"
+        "CLIENTES", "SUSCRIPCIONES", "MENU"
     ],
     "Logística y Domicilios": [
         "RUTA Y DOMICILIARIOS", "MONITOREO DE ENTREGA \"TIEMPO REAL\"", "INCIDENCIAS"
@@ -135,7 +135,7 @@ master_svg = '''
     <text x="525" y="200" font-family="'Outfit', 'Inter', sans-serif" font-size="11" font-weight="600" fill="#8C4A28" text-anchor="end">Inicio ➔</text>
   </g>
 
-  <g class="macro-node" cursor="pointer" onclick="openDiagram('EMPLEADOS')">
+  <g class="macro-node" cursor="pointer" onclick="openDiagram('CATEGORIA PRODUCTOS')">
     <rect x="230" y="232" width="310" height="46" rx="8" fill="#FAF6F0" stroke="#A0522D" stroke-width="1.8" filter="url(#soberCardShadow)"/>
     <rect x="230" y="232" width="8" height="46" rx="4" fill="#A0522D"/>
     <text x="248" y="260" font-family="'Outfit', 'Inter', sans-serif" font-size="12" font-weight="700" fill="#2A170F">3. Producción y Recetas</text>
