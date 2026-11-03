@@ -1,0 +1,56 @@
+@startuml C4_Nivel3_Componentes
+!include <C4/C4_Component>
+
+LAYOUT_WITH_LEGEND()
+
+title Nivel 3: Componentes del Backend API (módulos NestJS) — JackSoft
+
+Container(apps, "Aplicaciones Web y Móvil", "React / Flutter", "Consumen la API REST y el WebSocket.")
+ContainerDb(bd, "Base de Datos", "PostgreSQL", "Modelo bd.uml v3.5.")
+System_Ext(maps, "Google Maps Platform", "Geocodificación.")
+System_Ext(cloudinary, "Cloudinary", "Archivos.")
+System_Ext(fcm, "Firebase Cloud Messaging", "Notificaciones push.")
+
+Container_Boundary(api, "Backend API (NestJS)") {
+    Component(acceso, "1. Acceso y personal", "Módulo NestJS", "Roles, usuarios, inicio de sesión y empleados. Verifica la sesión y el rol en cada solicitud.")
+    Component(inventario, "2. Inventario y compras", "Módulo NestJS", "Insumos, kardex, proveedores y compras.")
+    Component(produccion, "3. Producción", "Módulo NestJS", "Menús, fichas técnicas, órdenes y producto terminado.")
+    Component(servicios, "4. Servicios y calendario", "Módulo NestJS", "Planes, categorías, días hábiles y festivos.")
+    Component(ventas, "5. Clientes y suscripciones", "Módulo NestJS", "Clientes, direcciones, liquidación, suscripciones, pagos y suspensiones.")
+    Component(logistica, "6. Logística y monitoreo", "Módulo NestJS + WebSocket", "Domiciliarios, zonas, rutas, entregas, GPS en vivo y rotación de cocas.")
+    Component(incidencias, "7. Incidencias", "Módulo NestJS", "Registro y gestión de novedades.")
+    Component(dashboard, "8. Dashboard", "Módulo NestJS", "Indicadores por consultas y vistas, solo lectura.")
+}
+
+Rel(apps, acceso, "Inicia sesión", "HTTPS")
+Rel(apps, inventario, "Gestiona insumos y compras", "HTTPS")
+Rel(apps, produccion, "Gestiona menús y órdenes", "HTTPS")
+Rel(apps, servicios, "Consulta planes y agenda", "HTTPS")
+Rel(apps, ventas, "Gestiona planes y pagos", "HTTPS")
+Rel(apps, logistica, "Rutas, entregas y GPS", "HTTPS / WebSocket")
+Rel(apps, incidencias, "Reporta y gestiona novedades", "HTTPS")
+Rel(apps, dashboard, "Consulta indicadores", "HTTPS")
+
+Rel(ventas, servicios, "Consulta tarifas y festivos")
+Rel(produccion, ventas, "Cuenta almuerzos y restricciones activas")
+Rel(produccion, inventario, "Registra consumo en el kardex")
+Rel(produccion, servicios, "Consulta días hábiles")
+Rel(logistica, ventas, "Obtiene entregas y direcciones del día")
+Rel(incidencias, logistica, "Asocia la novedad a una entrega")
+
+Rel(acceso, bd, "Lee y escribe", "SQL")
+Rel(inventario, bd, "Lee y escribe", "SQL")
+Rel(produccion, bd, "Lee y escribe", "SQL")
+Rel(servicios, bd, "Lee y escribe", "SQL")
+Rel(ventas, bd, "Lee y escribe", "SQL")
+Rel(logistica, bd, "Lee y escribe", "SQL")
+Rel(incidencias, bd, "Lee y escribe", "SQL")
+Rel(dashboard, bd, "Lee", "SQL")
+
+Rel(ventas, maps, "Geocodifica direcciones", "HTTPS")
+Rel(ventas, cloudinary, "Guarda comprobantes", "HTTPS")
+Rel(incidencias, cloudinary, "Guarda fotos", "HTTPS")
+Rel(ventas, fcm, "Avisa estado del plan", "HTTPS")
+Rel(logistica, fcm, "Avisa estado de la entrega", "HTTPS")
+
+@enduml

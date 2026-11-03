@@ -1,0 +1,80 @@
+Diagramas C4
+Recopilado por:
+Daniel David Benavides Sánchez
+
+¿Qué son los Diagramas C4?
+
+Diagramas C4
+Los Diagramas C4 son una herramienta visual que permite representar la arquitectura de software de manera clara y concisa. Se centran en mostrar la relación entre los diferentes componentes de un sistema, facilitando la comprensión tanto para desarrolladores como para partes interesadas no técnicas. Este enfoque se basa en cuatro niveles de detalle, lo que permite a los equipos de desarrollo comunicar de manera efectiva la estructura y el funcionamiento de sus aplicaciones.
+
+Niveles de Diagramas C4
+
+Diagrama de Contexto
+Este diagrama muestra el sistema en su contexto, incluyendo los actores externos y cómo interactúan con el sistema. Es útil para entender la posición del sistema dentro de un ecosistema más amplio.
+
+Ejemplo de Diagrama de Contexto
+Nombre del sistema: "EasyOrder" (Plataforma de pedidos en línea).
+Usuarios o actores externos: Cliente (realiza pedidos). Administrador (gestiona productos y pedidos).
+Sistemas externos: Pasarela de pagos (procesa pagos). Servicio de notificaciones (envía confirmaciones).
+Interacciones: Los clientes interactúan con "EasyOrder" para hacer pedidos.Los administradores gestionan productos y pedidos."EasyOrder" se comunica con la pasarela de pagos para procesar transacciones."EasyOrder" envía notificaciones de confirmación a los clientes.
+Nombre del sistema: "EasyOrder" (Plataforma de pedidos en línea)
+.Usuarios o actores externos:Cliente (realiza pedidos).
+Administrador (gestiona productos y pedidos).
+Sistemas externos:Pasarela de pagos (procesa pagos).
+Servicio de notificaciones (envía confirmaciones).
+Interacciones:Los clientes interactúan con "EasyOrder" para hacer pedidos.
+Los administradores gestionan productos y pedidos.
+"EasyOrder" se comunica con la pasarela de pagos para procesar transacciones.
+"EasyOrder" envía notificaciones de confirmación a los clientes.
+
+6
+
+Ejemplo de Diagrama de Contexto
+7
+
+Diagrama de Contenedores
+En este nivel, se detallan los contenedores que componen el sistema, como aplicaciones, bases de datos y servicios. Se representan las interacciones entre estos contenedores y se especifica cómo se comunican.
+
+Ejemplo de Diagrama de Contenedores
+Componentes principales dentro de "EasyOrder":
+Aplicación Web: La interfaz que usan los clientes.
+Backend API: Gestiona la lógica de negocio y datos.
+Base de Datos: Almacena pedidos, productos y usuarios.
+Interacciones: La Aplicación Web se comunica con la API.
+La API consulta la Base de Datos.
+La API se comunica con la Pasarela de Pagos y el Servicio de Notificaciones.
+Componentes principales dentro de "EasyOrder"
+Aplicación Web: La interfaz que usan los clientes.
+Backend API: Gestiona la lógica de negocio y datos.
+Base de Datos: Almacena pedidos, productos y usuarios.
+Interacciones:La Aplicación Web se comunica con la API.
+La API consulta la Base de Datos.
+La API se comunica con la Pasarela de Pagos y el Servicio de Notificaciones.
+
+9
+
+Ejemplo de Diagrama de Contenedores
+10
+
+Diagrama de Componentes
+Este diagrama descompone un contenedor en sus componentes internos. Se enfoca en cómo los diferentes componentes interactúan entre sí y qué responsabilidades tiene cada uno.
+
+Ejemplo de Diagrama de Componentes
+Módulos dentro del Backend API (Node.js): 
+Controlador de Pedidos: Recibe las solicitudes de compra. 
+Servicio de Pedidos: Contiene la lógica para procesar pedidos. 
+Repositorio de Pedidos: Interactúa con la base de datos. 
+Cliente de Pagos: Conexión con la pasarela de pagos. 
+Cliente de Notificaciones: Envía confirmaciones.
+Módulos dentro del Backend API (Node.js):
+Controlador de Pedidos: Recibe las solicitudes de compra.
+Servicio de Pedidos: Contiene la lógica para procesar pedidos.
+Repositorio de Pedidos: Interactúa con la base de datos.
+Cliente de Pagos: Conexión con la pasarela de pagos.
+Cliente de Notificaciones: Envía confirmaciones.
+
+12
+
+Ejemplo de Diagrama de Componentes
+13
+
