@@ -87,7 +87,7 @@ UC_R3 ..> UC_Central : <<extend>>
 7. Subir comprobante de suscripción
 8. Consultar comprobante de suscripción
 9. Buscar/Filtrar suscripciones
-10. Aprobar solicitud fuera de límite
+10. Gestionar suscripciones con pago vencido
 
 #### Diagrama PlantUML
 ```plantuml
@@ -128,7 +128,7 @@ rectangle "SISTEMA JACKSOFT — CLIENTES Y VENTAS (SUSCRIPCIONES)" {
   usecase "Cambiar estado de la suscripción" as UC_R3
   usecase "Subir comprobante de suscripción" as UC_R4
   usecase "Consultar comprobante de suscripción" as UC_R5
-  usecase "Aprobar solicitud fuera de límite" as UC_R6
+  usecase "Gestionar suscripciones con pago vencido" as UC_R6
 }
 
 actor_user --> UC_Hub
@@ -159,7 +159,7 @@ UC_R6 ..> UC_Central : <<extend>>
 2. Listar menús
 3. Ver detalle del menú
 4. Editar menú
-5. Cambiar estado del menú
+5. Publicar menú semanal
 6. Programar menú semanal
 7. Buscar/Filtrar menús
 8. Consultar menú de la semana (app móvil)
@@ -200,7 +200,7 @@ rectangle "SISTEMA JACKSOFT — CLIENTES Y VENTAS (MENU)" {
   usecase "Buscar/Filtrar menús" as UC_Bot1
   usecase "Ver detalle del menú" as UC_R1
   usecase "Editar menú" as UC_R2
-  usecase "Cambiar estado del menú" as UC_R3
+  usecase "Publicar menú semanal" as UC_R3
   usecase "Programar menú semanal" as UC_R4
   usecase "Consultar menú de la semana (app móvil)" as UC_R5
   usecase "Ver detalle del almuerzo del día (app móvil)" as UC_R6

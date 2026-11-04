@@ -77,3 +77,6 @@ graph TD
 * **Eliminado:** subproceso Empleados (sus diagramas quedan en `05_Casos_de_Uso/_Historial/`).
 * **Nuevo:** Configuraciones del sistema (8 CU) en [[CU_01_Configuracion_y_Seguridad]] y Menú (9 CU, 2 de ellos en la app móvil) en [[CU_05_Clientes_y_Ventas]].
 * Total: **23 subprocesos**. Documentación de CU v3: 248 fichas renumeradas HU_001–HU_248 en orden del documento. Roles queda sin "Asignar permisos" y Suscripciones suma "Aprobar solicitud fuera de límite".
+
+## 🔄 Ajuste con el frontend 2026-11-03 (bd.uml v3.7)
+Documentación de CU v4: 245 fichas renumeradas. Se retiran "Seleccionar menú personalizado", "Aplicar recargo por menú personalizado" y "Consultar impacto del menú personalizado"; "Aprobar solicitud fuera de límite" pasa a "Gestionar suscripciones con pago vencido"; "Cambiar estado del menú" pasa a "Publicar menú semanal"; los estados Pendiente y Vencida pasan a Pendiente de pago y Finalizada.

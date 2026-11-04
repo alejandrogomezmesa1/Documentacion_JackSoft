@@ -314,7 +314,7 @@ canonical_subprocesses = [
             "Subir comprobante de suscripción",
             "Consultar comprobante de suscripción",
             "Buscar/Filtrar suscripciones",
-            "Aprobar solicitud fuera de límite"
+            "Gestionar suscripciones con pago vencido"
         ]
     },
     {
@@ -329,7 +329,7 @@ canonical_subprocesses = [
             "Listar menús",
             "Ver detalle del menú",
             "Editar menú",
-            "Cambiar estado del menú",
+            "Publicar menú semanal",
             "Programar menú semanal",
             "Buscar/Filtrar menús",
             "Consultar menú de la semana (app móvil)",

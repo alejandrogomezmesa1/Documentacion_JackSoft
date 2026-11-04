@@ -31,7 +31,7 @@ rectangle "SISTEMA JACKSOFT — CLIENTES Y VENTAS (MENU)" {
   usecase "Buscar/Filtrar menús" as UC_Bot1
   usecase "Ver detalle del menú" as UC_R1
   usecase "Editar menú" as UC_R2
-  usecase "Cambiar estado del menú" as UC_R3
+  usecase "Publicar menú semanal" as UC_R3
   usecase "Programar menú semanal" as UC_R4
   usecase "Consultar menú de la semana (app móvil)" as UC_R5
   usecase "Ver detalle del almuerzo del día (app móvil)" as UC_R6

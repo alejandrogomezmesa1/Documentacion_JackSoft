@@ -1965,7 +1965,7 @@
         <mxCell id="men-19" edge="1" parent="1" source="men-21" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;endArrow=none;endFill=0;dashed=1;" target="men-9">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="men-21" parent="1" style="ellipse;whiteSpace=wrap;html=1;shapeInside=1;" value="Cambiar estado del menú" vertex="1">
+        <mxCell id="men-21" parent="1" style="ellipse;whiteSpace=wrap;html=1;shapeInside=1;" value="Publicar menú semanal" vertex="1">
           <mxGeometry height="80" width="120" x="600" y="9740" as="geometry" />
         </mxCell>
         <mxCell id="men-22" edge="1" parent="1" source="men-24" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;endArrow=none;endFill=0;startArrow=none;startFill=0;dashed=1;" target="men-9">

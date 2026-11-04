@@ -35,7 +35,7 @@ rectangle "SISTEMA JACKSOFT — CLIENTES Y VENTAS (SUSCRIPCIONES)" {
   usecase "Cambiar estado de la suscripción" as UC_R3
   usecase "Subir comprobante de suscripción" as UC_R4
   usecase "Consultar comprobante de suscripción" as UC_R5
-  usecase "Aprobar solicitud fuera de límite" as UC_R6
+  usecase "Gestionar suscripciones con pago vencido" as UC_R6
 }
 
 actor_user --> UC_Hub

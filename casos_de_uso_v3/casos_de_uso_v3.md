@@ -314,7 +314,7 @@
 7. Subir comprobante de suscripción
 8. Consultar comprobante de suscripción
 9. Buscar/Filtrar suscripciones
-10. Aprobar solicitud fuera de límite
+10. Gestionar suscripciones con pago vencido
 
 ---
 
@@ -328,7 +328,7 @@
 2. Listar menús
 3. Ver detalle del menú
 4. Editar menú
-5. Cambiar estado del menú
+5. Publicar menú semanal
 6. Programar menú semanal
 7. Buscar/Filtrar menús
 8. Consultar menú de la semana (app móvil)
