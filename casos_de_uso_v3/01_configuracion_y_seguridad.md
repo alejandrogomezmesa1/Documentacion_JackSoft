@@ -1,8 +1,79 @@
 # Macro-Proceso: Configuración y Seguridad
 
-Gestión de roles, usuarios, mecanismos de autenticación y acceso al sistema, y configuraciones generales (valores del negocio y funcionalidades activables).
+Gestión de permisos (matriz módulo × acción por rol), roles, usuarios, mecanismos de autenticación y acceso al sistema, y configuraciones generales (valores del negocio y funcionalidades activables).
 
 ## Subprocesos Integrados
+
+### Subproceso: PERMISOS
+- **Total de Casos de Uso / Acciones:** 8
+- **Actor Principal:** Administrador
+- **Nodo Principal:** Gestión de permisos
+
+#### Listado de Casos de Uso
+1. Listar permisos
+2. Ver detalle del permiso
+3. Asignar permisos a un rol
+4. Consultar permisos del rol
+5. Quitar permisos a un rol
+6. Cambiar estado del permiso
+7. Buscar/Filtrar permisos
+8. Generar reporte de permisos por rol
+
+#### Diagrama PlantUML
+```plantuml
+@startuml
+left to right direction
+skinparam packageStyle rectangle
+skinparam nodesep 50
+skinparam ranksep 70
+skinparam shadowing true
+skinparam defaultFontName "Inter, Arial, sans-serif"
+
+skinparam actor {
+  BorderColor #0f172a
+  BackgroundColor #fff7ed
+}
+
+skinparam usecase {
+  BackgroundColor #ffffff
+  BorderColor #0f172a
+  ArrowColor #ea580c
+}
+
+skinparam usecase<<hub>> {
+  BackgroundColor #fff7ed
+  BorderColor #ea580c
+}
+
+actor "Administrador" as actor_user
+
+rectangle "SISTEMA JACKSOFT — SEGURIDAD Y ACCESO (PERMISOS)" {
+  usecase "Gestión de permisos" as UC_Hub <<hub>>
+  usecase "Listar permisos" as UC_Central <<hub>>
+  usecase "Generar reporte de permisos por rol" as UC_Top1
+  usecase "Buscar/Filtrar permisos" as UC_Bot1
+  usecase "Ver detalle del permiso" as UC_R1
+  usecase "Asignar permisos a un rol" as UC_R2
+  usecase "Consultar permisos del rol" as UC_R3
+  usecase "Quitar permisos a un rol" as UC_R4
+  usecase "Cambiar estado del permiso" as UC_R5
+}
+
+actor_user --> UC_Hub
+UC_Hub .> UC_Central : <<include>>
+UC_Top1 ..> UC_Hub : <<extend>>
+UC_Top1 .> UC_Central : <<include>>
+UC_Bot1 ..> UC_Hub : <<extend>>
+UC_Bot1 .> UC_Central : <<include>>
+UC_R1 ..> UC_Central : <<extend>>
+UC_R2 ..> UC_Central : <<extend>>
+UC_R3 ..> UC_Central : <<extend>>
+UC_R4 ..> UC_Central : <<extend>>
+UC_R5 ..> UC_Central : <<extend>>
+@enduml
+```
+
+---
 
 ### Subproceso: ROLES
 - **Total de Casos de Uso / Acciones:** 6

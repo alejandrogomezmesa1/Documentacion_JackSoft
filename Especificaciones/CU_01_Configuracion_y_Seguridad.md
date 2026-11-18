@@ -19,13 +19,31 @@ related:
 # 📌 CU-01: Módulo de Configuración y Seguridad
 
 ## 📌 Descripción General
-Gestión de roles, usuarios, mecanismos de autenticación y acceso al sistema, y configuraciones generales (valores del negocio y funcionalidades activables).
+Gestión de permisos (matriz módulo × acción por rol), roles, usuarios, mecanismos de autenticación y acceso al sistema, y configuraciones generales (valores del negocio y funcionalidades activables).
 
 ---
 
 ## 📋 Subprocesos y Especificación Funcional
 
-### Subproceso 1: ROLES (6 Casos de Uso)
+### Subproceso 1: PERMISOS (8 Casos de Uso)
+* **Actor Principal:** `Administrador`
+* **Nodo Principal:** `Gestión de permisos`
+
+![Diagrama de Casos de Uso - PERMISOS](../Diagramas_PNG/PERMISOS.png)
+
+#### Casos de Uso Oficiales:
+1. **Listar permisos**
+2. **Ver detalle del permiso**
+3. **Asignar permisos a un rol**
+4. **Consultar permisos del rol**
+5. **Quitar permisos a un rol**
+6. **Cambiar estado del permiso**
+7. **Buscar/Filtrar permisos**
+8. **Generar reporte de permisos por rol**
+
+---
+
+### Subproceso 2: ROLES (6 Casos de Uso)
 * **Actor Principal:** `Administrador`
 * **Nodo Principal:** `Gestión de roles`
 
@@ -41,7 +59,7 @@ Gestión de roles, usuarios, mecanismos de autenticación y acceso al sistema, y
 
 ---
 
-### Subproceso 2: USUARIOS (8 Casos de Uso)
+### Subproceso 3: USUARIOS (8 Casos de Uso)
 * **Actor Principal:** `Administrador`
 * **Nodo Principal:** `Gestión de usuarios`
 
@@ -59,7 +77,7 @@ Gestión de roles, usuarios, mecanismos de autenticación y acceso al sistema, y
 
 ---
 
-### Subproceso 3: ACCESO (5 Casos de Uso)
+### Subproceso 4: ACCESO (5 Casos de Uso)
 * **Actor Principal:** `Usuario / Admin`
 * **Nodo Principal:** `Acceso al sistema`
 
@@ -74,7 +92,7 @@ Gestión de roles, usuarios, mecanismos de autenticación y acceso al sistema, y
 
 ---
 
-### Subproceso 4: CONFIGURACIONES DEL SISTEMA (8 Casos de Uso)
+### Subproceso 5: CONFIGURACIONES DEL SISTEMA (8 Casos de Uso)
 * **Actor Principal:** `Administrador`
 * **Nodo Principal:** `Gestión de configuraciones`
 

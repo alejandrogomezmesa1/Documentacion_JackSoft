@@ -62,10 +62,10 @@ graph TD
 
 ## 🎨 Recursos y Diagramas del Módulo
 
-- **Diagramas Editables:** `05_Casos_de_Uso/Diagramas_DrawIO/Casos_de_usos.drawio` (22 diagramas editables actualizados).
+- **Diagramas Editables:** `05_Casos_de_Uso/Diagramas_DrawIO/Casos_de_usos.drawio` (24 carriles, con Permisos).
 - **Código y Exportaciones:**
-  - `05_Casos_de_Uso/Diagramas_PUML/` (23 archivos en PlantUML).
-  - `05_Casos_de_Uso/Diagramas_SVG/` (23 archivos vectoriales).
+  - `05_Casos_de_Uso/Diagramas_PUML/` (24 archivos en PlantUML).
+  - `05_Casos_de_Uso/Diagramas_SVG/` (24 archivos vectoriales).
   - `05_Casos_de_Uso/Diagramas_PNG/` (24 diagramas de alta resolución).
 - **Documento Oficial de Fichas:** `05_Casos_de_Uso/Especificaciones/Documentacion_Word/v2_2026-09-14/Documentacion_Casos_de_Uso_JackSoft.docx` (243 fichas funcionales).
 - **Subprocesos v3:** `05_Casos_de_Uso/casos_de_uso_v3/` (desglose minucioso por cada subproceso).
@@ -80,3 +80,5 @@ graph TD
 
 ## 🔄 Ajuste con el frontend 2026-11-03 (bd.uml v3.7)
 Documentación de CU v4: 245 fichas renumeradas. Se retiran "Seleccionar menú personalizado", "Aplicar recargo por menú personalizado" y "Consultar impacto del menú personalizado"; "Aprobar solicitud fuera de límite" pasa a "Gestionar suscripciones con pago vencido"; "Cambiar estado del menú" pasa a "Publicar menú semanal"; los estados Pendiente y Vencida pasan a Pendiente de pago y Finalizada.
+
+Documentación de CU v5 (2026-11-17): vuelve el subproceso **Permisos** antes de Roles (bd.uml v4.6, acuerdo G2). Total: **24 subprocesos** y 253 fichas; las de Permisos son HU_246 a HU_253 (listar, ver detalle, asignar a un rol, consultar los del rol, quitar, cambiar estado, buscar/filtrar y reporte por rol). Ruta: `Especificaciones/Documentacion_Word/v5_2026-11-17/`.

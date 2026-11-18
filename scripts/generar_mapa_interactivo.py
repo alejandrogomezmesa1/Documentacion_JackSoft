@@ -10,7 +10,7 @@ output_html = os.path.join(base_dir, "Visor_Interactivo", "mapa_interactivo.html
 # Grouping Subprocesses by Macro-Process
 macro_processes = {
     "Configuración y Seguridad": [
-        "ROLES", "USUARIOS", "ACCESO", "CONFIGURACIONES DEL SISTEMA"
+        "PERMISOS", "ROLES", "USUARIOS", "ACCESO", "CONFIGURACIONES DEL SISTEMA"
     ],
     "Compras e Inventario": [
         "CATEGORIA DE INSUMOS", "INSUMOS", "PROVEEDORES", "COMPRAS"

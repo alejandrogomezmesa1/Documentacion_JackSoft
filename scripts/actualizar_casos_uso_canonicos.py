@@ -14,6 +14,24 @@ os.makedirs(png_dir, exist_ok=True)
 
 canonical_subprocesses = [
     {
+        "title": "PERMISOS",
+        "safe_title": "PERMISOS",
+        "macro": "Configuración y Seguridad",
+        "macro_full": "SEGURIDAD Y ACCESO",
+        "actor": "Administrador",
+        "hub": "Gestión de permisos",
+        "actions": [
+            "Listar permisos",
+            "Ver detalle del permiso",
+            "Asignar permisos a un rol",
+            "Consultar permisos del rol",
+            "Quitar permisos a un rol",
+            "Cambiar estado del permiso",
+            "Buscar/Filtrar permisos",
+            "Generar reporte de permisos por rol"
+        ]
+    },
+    {
         "title": "ROLES",
         "safe_title": "ROLES",
         "macro": "Configuración y Seguridad",
@@ -912,8 +930,8 @@ for sp in canonical_subprocesses:
         
     print(f"Generated SVG & PUML for: {safe_name}")
 
-# Remove obsolete PERMISOS files if present
-for obsolete in ["PERMISOS.svg", "PERMISOS.puml", "PERMISOS.png", "EMPLEADOS.svg", "EMPLEADOS.puml", "EMPLEADOS.png"]:
+# Remove obsolete EMPLEADOS files if present (PERMISOS volvió el 2026-11-17)
+for obsolete in ["EMPLEADOS.svg", "EMPLEADOS.puml", "EMPLEADOS.png"]:
     fpath = os.path.join(base_dir, "Diagramas_" + obsolete.split('.')[1].upper(), obsolete)
     if os.path.exists(fpath):
         os.remove(fpath)

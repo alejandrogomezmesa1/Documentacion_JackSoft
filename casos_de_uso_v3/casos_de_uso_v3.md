@@ -1,34 +1,52 @@
 # Especificación General de Casos de Uso - JackSoft (Versión Canónica v3)
 
-**Total de Subprocesos:** 23  
-**Total de Casos de Uso Oficiales:** 155  
+**Total de Subprocesos:** 24  
+**Total de Casos de Uso Oficiales:** 163  
 **Diseño y Estandarización:** Sistema de Diseño Corporativo JackSoft (La Coca de Jacks)
 
 | Nº | Subproceso | Macro-Proceso | Actor Principal | Cantidad de Casos de Uso |
 | :--- | :--- | :--- | :--- | :---: |
-| 1 | **ROLES** | Configuración y Seguridad | `Administrador` | 6 |
-| 2 | **USUARIOS** | Configuración y Seguridad | `Administrador` | 8 |
-| 3 | **ACCESO** | Configuración y Seguridad | `Usuario / Admin` | 5 |
-| 4 | **CONFIGURACIONES DEL SISTEMA** | Configuración y Seguridad | `Administrador` | 8 |
-| 5 | **CATEGORIA DE INSUMOS** | Compras e Inventario | `Administrador` | 7 |
-| 6 | **INSUMOS** | Compras e Inventario | `Administrador` | 8 |
-| 7 | **CATEGORIA PRODUCTOS** | Producción y Recetas | `Jefe de Cocina` | 7 |
-| 8 | **PRODUCTOS** | Producción y Recetas | `Jefe de Cocina` | 7 |
-| 9 | **PROVEEDORES** | Compras e Inventario | `Administrador` | 7 |
-| 10 | **COMPRAS** | Compras e Inventario | `Administrador` | 8 |
-| 11 | **PRODUCCION** | Producción y Recetas | `Jefe de Cocina` | 7 |
-| 12 | **FICHA TECNICA "PRODUCTO"** | Producción y Recetas | `Jefe de Cocina` | 7 |
-| 13 | **PRODUCTO TERMINADO** | Producción y Recetas | `Jefe de Cocina` | 6 |
-| 14 | **CATEGORIA DE SERVICIOS** | Servicios y Operación | `Gestor Comercial` | 5 |
-| 15 | **SERVICIO** | Servicios y Operación | `Gestor Comercial` | 7 |
-| 16 | **CALENDARIO** | Servicios y Operación | `Administrador` | 4 |
-| 17 | **CLIENTES** | Clientes y Ventas | `Gestor Comercial` | 7 |
-| 18 | **SUSCRIPCIONES** | Clientes y Ventas | `Gestor Comercial` | 10 |
-| 19 | **MENU** | Clientes y Ventas | `Administrador / Cliente` | 9 |
-| 20 | **RUTA Y DOMICILIARIOS** | Logística y Domicilios | `Domiciliario` | 5 |
-| 21 | **MONITOREO DE ENTREGA "TIEMPO REAL"** | Logística y Domicilios | `Logística` | 7 |
-| 22 | **INCIDENCIAS** | Logística y Domicilios | `Logística` | 6 |
-| 23 | **DASHBOARD** | Analítica y Métricas | `Administrador` | 4 |
+| 1 | **PERMISOS** | Configuración y Seguridad | `Administrador` | 8 |
+| 2 | **ROLES** | Configuración y Seguridad | `Administrador` | 6 |
+| 3 | **USUARIOS** | Configuración y Seguridad | `Administrador` | 8 |
+| 4 | **ACCESO** | Configuración y Seguridad | `Usuario / Admin` | 5 |
+| 5 | **CONFIGURACIONES DEL SISTEMA** | Configuración y Seguridad | `Administrador` | 8 |
+| 6 | **CATEGORIA DE INSUMOS** | Compras e Inventario | `Administrador` | 7 |
+| 7 | **INSUMOS** | Compras e Inventario | `Administrador` | 8 |
+| 8 | **CATEGORIA PRODUCTOS** | Producción y Recetas | `Jefe de Cocina` | 7 |
+| 9 | **PRODUCTOS** | Producción y Recetas | `Jefe de Cocina` | 7 |
+| 10 | **PROVEEDORES** | Compras e Inventario | `Administrador` | 7 |
+| 11 | **COMPRAS** | Compras e Inventario | `Administrador` | 8 |
+| 12 | **PRODUCCION** | Producción y Recetas | `Jefe de Cocina` | 7 |
+| 13 | **FICHA TECNICA "PRODUCTO"** | Producción y Recetas | `Jefe de Cocina` | 7 |
+| 14 | **PRODUCTO TERMINADO** | Producción y Recetas | `Jefe de Cocina` | 6 |
+| 15 | **CATEGORIA DE SERVICIOS** | Servicios y Operación | `Gestor Comercial` | 5 |
+| 16 | **SERVICIO** | Servicios y Operación | `Gestor Comercial` | 7 |
+| 17 | **CALENDARIO** | Servicios y Operación | `Administrador` | 4 |
+| 18 | **CLIENTES** | Clientes y Ventas | `Gestor Comercial` | 7 |
+| 19 | **SUSCRIPCIONES** | Clientes y Ventas | `Gestor Comercial` | 10 |
+| 20 | **MENU** | Clientes y Ventas | `Administrador / Cliente` | 9 |
+| 21 | **RUTA Y DOMICILIARIOS** | Logística y Domicilios | `Domiciliario` | 5 |
+| 22 | **MONITOREO DE ENTREGA "TIEMPO REAL"** | Logística y Domicilios | `Logística` | 7 |
+| 23 | **INCIDENCIAS** | Logística y Domicilios | `Logística` | 6 |
+| 24 | **DASHBOARD** | Analítica y Métricas | `Administrador` | 4 |
+
+---
+
+## Subproceso: PERMISOS
+* **Macro-Proceso:** Configuración y Seguridad (SEGURIDAD Y ACCESO)
+* **Actor:** Administrador
+* **Nodo Principal:** Gestión de permisos
+
+### Casos de Uso:
+1. Listar permisos
+2. Ver detalle del permiso
+3. Asignar permisos a un rol
+4. Consultar permisos del rol
+5. Quitar permisos a un rol
+6. Cambiar estado del permiso
+7. Buscar/Filtrar permisos
+8. Generar reporte de permisos por rol
 
 ---
 

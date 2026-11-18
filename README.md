@@ -31,7 +31,7 @@ CasosDeUsoJackSoft/
 ├── README.md                   # Documentación general y catálogo del sistema
 ├── .gitignore                  # Exclusiones de archivos temporales del sistema
 │
-├── Diagramas_PNG/              # 22 diagramas canónicos HD + 1 Mapa General del Sistema
+├── Diagramas_PNG/              # 24 diagramas canónicos HD + 1 Mapa General del Sistema
 │   ├── ACCESO.png
 │   ├── ROLES.png
 │   ├── USUARIOS.png
@@ -39,13 +39,13 @@ CasosDeUsoJackSoft/
 │   ├── CONFIGURACIONES_DEL_SISTEMA.png
 │   ├── MENU.png
 │   ├── MAPA_GENERAL_CASOS_DE_USO.png
-│   └── ... (23 archivos PNG)
+│   └── ... (25 archivos PNG)
 │
 ├── Diagramas_SVG/              # Diagramas vectoriales escalables independientes
-│   └── ... (22 archivos SVG)
+│   └── ... (24 archivos SVG)
 │
 ├── Diagramas_PUML/             # Código fuente PlantUML con jerarquías y notas normativas
-│   └── ... (22 archivos PUML)
+│   └── ... (24 archivos PUML)
 │
 ├── Diagramas_DrawIO/           # Diagrama general editable en Draw.io
 │   └── Casos_de_usos.drawio

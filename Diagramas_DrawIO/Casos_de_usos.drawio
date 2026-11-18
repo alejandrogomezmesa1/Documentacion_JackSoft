@@ -2035,6 +2035,124 @@
         <mxCell id="men-me0" edge="1" parent="1" source="men-actor2" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;endFill=0;startArrow=none;startFill=0;" target="men-m0"><mxGeometry relative="1" as="geometry" /></mxCell>
         <mxCell id="men-m1" parent="1" style="ellipse;whiteSpace=wrap;html=1;shapeInside=1;" value="Ver detalle del almuerzo del día (app móvil)" vertex="1"><mxGeometry height="80" width="120" x="600" y="10020" as="geometry" /></mxCell>
         <mxCell id="men-me1" edge="1" parent="1" source="men-m1" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;endFill=0;dashed=1;" target="men-m0"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="perm-0" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;" value="Admin" vertex="1">
+          <mxGeometry height="60" width="30" x="80" y="-1690" as="geometry" />
+        </mxCell>
+        <mxCell id="perm-1" edge="1" parent="1" source="perm-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;dashed=1;" target="perm-9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="perm-3" parent="1" style="ellipse;whiteSpace=wrap;html=1;shapeInside=1;" value="Gestión de permisos" vertex="1">
+          <mxGeometry height="80" width="120" x="190" y="-1700" as="geometry" />
+        </mxCell>
+        <mxCell id="perm-4" edge="1" parent="1" source="perm-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;endArrow=none;endFill=0;startArrow=none;startFill=0;" target="perm-0">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="perm-5" edge="1" parent="1" source="perm-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;dashed=1;endArrow=none;endFill=0;" target="perm-27">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="perm-7" edge="1" parent="1" source="perm-9" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;dashed=1;endArrow=none;endFill=0;" target="perm-18">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="perm-9" parent="1" style="ellipse;whiteSpace=wrap;html=1;shapeInside=1;" value="Listar permisos" vertex="1">
+          <mxGeometry height="80" width="120" x="400" y="-1700" as="geometry" />
+        </mxCell>
+        <mxCell id="perm-10" edge="1" parent="1" source="perm-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;endArrow=none;endFill=0;dashed=1;" target="perm-9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="perm-12" edge="1" parent="1" source="perm-14" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;endArrow=none;endFill=0;dashed=1;" target="perm-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="perm-14" parent="1" style="ellipse;whiteSpace=wrap;html=1;shapeInside=1;" value="Generar reporte de permisos por rol" vertex="1">
+          <mxGeometry height="80" width="120" x="400" y="-1860" as="geometry" />
+        </mxCell>
+        <mxCell id="perm-15" edge="1" parent="1" source="perm-17" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;endArrow=none;endFill=0;dashed=1;" target="perm-9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="perm-17" parent="1" style="ellipse;whiteSpace=wrap;html=1;shapeInside=1;" value="Ver detalle del permiso" vertex="1">
+          <mxGeometry height="80" width="120" x="600" y="-1860" as="geometry" />
+        </mxCell>
+        <mxCell id="perm-18" parent="1" style="ellipse;whiteSpace=wrap;html=1;shapeInside=1;" value="Asignar permisos a un rol" vertex="1">
+          <mxGeometry height="80" width="120" x="600" y="-1750" as="geometry" />
+        </mxCell>
+        <mxCell id="perm-19" edge="1" parent="1" source="perm-21" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;endArrow=none;endFill=0;dashed=1;" target="perm-9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="perm-21" parent="1" style="ellipse;whiteSpace=wrap;html=1;shapeInside=1;" value="Consultar permisos del rol" vertex="1">
+          <mxGeometry height="80" width="120" x="600" y="-1640" as="geometry" />
+        </mxCell>
+        <mxCell id="perm-22" edge="1" parent="1" source="perm-24" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;endArrow=none;endFill=0;startArrow=none;startFill=0;dashed=1;" target="perm-9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="perm-24" parent="1" style="ellipse;whiteSpace=wrap;html=1;shapeInside=1;" value="Quitar permisos a un rol" vertex="1">
+          <mxGeometry height="80" width="120" x="600" y="-1530" as="geometry" />
+        </mxCell>
+        <mxCell id="perm-25" edge="1" parent="1" source="perm-27" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;endArrow=none;endFill=0;dashed=1;" target="perm-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="perm-27" parent="1" style="ellipse;whiteSpace=wrap;html=1;shapeInside=1;" value="Buscar/Filtrar permisos" vertex="1">
+          <mxGeometry height="80" width="120" x="400" y="-1530" as="geometry" />
+        </mxCell>
+        <mxCell id="perm-28" parent="1" style="swimlane;startSize=0;" value="" vertex="1">
+          <mxGeometry height="660" width="600" x="160" y="-1900" as="geometry">
+            <mxRectangle height="40" width="50" x="280" y="360" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="perm-2" connectable="0" parent="perm-1" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="Include" vertex="1">
+          <mxGeometry relative="1" x="-0.1556" y="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="perm-6" connectable="0" parent="perm-5" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="Include" vertex="1">
+          <mxGeometry relative="1" x="-0.0889" y="-1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="perm-8" connectable="0" parent="perm-7" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="Extends" vertex="1">
+          <mxGeometry relative="1" x="0.0472" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="perm-11" connectable="0" parent="perm-10" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="Include" vertex="1">
+          <mxGeometry relative="1" x="-0.2" y="-1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="perm-13" connectable="0" parent="perm-12" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="Extends" vertex="1">
+          <mxGeometry relative="1" x="0.0748" y="-1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="perm-16" connectable="0" parent="perm-15" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="Extends" vertex="1">
+          <mxGeometry relative="1" x="-0.055" y="-1" as="geometry">
+            <mxPoint y="-1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="perm-20" connectable="0" parent="perm-19" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="Extends" vertex="1">
+          <mxGeometry relative="1" x="-0.096" y="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="perm-23" connectable="0" parent="perm-22" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="Extends" vertex="1">
+          <mxGeometry relative="1" x="0.0244" y="-2" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="perm-26" connectable="0" parent="perm-25" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="Extends" vertex="1">
+          <mxGeometry relative="1" x="-0.0492" y="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="perm-29" edge="1" parent="1" source="perm-31" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;endArrow=none;endFill=0;startArrow=none;startFill=0;dashed=1;" target="perm-9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="perm-31" parent="1" style="ellipse;whiteSpace=wrap;html=1;shapeInside=1;" value="Cambiar estado del permiso" vertex="1">
+          <mxGeometry height="80" width="120" x="600" y="-1420" as="geometry" />
+        </mxCell>
+        <mxCell id="perm-30" connectable="0" parent="perm-29" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="Extends" vertex="1">
+          <mxGeometry relative="1" x="0.0244" y="-2" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>

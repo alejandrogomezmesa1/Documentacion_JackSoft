@@ -12,8 +12,8 @@ from actualizar_casos_uso_canonicos import canonical_subprocesses
 macro_groups = {
     "01_configuracion_y_seguridad.md": {
         "title": "Configuración y Seguridad",
-        "desc": "Gestión de roles, usuarios, mecanismos de autenticación y acceso al sistema, y configuraciones generales (valores del negocio y funcionalidades activables).",
-        "subs": ["ROLES", "USUARIOS", "ACCESO", "CONFIGURACIONES DEL SISTEMA"],
+        "desc": "Gestión de permisos (matriz módulo × acción por rol), roles, usuarios, mecanismos de autenticación y acceso al sistema, y configuraciones generales (valores del negocio y funcionalidades activables).",
+        "subs": ["PERMISOS", "ROLES", "USUARIOS", "ACCESO", "CONFIGURACIONES DEL SISTEMA"],
         "espec_file": "CU_01_Configuracion_y_Seguridad.md"
     },
     "02_compras_e_inventario.md": {

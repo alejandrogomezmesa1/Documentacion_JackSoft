@@ -1,0 +1,44 @@
+@startuml C4_Nivel2_Contenedores
+!include <C4/C4_Container>
+
+LAYOUT_WITH_LEGEND()
+
+title Nivel 2: Contenedores — JackSoft
+
+Person(cliente, "Cliente", "Usa la web o la app móvil.")
+Person(admin, "Administrador", "Usa la web.")
+Person(cocina, "Personal de Cocina", "Usa la web.")
+Person(domi, "Domiciliario", "Usa la app móvil.")
+
+System_Boundary(c1, "JackSoft") {
+    Container(web, "Aplicación Web", "React", "Una sola aplicación: muestra las pantallas de Cliente, Administrador o Cocina según el rol; el menú y los botones salen de los permisos del usuario.")
+    Container(movil, "Aplicación Móvil", "Flutter / Dart", "Funciones del Cliente y del Domiciliario, incluido el envío de GPS.")
+    Container(api, "Backend API", "Node.js / NestJS / TypeScript", "Aplica las reglas de negocio y expone API REST y WebSocket.")
+    ContainerDb(bd, "Base de Datos", "PostgreSQL", "Modelo bd.uml v4.6: 39 tablas de usuarios, roles y permisos, consentimientos, configuración, inventario, producción, ventas y logística.")
+}
+
+System_Ext(maps, "Google Maps Platform", "Mapas y geocodificación.")
+System_Ext(cloudinary, "Cloudinary", "Comprobantes y fotos.")
+System_Ext(fcm, "Firebase Cloud Messaging", "Notificaciones push.")
+
+Rel(cliente, web, "Usa", "HTTPS")
+Rel(cliente, movil, "Usa", "Android / iOS")
+Rel(admin, web, "Usa", "HTTPS")
+Rel(cocina, web, "Usa", "HTTPS")
+Rel(domi, movil, "Usa", "Android / iOS")
+
+Rel(web, api, "Consume la API", "HTTPS / JSON")
+Rel(movil, api, "Consume la API", "HTTPS / JSON")
+Rel(movil, api, "Envía GPS del domiciliario", "WebSocket")
+Rel(api, web, "Publica ubicación en vivo", "WebSocket")
+Rel(api, movil, "Publica ubicación en vivo", "WebSocket")
+
+Rel(api, bd, "Lee y escribe", "SQL")
+Rel(api, cloudinary, "Sube archivos y obtiene URL", "HTTPS")
+Rel(api, fcm, "Solicita notificaciones", "HTTPS")
+Rel(api, maps, "Geocodifica direcciones", "HTTPS")
+Rel(web, maps, "Carga el mapa", "HTTPS")
+Rel(movil, maps, "Carga el mapa", "HTTPS")
+Rel(fcm, movil, "Entrega notificaciones push")
+
+@enduml
