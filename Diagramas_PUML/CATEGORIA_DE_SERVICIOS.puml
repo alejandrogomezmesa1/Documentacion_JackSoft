@@ -30,7 +30,6 @@ rectangle "SISTEMA JACKSOFT — SERVICIOS Y OPERACIÓN (CATEGORIA DE SERVICIOS)"
   usecase "Crear categoría de servicios" as UC_Top1
   usecase "Editar categoría de servicios" as UC_R1
   usecase "Cambiar estado de la categoría de servicios" as UC_R2
-  usecase "Eliminar categoría de servicios" as UC_R3
 }
 
 actor_user --> UC_Hub
@@ -39,5 +38,4 @@ UC_Top1 ..> UC_Hub : <<extend>>
 UC_Top1 .> UC_Central : <<include>>
 UC_R1 ..> UC_Central : <<extend>>
 UC_R2 ..> UC_Central : <<extend>>
-UC_R3 ..> UC_Central : <<extend>>
 @enduml

@@ -24,7 +24,7 @@ Gestión del catálogo de insumos, categorías de materia prima, proveedores y �
 
 ## 📋 Subprocesos y Especificación Funcional
 
-### Subproceso 1: CATEGORIA DE INSUMOS (7 Casos de Uso)
+### Subproceso 1: CATEGORIA DE INSUMOS (6 Casos de Uso)
 * **Actor Principal:** `Administrador`
 * **Nodo Principal:** `Gestión de categorías de insumos`
 
@@ -36,12 +36,11 @@ Gestión del catálogo de insumos, categorías de materia prima, proveedores y �
 3. **Ver detalle de la categoría**
 4. **Editar categoría**
 5. **Cambiar estado de la categoría**
-6. **Eliminar categoría**
-7. **Filtrar/Buscar categoría de insumo**
+6. **Filtrar/Buscar categoría de insumo**
 
 ---
 
-### Subproceso 2: INSUMOS (8 Casos de Uso)
+### Subproceso 2: INSUMOS (7 Casos de Uso)
 * **Actor Principal:** `Administrador`
 * **Nodo Principal:** `Gestión de insumos`
 
@@ -55,11 +54,10 @@ Gestión del catálogo de insumos, categorías de materia prima, proveedores y �
 5. **Cambiar estado del insumo**
 6. **Generar reporte de insumos**
 7. **Buscar Insumos**
-8. **Eliminar insumo**
 
 ---
 
-### Subproceso 3: PROVEEDORES (7 Casos de Uso)
+### Subproceso 3: PROVEEDORES (6 Casos de Uso)
 * **Actor Principal:** `Administrador`
 * **Nodo Principal:** `Gestión de proveedores`
 
@@ -72,7 +70,6 @@ Gestión del catálogo de insumos, categorías de materia prima, proveedores y �
 4. **Editar proveedor**
 5. **Cambiar estado del proveedor**
 6. **Buscar proveedores**
-7. **Eliminar proveedor**
 
 ---
 

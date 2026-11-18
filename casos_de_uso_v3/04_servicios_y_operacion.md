@@ -5,7 +5,7 @@ Administración de categorías y tipos de servicios (almuerzos, catering), y par
 ## Subprocesos Integrados
 
 ### Subproceso: CATEGORIA DE SERVICIOS
-- **Total de Casos de Uso / Acciones:** 5
+- **Total de Casos de Uso / Acciones:** 4
 - **Actor Principal:** Gestor Comercial
 - **Nodo Principal:** Gestión de categorías de servicios
 
@@ -14,7 +14,6 @@ Administración de categorías y tipos de servicios (almuerzos, catering), y par
 2. Listar categorías de servicios
 3. Editar categoría de servicios
 4. Cambiar estado de la categoría de servicios
-5. Eliminar categoría de servicios
 
 #### Diagrama PlantUML
 ```plantuml
@@ -50,7 +49,6 @@ rectangle "SISTEMA JACKSOFT — SERVICIOS Y OPERACIÓN (CATEGORIA DE SERVICIOS)"
   usecase "Crear categoría de servicios" as UC_Top1
   usecase "Editar categoría de servicios" as UC_R1
   usecase "Cambiar estado de la categoría de servicios" as UC_R2
-  usecase "Eliminar categoría de servicios" as UC_R3
 }
 
 actor_user --> UC_Hub
@@ -59,14 +57,13 @@ UC_Top1 ..> UC_Hub : <<extend>>
 UC_Top1 .> UC_Central : <<include>>
 UC_R1 ..> UC_Central : <<extend>>
 UC_R2 ..> UC_Central : <<extend>>
-UC_R3 ..> UC_Central : <<extend>>
 @enduml
 ```
 
 ---
 
 ### Subproceso: SERVICIO
-- **Total de Casos de Uso / Acciones:** 7
+- **Total de Casos de Uso / Acciones:** 6
 - **Actor Principal:** Gestor Comercial
 - **Nodo Principal:** Gestión de servicios
 
@@ -77,7 +74,6 @@ UC_R3 ..> UC_Central : <<extend>>
 4. Editar servicio
 5. Cambiar estado del servicio
 6. Filtrar servicios
-7. Eliminar servicio
 
 #### Diagrama PlantUML
 ```plantuml
@@ -115,7 +111,6 @@ rectangle "SISTEMA JACKSOFT — SERVICIOS Y OPERACIÓN (SERVICIO)" {
   usecase "Ver detalle del servicio" as UC_R1
   usecase "Editar servicio" as UC_R2
   usecase "Cambiar estado del servicio" as UC_R3
-  usecase "Eliminar servicio" as UC_R4
 }
 
 actor_user --> UC_Hub
@@ -127,7 +122,6 @@ UC_Bot1 .> UC_Central : <<include>>
 UC_R1 ..> UC_Central : <<extend>>
 UC_R2 ..> UC_Central : <<extend>>
 UC_R3 ..> UC_Central : <<extend>>
-UC_R4 ..> UC_Central : <<extend>>
 @enduml
 ```
 

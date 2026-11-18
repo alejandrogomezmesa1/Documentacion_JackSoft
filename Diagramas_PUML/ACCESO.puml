@@ -31,6 +31,8 @@ rectangle "SISTEMA JACKSOFT — SEGURIDAD Y ACCESO (ACCESO)" {
   usecase "Consultar estado de la cuenta" as UC_Estado
   usecase "Cerrar sesión" as UC_Logout
   usecase "Generar reporte" as UC_Reporte
+  usecase "Iniciar sesión con Google o Apple" as UC_Social
+  usecase "Iniciar sesión con código por WhatsApp" as UC_Codigo
 }
 
 actor_user --> UC_Hub
@@ -40,4 +42,6 @@ UC_Estado ..> UC_Login : <<extend>>
 UC_Logout ..> UC_Login : <<extend>>
 UC_Reporte ..> UC_Hub : <<extend>>
 UC_Reporte .> UC_Login : <<include>>
+UC_Social ..> UC_Login : <<extend>>
+UC_Codigo ..> UC_Login : <<extend>>
 @enduml

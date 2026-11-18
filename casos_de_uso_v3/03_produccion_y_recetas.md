@@ -5,7 +5,7 @@ Categorías y catálogo de productos, fichas técnicas (recetas), órdenes de pr
 ## Subprocesos Integrados
 
 ### Subproceso: CATEGORIA PRODUCTOS
-- **Total de Casos de Uso / Acciones:** 7
+- **Total de Casos de Uso / Acciones:** 6
 - **Actor Principal:** Jefe de Cocina
 - **Nodo Principal:** Gestión de categorías de productos
 
@@ -15,8 +15,7 @@ Categorías y catálogo de productos, fichas técnicas (recetas), órdenes de pr
 3. Ver detalle de la categoría de productos
 4. Editar categoría de productos
 5. Cambiar estado de la categoría de productos
-6. Eliminar categoría de productos
-7. Buscar/Filtrar categorías de productos
+6. Buscar/Filtrar categorías de productos
 
 #### Diagrama PlantUML
 ```plantuml
@@ -54,7 +53,6 @@ rectangle "SISTEMA JACKSOFT — PRODUCCIÓN Y RECETAS (CATEGORIA PRODUCTOS)" {
   usecase "Ver detalle de la categoría de productos" as UC_R1
   usecase "Editar categoría de productos" as UC_R2
   usecase "Cambiar estado de la categoría de productos" as UC_R3
-  usecase "Eliminar categoría de productos" as UC_R4
 }
 
 actor_user --> UC_Hub
@@ -66,14 +64,13 @@ UC_Bot1 .> UC_Central : <<include>>
 UC_R1 ..> UC_Central : <<extend>>
 UC_R2 ..> UC_Central : <<extend>>
 UC_R3 ..> UC_Central : <<extend>>
-UC_R4 ..> UC_Central : <<extend>>
 @enduml
 ```
 
 ---
 
 ### Subproceso: PRODUCTOS
-- **Total de Casos de Uso / Acciones:** 7
+- **Total de Casos de Uso / Acciones:** 6
 - **Actor Principal:** Jefe de Cocina
 - **Nodo Principal:** Gestión de productos
 
@@ -84,7 +81,6 @@ UC_R4 ..> UC_Central : <<extend>>
 4. Editar producto
 5. Cambiar estado del producto
 6. Buscar productos
-7. Eliminar producto
 
 #### Diagrama PlantUML
 ```plantuml
@@ -122,7 +118,6 @@ rectangle "SISTEMA JACKSOFT — PRODUCCIÓN Y RECETAS (PRODUCTOS)" {
   usecase "Ver detalle del producto" as UC_R1
   usecase "Editar producto" as UC_R2
   usecase "Cambiar estado del producto" as UC_R3
-  usecase "Eliminar producto" as UC_R4
 }
 
 actor_user --> UC_Hub
@@ -134,7 +129,6 @@ UC_Bot1 .> UC_Central : <<include>>
 UC_R1 ..> UC_Central : <<extend>>
 UC_R2 ..> UC_Central : <<extend>>
 UC_R3 ..> UC_Central : <<extend>>
-UC_R4 ..> UC_Central : <<extend>>
 @enduml
 ```
 
@@ -209,7 +203,7 @@ UC_R4 ..> UC_Central : <<extend>>
 ---
 
 ### Subproceso: FICHA TECNICA "PRODUCTO"
-- **Total de Casos de Uso / Acciones:** 7
+- **Total de Casos de Uso / Acciones:** 6
 - **Actor Principal:** Jefe de Cocina
 - **Nodo Principal:** Gestión de fichas técnicas
 
@@ -220,7 +214,6 @@ UC_R4 ..> UC_Central : <<extend>>
 4. Editar ficha técnica de producto
 5. Buscar fichas técnicas de producto
 6. Generar reporte de fichas técnicas
-7. Eliminar ficha técnica de producto
 
 #### Diagrama PlantUML
 ```plantuml
@@ -258,7 +251,6 @@ rectangle "SISTEMA JACKSOFT — PRODUCCIÓN Y RECETAS (FICHA TECNICA PRODUCTO)" 
   usecase "Buscar fichas técnicas de producto" as UC_Bot1
   usecase "Ver detalle de la ficha técnica de producto" as UC_R1
   usecase "Editar ficha técnica de producto" as UC_R2
-  usecase "Eliminar ficha técnica de producto" as UC_R3
 }
 
 actor_user --> UC_Hub
@@ -270,7 +262,6 @@ UC_Bot1 ..> UC_Hub : <<extend>>
 UC_Bot1 .> UC_Central : <<include>>
 UC_R1 ..> UC_Central : <<extend>>
 UC_R2 ..> UC_Central : <<extend>>
-UC_R3 ..> UC_Central : <<extend>>
 @enduml
 ```
 

@@ -43,8 +43,7 @@ canonical_subprocesses = [
             "Listar roles",
             "Ver detalle del rol",
             "Editar rol",
-            "Cambiar estado",
-            "Eliminar rol"
+            "Cambiar estado"
         ]
     },
     {
@@ -61,7 +60,6 @@ canonical_subprocesses = [
             "Ver detalle del usuario",
             "Editar usuario",
             "Cambiar estado",
-            "Eliminar usuario",
             "Filtrar/Buscar usuario"
         ]
     },
@@ -77,7 +75,9 @@ canonical_subprocesses = [
             "Recuperar/Restablecer contraseña",
             "Consultar estado de la cuenta",
             "Cerrar sesión",
-            "Generar reporte"
+            "Generar reporte",
+            "Iniciar sesión con Google o Apple",
+            "Iniciar sesión con código por WhatsApp"
         ]
     },
     {
@@ -111,7 +111,6 @@ canonical_subprocesses = [
             "Ver detalle de la categoría",
             "Editar categoría",
             "Cambiar estado de la categoría",
-            "Eliminar categoría",
             "Filtrar/Buscar categoría de insumo"
         ]
     },
@@ -129,8 +128,7 @@ canonical_subprocesses = [
             "Editar insumo",
             "Cambiar estado del insumo",
             "Generar reporte de insumos",
-            "Buscar Insumos",
-            "Eliminar insumo"
+            "Buscar Insumos"
         ]
     },
     {
@@ -146,7 +144,6 @@ canonical_subprocesses = [
             "Ver detalle de la categoría de productos",
             "Editar categoría de productos",
             "Cambiar estado de la categoría de productos",
-            "Eliminar categoría de productos",
             "Buscar/Filtrar categorías de productos"
         ]
     },
@@ -163,8 +160,7 @@ canonical_subprocesses = [
             "Ver detalle del producto",
             "Editar producto",
             "Cambiar estado del producto",
-            "Buscar productos",
-            "Eliminar producto"
+            "Buscar productos"
         ]
     },
     {
@@ -180,8 +176,7 @@ canonical_subprocesses = [
             "Ver detalle del proveedor",
             "Editar proveedor",
             "Cambiar estado del proveedor",
-            "Buscar proveedores",
-            "Eliminar proveedor"
+            "Buscar proveedores"
         ]
     },
     {
@@ -232,8 +227,7 @@ canonical_subprocesses = [
             "Ver detalle de la ficha técnica de producto",
             "Editar ficha técnica de producto",
             "Buscar fichas técnicas de producto",
-            "Generar reporte de fichas técnicas",
-            "Eliminar ficha técnica de producto"
+            "Generar reporte de fichas técnicas"
         ]
     },
     {
@@ -263,8 +257,7 @@ canonical_subprocesses = [
             "Crear categoría de servicios",
             "Listar categorías de servicios",
             "Editar categoría de servicios",
-            "Cambiar estado de la categoría de servicios",
-            "Eliminar categoría de servicios"
+            "Cambiar estado de la categoría de servicios"
         ]
     },
     {
@@ -280,8 +273,7 @@ canonical_subprocesses = [
             "Ver detalle del servicio",
             "Editar servicio",
             "Cambiar estado del servicio",
-            "Filtrar servicios",
-            "Eliminar servicio"
+            "Filtrar servicios"
         ]
     },
     {
@@ -536,6 +528,16 @@ def generate_svg(sp):
         draw_oval(recup_x, recup_y, "Recuperar/Restablecer contraseña", rx=105, ry=28)
         draw_oval(report_x, report_y, "Generar reporte", rx=82, ry=26)
         draw_oval(close_x, close_y, "Cerrar sesión", rx=82, ry=26)
+        # v4.7 (G3-Q11..Q13, G4): formas alternas de iniciar sesión (solo clientes)
+        social_x, social_y = 830, actor_y - 165
+        codigo_x, codigo_y = 830, actor_y - 85
+        draw_oval(social_x, social_y, "Iniciar sesión con Google o Apple", rx=118, ry=27)
+        draw_oval(codigo_x, codigo_y, "Iniciar sesión con código por WhatsApp", rx=118, ry=27)
+        for ox, oy in ((social_x, social_y), (codigo_x, codigo_y)):
+            svg.append(f'  <line x1="{ox - 110}" y1="{oy + 12}" x2="{login_x + 55}" y2="{login_y - 22}" stroke="#ea580c" stroke-width="1.4" stroke-dasharray="4,4" marker-end="url(#extendArrow)" />')
+            mx, my = (ox - 110 + login_x + 55) / 2, (oy + 12 + login_y - 22) / 2
+            svg.append(f'  <rect x="{mx - 28}" y="{my - 8}" width="56" height="17" rx="8" fill="#ffffff" stroke="#fed7aa" stroke-width="1" />')
+            svg.append(f'  <text x="{mx}" y="{my + 4}" font-family="\'Inter\', sans-serif" font-size="9" font-weight="700" fill="#c2410c" text-anchor="middle">«extend»</text>')
 
         # Lines
         svg.append(f'  <line x1="175" y1="{actor_y}" x2="{hub_x - 88}" y2="{hub_y}" stroke="#0f172a" stroke-width="2" />')
@@ -832,6 +834,8 @@ def generate_puml(sp):
         puml.append('  usecase "Consultar estado de la cuenta" as UC_Estado')
         puml.append('  usecase "Cerrar sesión" as UC_Logout')
         puml.append('  usecase "Generar reporte" as UC_Reporte')
+        puml.append('  usecase "Iniciar sesión con Google o Apple" as UC_Social')
+        puml.append('  usecase "Iniciar sesión con código por WhatsApp" as UC_Codigo')
         puml.append("}")
         puml.append("")
         puml.append("actor_user --> UC_Hub")
@@ -841,6 +845,8 @@ def generate_puml(sp):
         puml.append("UC_Logout ..> UC_Login : <<extend>>")
         puml.append("UC_Reporte ..> UC_Hub : <<extend>>")
         puml.append("UC_Reporte .> UC_Login : <<include>>")
+        puml.append("UC_Social ..> UC_Login : <<extend>>")
+        puml.append("UC_Codigo ..> UC_Login : <<extend>>")
         puml.append("@enduml")
         return "\n".join(puml)
 

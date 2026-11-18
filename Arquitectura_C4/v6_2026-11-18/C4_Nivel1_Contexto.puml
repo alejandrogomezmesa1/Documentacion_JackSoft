@@ -1,0 +1,32 @@
+@startuml C4_Nivel1_Contexto
+!include <C4/C4_Context>
+
+LAYOUT_WITH_LEGEND()
+
+title Nivel 1: Contexto del Sistema — JackSoft
+
+Person(cliente, "Cliente", "Compra y renueva su plan, consulta el menú, sube comprobantes, sigue su entrega y reporta incidencias.")
+Person(admin, "Administrador", "Gestiona la operación, valida los pagos manualmente y consulta indicadores.")
+Person(cocina, "Personal de Cocina", "Consulta la producción del día y registra lo elaborado.")
+Person(domi, "Domiciliario", "Consulta su ruta, transmite su ubicación y registra entregas y cocas.")
+
+System(jacksoft, "JackSoft", "Gestiona suscripciones de alimentación, compras, producción, entregas e incidencias de La Coca de Jacks S.A.S.")
+
+System_Ext(maps, "Google Maps Platform", "Mapas y geocodificación de direcciones.")
+System_Ext(cloudinary, "Cloudinary", "Almacena comprobantes de pago y fotos de incidencias.")
+System_Ext(fcm, "Firebase Cloud Messaging", "Entrega notificaciones push a la app móvil.")
+System_Ext(oidc, "Google y Apple", "Inicio de sesión de clientes con OpenID Connect + PKCE.")
+System_Ext(wa, "WhatsApp Business API", "Envía al cliente el código de acceso de 6 dígitos.")
+
+Rel(cliente, jacksoft, "Compra planes y sigue sus entregas", "Web y móvil")
+Rel(admin, jacksoft, "Administra la operación y valida pagos", "Web")
+Rel(cocina, jacksoft, "Consulta y registra la producción", "Web")
+Rel(domi, jacksoft, "Consulta rutas y registra entregas", "Móvil")
+
+Rel(jacksoft, maps, "Muestra mapas y geocodifica direcciones")
+Rel(jacksoft, cloudinary, "Guarda y consulta archivos")
+Rel(jacksoft, fcm, "Envía notificaciones push")
+Rel(jacksoft, oidc, "Valida el ingreso con Google o Apple (solo clientes)")
+Rel(jacksoft, wa, "Envía el código de acceso por WhatsApp")
+
+@enduml

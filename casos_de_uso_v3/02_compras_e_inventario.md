@@ -5,7 +5,7 @@ Gestión del catálogo de insumos, categorías de materia prima, proveedores y �
 ## Subprocesos Integrados
 
 ### Subproceso: CATEGORIA DE INSUMOS
-- **Total de Casos de Uso / Acciones:** 7
+- **Total de Casos de Uso / Acciones:** 6
 - **Actor Principal:** Administrador
 - **Nodo Principal:** Gestión de categorías de insumos
 
@@ -15,8 +15,7 @@ Gestión del catálogo de insumos, categorías de materia prima, proveedores y �
 3. Ver detalle de la categoría
 4. Editar categoría
 5. Cambiar estado de la categoría
-6. Eliminar categoría
-7. Filtrar/Buscar categoría de insumo
+6. Filtrar/Buscar categoría de insumo
 
 #### Diagrama PlantUML
 ```plantuml
@@ -54,7 +53,6 @@ rectangle "SISTEMA JACKSOFT — COMPRAS E INVENTARIO (CATEGORIA DE INSUMOS)" {
   usecase "Ver detalle de la categoría" as UC_R1
   usecase "Editar categoría" as UC_R2
   usecase "Cambiar estado de la categoría" as UC_R3
-  usecase "Eliminar categoría" as UC_R4
 }
 
 actor_user --> UC_Hub
@@ -66,14 +64,13 @@ UC_Bot1 .> UC_Central : <<include>>
 UC_R1 ..> UC_Central : <<extend>>
 UC_R2 ..> UC_Central : <<extend>>
 UC_R3 ..> UC_Central : <<extend>>
-UC_R4 ..> UC_Central : <<extend>>
 @enduml
 ```
 
 ---
 
 ### Subproceso: INSUMOS
-- **Total de Casos de Uso / Acciones:** 8
+- **Total de Casos de Uso / Acciones:** 7
 - **Actor Principal:** Administrador
 - **Nodo Principal:** Gestión de insumos
 
@@ -85,7 +82,6 @@ UC_R4 ..> UC_Central : <<extend>>
 5. Cambiar estado del insumo
 6. Generar reporte de insumos
 7. Buscar Insumos
-8. Eliminar insumo
 
 #### Diagrama PlantUML
 ```plantuml
@@ -124,7 +120,6 @@ rectangle "SISTEMA JACKSOFT — COMPRAS E INVENTARIO (INSUMOS)" {
   usecase "Ver detalle del insumo" as UC_R1
   usecase "Editar insumo" as UC_R2
   usecase "Cambiar estado del insumo" as UC_R3
-  usecase "Eliminar insumo" as UC_R4
 }
 
 actor_user --> UC_Hub
@@ -137,14 +132,13 @@ UC_Bot1 .> UC_Central : <<include>>
 UC_R1 ..> UC_Central : <<extend>>
 UC_R2 ..> UC_Central : <<extend>>
 UC_R3 ..> UC_Central : <<extend>>
-UC_R4 ..> UC_Central : <<extend>>
 @enduml
 ```
 
 ---
 
 ### Subproceso: PROVEEDORES
-- **Total de Casos de Uso / Acciones:** 7
+- **Total de Casos de Uso / Acciones:** 6
 - **Actor Principal:** Administrador
 - **Nodo Principal:** Gestión de proveedores
 
@@ -155,7 +149,6 @@ UC_R4 ..> UC_Central : <<extend>>
 4. Editar proveedor
 5. Cambiar estado del proveedor
 6. Buscar proveedores
-7. Eliminar proveedor
 
 #### Diagrama PlantUML
 ```plantuml
@@ -193,7 +186,6 @@ rectangle "SISTEMA JACKSOFT — COMPRAS E INVENTARIO (PROVEEDORES)" {
   usecase "Ver detalle del proveedor" as UC_R1
   usecase "Editar proveedor" as UC_R2
   usecase "Cambiar estado del proveedor" as UC_R3
-  usecase "Eliminar proveedor" as UC_R4
 }
 
 actor_user --> UC_Hub
@@ -205,7 +197,6 @@ UC_Bot1 .> UC_Central : <<include>>
 UC_R1 ..> UC_Central : <<extend>>
 UC_R2 ..> UC_Central : <<extend>>
 UC_R3 ..> UC_Central : <<extend>>
-UC_R4 ..> UC_Central : <<extend>>
 @enduml
 ```
 

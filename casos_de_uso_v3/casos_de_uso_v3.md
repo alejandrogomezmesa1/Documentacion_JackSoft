@@ -1,27 +1,27 @@
 # Especificación General de Casos de Uso - JackSoft (Versión Canónica v3)
 
 **Total de Subprocesos:** 24  
-**Total de Casos de Uso Oficiales:** 163  
+**Total de Casos de Uso Oficiales:** 155  
 **Diseño y Estandarización:** Sistema de Diseño Corporativo JackSoft (La Coca de Jacks)
 
 | Nº | Subproceso | Macro-Proceso | Actor Principal | Cantidad de Casos de Uso |
 | :--- | :--- | :--- | :--- | :---: |
 | 1 | **PERMISOS** | Configuración y Seguridad | `Administrador` | 8 |
-| 2 | **ROLES** | Configuración y Seguridad | `Administrador` | 6 |
-| 3 | **USUARIOS** | Configuración y Seguridad | `Administrador` | 8 |
-| 4 | **ACCESO** | Configuración y Seguridad | `Usuario / Admin` | 5 |
+| 2 | **ROLES** | Configuración y Seguridad | `Administrador` | 5 |
+| 3 | **USUARIOS** | Configuración y Seguridad | `Administrador` | 7 |
+| 4 | **ACCESO** | Configuración y Seguridad | `Usuario / Admin` | 7 |
 | 5 | **CONFIGURACIONES DEL SISTEMA** | Configuración y Seguridad | `Administrador` | 8 |
-| 6 | **CATEGORIA DE INSUMOS** | Compras e Inventario | `Administrador` | 7 |
-| 7 | **INSUMOS** | Compras e Inventario | `Administrador` | 8 |
-| 8 | **CATEGORIA PRODUCTOS** | Producción y Recetas | `Jefe de Cocina` | 7 |
-| 9 | **PRODUCTOS** | Producción y Recetas | `Jefe de Cocina` | 7 |
-| 10 | **PROVEEDORES** | Compras e Inventario | `Administrador` | 7 |
+| 6 | **CATEGORIA DE INSUMOS** | Compras e Inventario | `Administrador` | 6 |
+| 7 | **INSUMOS** | Compras e Inventario | `Administrador` | 7 |
+| 8 | **CATEGORIA PRODUCTOS** | Producción y Recetas | `Jefe de Cocina` | 6 |
+| 9 | **PRODUCTOS** | Producción y Recetas | `Jefe de Cocina` | 6 |
+| 10 | **PROVEEDORES** | Compras e Inventario | `Administrador` | 6 |
 | 11 | **COMPRAS** | Compras e Inventario | `Administrador` | 8 |
 | 12 | **PRODUCCION** | Producción y Recetas | `Jefe de Cocina` | 7 |
-| 13 | **FICHA TECNICA "PRODUCTO"** | Producción y Recetas | `Jefe de Cocina` | 7 |
+| 13 | **FICHA TECNICA "PRODUCTO"** | Producción y Recetas | `Jefe de Cocina` | 6 |
 | 14 | **PRODUCTO TERMINADO** | Producción y Recetas | `Jefe de Cocina` | 6 |
-| 15 | **CATEGORIA DE SERVICIOS** | Servicios y Operación | `Gestor Comercial` | 5 |
-| 16 | **SERVICIO** | Servicios y Operación | `Gestor Comercial` | 7 |
+| 15 | **CATEGORIA DE SERVICIOS** | Servicios y Operación | `Gestor Comercial` | 4 |
+| 16 | **SERVICIO** | Servicios y Operación | `Gestor Comercial` | 6 |
 | 17 | **CALENDARIO** | Servicios y Operación | `Administrador` | 4 |
 | 18 | **CLIENTES** | Clientes y Ventas | `Gestor Comercial` | 7 |
 | 19 | **SUSCRIPCIONES** | Clientes y Ventas | `Gestor Comercial` | 10 |
@@ -61,7 +61,6 @@
 3. Ver detalle del rol
 4. Editar rol
 5. Cambiar estado
-6. Eliminar rol
 
 ---
 
@@ -77,8 +76,7 @@
 4. Ver detalle del usuario
 5. Editar usuario
 6. Cambiar estado
-7. Eliminar usuario
-8. Filtrar/Buscar usuario
+7. Filtrar/Buscar usuario
 
 ---
 
@@ -93,6 +91,8 @@
 3. Consultar estado de la cuenta
 4. Cerrar sesión
 5. Generar reporte
+6. Iniciar sesión con Google o Apple
+7. Iniciar sesión con código por WhatsApp
 
 ---
 
@@ -124,8 +124,7 @@
 3. Ver detalle de la categoría
 4. Editar categoría
 5. Cambiar estado de la categoría
-6. Eliminar categoría
-7. Filtrar/Buscar categoría de insumo
+6. Filtrar/Buscar categoría de insumo
 
 ---
 
@@ -142,7 +141,6 @@
 5. Cambiar estado del insumo
 6. Generar reporte de insumos
 7. Buscar Insumos
-8. Eliminar insumo
 
 ---
 
@@ -157,8 +155,7 @@
 3. Ver detalle de la categoría de productos
 4. Editar categoría de productos
 5. Cambiar estado de la categoría de productos
-6. Eliminar categoría de productos
-7. Buscar/Filtrar categorías de productos
+6. Buscar/Filtrar categorías de productos
 
 ---
 
@@ -174,7 +171,6 @@
 4. Editar producto
 5. Cambiar estado del producto
 6. Buscar productos
-7. Eliminar producto
 
 ---
 
@@ -190,7 +186,6 @@
 4. Editar proveedor
 5. Cambiar estado del proveedor
 6. Buscar proveedores
-7. Eliminar proveedor
 
 ---
 
@@ -239,7 +234,6 @@
 4. Editar ficha técnica de producto
 5. Buscar fichas técnicas de producto
 6. Generar reporte de fichas técnicas
-7. Eliminar ficha técnica de producto
 
 ---
 
@@ -268,7 +262,6 @@
 2. Listar categorías de servicios
 3. Editar categoría de servicios
 4. Cambiar estado de la categoría de servicios
-5. Eliminar categoría de servicios
 
 ---
 
@@ -284,7 +277,6 @@
 4. Editar servicio
 5. Cambiar estado del servicio
 6. Filtrar servicios
-7. Eliminar servicio
 
 ---
 

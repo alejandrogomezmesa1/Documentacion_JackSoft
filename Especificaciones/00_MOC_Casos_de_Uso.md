@@ -82,3 +82,5 @@ graph TD
 Documentación de CU v4: 245 fichas renumeradas. Se retiran "Seleccionar menú personalizado", "Aplicar recargo por menú personalizado" y "Consultar impacto del menú personalizado"; "Aprobar solicitud fuera de límite" pasa a "Gestionar suscripciones con pago vencido"; "Cambiar estado del menú" pasa a "Publicar menú semanal"; los estados Pendiente y Vencida pasan a Pendiente de pago y Finalizada.
 
 Documentación de CU v5 (2026-11-17): vuelve el subproceso **Permisos** antes de Roles (bd.uml v4.6, acuerdo G2). Total: **24 subprocesos** y 253 fichas; las de Permisos son HU_246 a HU_253 (listar, ver detalle, asignar a un rol, consultar los del rol, quitar, cambiar estado, buscar/filtrar y reporte por rol). Ruta: `Especificaciones/Documentacion_Word/v5_2026-11-17/`.
+
+Documentación de CU v6 (2026-11-18, modelo v4.7): salen las fichas de eliminar (rol, usuario, categoría de insumos y ruta; G3-Q6: no se borra, se inactiva). Acceso suma HU_254 "Iniciar sesión con Google o Apple" y HU_255 "Iniciar sesión con código por WhatsApp". Total: 251 fichas. Ruta: `Especificaciones/Documentacion_Word/v6_2026-11-18/`.

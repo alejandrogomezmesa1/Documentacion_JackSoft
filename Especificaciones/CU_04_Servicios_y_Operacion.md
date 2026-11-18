@@ -25,7 +25,7 @@ Administración de categorías y tipos de servicios (almuerzos, catering), y par
 
 ## 📋 Subprocesos y Especificación Funcional
 
-### Subproceso 1: CATEGORIA DE SERVICIOS (5 Casos de Uso)
+### Subproceso 1: CATEGORIA DE SERVICIOS (4 Casos de Uso)
 * **Actor Principal:** `Gestor Comercial`
 * **Nodo Principal:** `Gestión de categorías de servicios`
 
@@ -36,11 +36,10 @@ Administración de categorías y tipos de servicios (almuerzos, catering), y par
 2. **Listar categorías de servicios**
 3. **Editar categoría de servicios**
 4. **Cambiar estado de la categoría de servicios**
-5. **Eliminar categoría de servicios**
 
 ---
 
-### Subproceso 2: SERVICIO (7 Casos de Uso)
+### Subproceso 2: SERVICIO (6 Casos de Uso)
 * **Actor Principal:** `Gestor Comercial`
 * **Nodo Principal:** `Gestión de servicios`
 
@@ -53,7 +52,6 @@ Administración de categorías y tipos de servicios (almuerzos, catering), y par
 4. **Editar servicio**
 5. **Cambiar estado del servicio**
 6. **Filtrar servicios**
-7. **Eliminar servicio**
 
 ---
 

@@ -25,7 +25,7 @@ Categorías y catálogo de productos, fichas técnicas (recetas), órdenes de pr
 
 ## 📋 Subprocesos y Especificación Funcional
 
-### Subproceso 1: CATEGORIA PRODUCTOS (7 Casos de Uso)
+### Subproceso 1: CATEGORIA PRODUCTOS (6 Casos de Uso)
 * **Actor Principal:** `Jefe de Cocina`
 * **Nodo Principal:** `Gestión de categorías de productos`
 
@@ -37,12 +37,11 @@ Categorías y catálogo de productos, fichas técnicas (recetas), órdenes de pr
 3. **Ver detalle de la categoría de productos**
 4. **Editar categoría de productos**
 5. **Cambiar estado de la categoría de productos**
-6. **Eliminar categoría de productos**
-7. **Buscar/Filtrar categorías de productos**
+6. **Buscar/Filtrar categorías de productos**
 
 ---
 
-### Subproceso 2: PRODUCTOS (7 Casos de Uso)
+### Subproceso 2: PRODUCTOS (6 Casos de Uso)
 * **Actor Principal:** `Jefe de Cocina`
 * **Nodo Principal:** `Gestión de productos`
 
@@ -55,7 +54,6 @@ Categorías y catálogo de productos, fichas técnicas (recetas), órdenes de pr
 4. **Editar producto**
 5. **Cambiar estado del producto**
 6. **Buscar productos**
-7. **Eliminar producto**
 
 ---
 
@@ -76,7 +74,7 @@ Categorías y catálogo de productos, fichas técnicas (recetas), órdenes de pr
 
 ---
 
-### Subproceso 4: FICHA TECNICA "PRODUCTO" (7 Casos de Uso)
+### Subproceso 4: FICHA TECNICA "PRODUCTO" (6 Casos de Uso)
 * **Actor Principal:** `Jefe de Cocina`
 * **Nodo Principal:** `Gestión de fichas técnicas`
 
@@ -89,7 +87,6 @@ Categorías y catálogo de productos, fichas técnicas (recetas), órdenes de pr
 4. **Editar ficha técnica de producto**
 5. **Buscar fichas técnicas de producto**
 6. **Generar reporte de fichas técnicas**
-7. **Eliminar ficha técnica de producto**
 
 ---
 

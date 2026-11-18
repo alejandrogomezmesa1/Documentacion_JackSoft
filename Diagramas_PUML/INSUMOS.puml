@@ -33,7 +33,6 @@ rectangle "SISTEMA JACKSOFT — COMPRAS E INVENTARIO (INSUMOS)" {
   usecase "Ver detalle del insumo" as UC_R1
   usecase "Editar insumo" as UC_R2
   usecase "Cambiar estado del insumo" as UC_R3
-  usecase "Eliminar insumo" as UC_R4
 }
 
 actor_user --> UC_Hub
@@ -46,5 +45,4 @@ UC_Bot1 .> UC_Central : <<include>>
 UC_R1 ..> UC_Central : <<extend>>
 UC_R2 ..> UC_Central : <<extend>>
 UC_R3 ..> UC_Central : <<extend>>
-UC_R4 ..> UC_Central : <<extend>>
 @enduml

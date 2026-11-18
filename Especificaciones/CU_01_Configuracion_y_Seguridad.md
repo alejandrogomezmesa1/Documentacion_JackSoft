@@ -43,7 +43,7 @@ Gestión de permisos (matriz módulo × acción por rol), roles, usuarios, mecan
 
 ---
 
-### Subproceso 2: ROLES (6 Casos de Uso)
+### Subproceso 2: ROLES (5 Casos de Uso)
 * **Actor Principal:** `Administrador`
 * **Nodo Principal:** `Gestión de roles`
 
@@ -55,11 +55,10 @@ Gestión de permisos (matriz módulo × acción por rol), roles, usuarios, mecan
 3. **Ver detalle del rol**
 4. **Editar rol**
 5. **Cambiar estado**
-6. **Eliminar rol**
 
 ---
 
-### Subproceso 3: USUARIOS (8 Casos de Uso)
+### Subproceso 3: USUARIOS (7 Casos de Uso)
 * **Actor Principal:** `Administrador`
 * **Nodo Principal:** `Gestión de usuarios`
 
@@ -72,12 +71,11 @@ Gestión de permisos (matriz módulo × acción por rol), roles, usuarios, mecan
 4. **Ver detalle del usuario**
 5. **Editar usuario**
 6. **Cambiar estado**
-7. **Eliminar usuario**
-8. **Filtrar/Buscar usuario**
+7. **Filtrar/Buscar usuario**
 
 ---
 
-### Subproceso 4: ACCESO (5 Casos de Uso)
+### Subproceso 4: ACCESO (7 Casos de Uso)
 * **Actor Principal:** `Usuario / Admin`
 * **Nodo Principal:** `Acceso al sistema`
 
@@ -89,6 +87,8 @@ Gestión de permisos (matriz módulo × acción por rol), roles, usuarios, mecan
 3. **Consultar estado de la cuenta**
 4. **Cerrar sesión**
 5. **Generar reporte**
+6. **Iniciar sesión con Google o Apple**
+7. **Iniciar sesión con código por WhatsApp**
 
 ---
 

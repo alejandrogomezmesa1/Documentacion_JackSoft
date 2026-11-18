@@ -94,20 +94,14 @@
   <line x1="732" y1="150.0" x2="614" y2="330.0" stroke="#ea580c" stroke-width="1.4" stroke-dasharray="4,4" marker-end="url(#extendArrow)" />
   <rect x="659.16" y="210.4" width="56" height="17" rx="8" fill="#ffffff" stroke="#fed7aa" stroke-width="1" />
   <text x="687.16" y="222.4" font-family="'Inter', sans-serif" font-size="9" font-weight="700" fill="#c2410c" text-anchor="middle">«extend»</text>
-  <g filter="url(#pillShadow)"><ellipse cx="820" cy="276.6666666666667" rx="88" ry="26" fill="url(#ucGrad)" stroke="#0f172a" stroke-width="1.6" />
-  <text x="820" y="280.6666666666667" font-family="'Inter', sans-serif" font-size="12" font-weight="600" fill="#0f172a" text-anchor="middle">Editar usuario</text>
+  <g filter="url(#pillShadow)"><ellipse cx="820" cy="340.0" rx="88" ry="26" fill="url(#ucGrad)" stroke="#0f172a" stroke-width="1.6" />
+  <text x="820" y="344.0" font-family="'Inter', sans-serif" font-size="12" font-weight="600" fill="#0f172a" text-anchor="middle">Editar usuario</text>
   </g>
-  <line x1="732" y1="276.6666666666667" x2="614" y2="330.0" stroke="#ea580c" stroke-width="1.4" stroke-dasharray="4,4" marker-end="url(#extendArrow)" />
-  <rect x="659.16" y="288.93333333333334" width="56" height="17" rx="8" fill="#ffffff" stroke="#fed7aa" stroke-width="1" />
-  <text x="687.16" y="300.93333333333334" font-family="'Inter', sans-serif" font-size="9" font-weight="700" fill="#c2410c" text-anchor="middle">«extend»</text>
-  <g filter="url(#pillShadow)"><ellipse cx="820" cy="403.33333333333337" rx="88" ry="26" fill="url(#ucGrad)" stroke="#0f172a" stroke-width="1.6" />
-  <text x="820" y="407.33333333333337" font-family="'Inter', sans-serif" font-size="12" font-weight="600" fill="#0f172a" text-anchor="middle">Cambiar estado</text>
-  </g>
-  <line x1="732" y1="403.33333333333337" x2="614" y2="330.0" stroke="#ea580c" stroke-width="1.4" stroke-dasharray="4,4" marker-end="url(#extendArrow)" />
-  <rect x="659.16" y="367.4666666666667" width="56" height="17" rx="8" fill="#ffffff" stroke="#fed7aa" stroke-width="1" />
-  <text x="687.16" y="379.4666666666667" font-family="'Inter', sans-serif" font-size="9" font-weight="700" fill="#c2410c" text-anchor="middle">«extend»</text>
+  <line x1="732" y1="340.0" x2="614" y2="330.0" stroke="#ea580c" stroke-width="1.4" stroke-dasharray="4,4" marker-end="url(#extendArrow)" />
+  <rect x="659.16" y="328.2" width="56" height="17" rx="8" fill="#ffffff" stroke="#fed7aa" stroke-width="1" />
+  <text x="687.16" y="340.2" font-family="'Inter', sans-serif" font-size="9" font-weight="700" fill="#c2410c" text-anchor="middle">«extend»</text>
   <g filter="url(#pillShadow)"><ellipse cx="820" cy="530.0" rx="88" ry="26" fill="url(#ucGrad)" stroke="#0f172a" stroke-width="1.6" />
-  <text x="820" y="534.0" font-family="'Inter', sans-serif" font-size="12" font-weight="600" fill="#0f172a" text-anchor="middle">Eliminar usuario</text>
+  <text x="820" y="534.0" font-family="'Inter', sans-serif" font-size="12" font-weight="600" fill="#0f172a" text-anchor="middle">Cambiar estado</text>
   </g>
   <line x1="732" y1="530.0" x2="614" y2="330.0" stroke="#ea580c" stroke-width="1.4" stroke-dasharray="4,4" marker-end="url(#extendArrow)" />
   <rect x="659.16" y="446.0" width="56" height="17" rx="8" fill="#ffffff" stroke="#fed7aa" stroke-width="1" />
