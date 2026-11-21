@@ -87,35 +87,42 @@
   <line x1="732" y1="150.0" x2="614" y2="330.0" stroke="#ea580c" stroke-width="1.4" stroke-dasharray="4,4" marker-end="url(#extendArrow)" />
   <rect x="659.16" y="210.4" width="56" height="17" rx="8" fill="#ffffff" stroke="#fed7aa" stroke-width="1" />
   <text x="687.16" y="222.4" font-family="'Inter', sans-serif" font-size="9" font-weight="700" fill="#c2410c" text-anchor="middle">«extend»</text>
-  <g filter="url(#pillShadow)"><ellipse cx="820" cy="226.0" rx="88" ry="26" fill="url(#ucGrad)" stroke="#0f172a" stroke-width="1.6" />
-  <text x="820" y="230.0" font-family="'Inter', sans-serif" font-size="12" font-weight="600" fill="#0f172a" text-anchor="middle">Editar menú</text>
+  <g filter="url(#pillShadow)"><ellipse cx="820" cy="213.33333333333334" rx="88" ry="26" fill="url(#ucGrad)" stroke="#0f172a" stroke-width="1.6" />
+  <text x="820" y="217.33333333333334" font-family="'Inter', sans-serif" font-size="12" font-weight="600" fill="#0f172a" text-anchor="middle">Editar menú</text>
   </g>
-  <line x1="732" y1="226.0" x2="614" y2="330.0" stroke="#ea580c" stroke-width="1.4" stroke-dasharray="4,4" marker-end="url(#extendArrow)" />
-  <rect x="659.16" y="257.52" width="56" height="17" rx="8" fill="#ffffff" stroke="#fed7aa" stroke-width="1" />
-  <text x="687.16" y="269.52" font-family="'Inter', sans-serif" font-size="9" font-weight="700" fill="#c2410c" text-anchor="middle">«extend»</text>
-  <g filter="url(#pillShadow)"><ellipse cx="820" cy="302.0" rx="88" ry="26" fill="url(#ucGrad)" stroke="#0f172a" stroke-width="1.6" />
-  <text x="820" y="306.0" font-family="'Inter', sans-serif" font-size="12" font-weight="600" fill="#0f172a" text-anchor="middle">Publicar menú semanal</text>
+  <line x1="732" y1="213.33333333333334" x2="614" y2="330.0" stroke="#ea580c" stroke-width="1.4" stroke-dasharray="4,4" marker-end="url(#extendArrow)" />
+  <rect x="659.16" y="249.66666666666669" width="56" height="17" rx="8" fill="#ffffff" stroke="#fed7aa" stroke-width="1" />
+  <text x="687.16" y="261.6666666666667" font-family="'Inter', sans-serif" font-size="9" font-weight="700" fill="#c2410c" text-anchor="middle">«extend»</text>
+  <g filter="url(#pillShadow)"><ellipse cx="820" cy="276.6666666666667" rx="88" ry="26" fill="url(#ucGrad)" stroke="#0f172a" stroke-width="1.6" />
+  <text x="820" y="280.6666666666667" font-family="'Inter', sans-serif" font-size="12" font-weight="600" fill="#0f172a" text-anchor="middle">Publicar menú semanal</text>
   </g>
-  <line x1="732" y1="302.0" x2="614" y2="330.0" stroke="#ea580c" stroke-width="1.4" stroke-dasharray="4,4" marker-end="url(#extendArrow)" />
-  <rect x="659.16" y="304.64" width="56" height="17" rx="8" fill="#ffffff" stroke="#fed7aa" stroke-width="1" />
-  <text x="687.16" y="316.64" font-family="'Inter', sans-serif" font-size="9" font-weight="700" fill="#c2410c" text-anchor="middle">«extend»</text>
-  <g filter="url(#pillShadow)"><ellipse cx="820" cy="378.0" rx="88" ry="26" fill="url(#ucGrad)" stroke="#0f172a" stroke-width="1.6" />
-  <text x="820" y="382.0" font-family="'Inter', sans-serif" font-size="12" font-weight="600" fill="#0f172a" text-anchor="middle">Programar menú semanal</text>
+  <line x1="732" y1="276.6666666666667" x2="614" y2="330.0" stroke="#ea580c" stroke-width="1.4" stroke-dasharray="4,4" marker-end="url(#extendArrow)" />
+  <rect x="659.16" y="288.93333333333334" width="56" height="17" rx="8" fill="#ffffff" stroke="#fed7aa" stroke-width="1" />
+  <text x="687.16" y="300.93333333333334" font-family="'Inter', sans-serif" font-size="9" font-weight="700" fill="#c2410c" text-anchor="middle">«extend»</text>
+  <g filter="url(#pillShadow)"><ellipse cx="820" cy="340.0" rx="88" ry="26" fill="url(#ucGrad)" stroke="#0f172a" stroke-width="1.6" />
+  <text x="820" y="344.0" font-family="'Inter', sans-serif" font-size="12" font-weight="600" fill="#0f172a" text-anchor="middle">Programar menú semanal</text>
   </g>
-  <line x1="732" y1="378.0" x2="614" y2="330.0" stroke="#ea580c" stroke-width="1.4" stroke-dasharray="4,4" marker-end="url(#extendArrow)" />
-  <rect x="659.16" y="351.76" width="56" height="17" rx="8" fill="#ffffff" stroke="#fed7aa" stroke-width="1" />
-  <text x="687.16" y="363.76" font-family="'Inter', sans-serif" font-size="9" font-weight="700" fill="#c2410c" text-anchor="middle">«extend»</text>
-  <g filter="url(#pillShadow)"><ellipse cx="820" cy="454.0" rx="88" ry="26" fill="url(#ucGrad)" stroke="#0f172a" stroke-width="1.6" />
-  <text x="820" y="451.0" font-family="'Inter', sans-serif" font-size="12" font-weight="600" fill="#0f172a" text-anchor="middle">Consultar menú de la</text>
-  <text x="820" y="465.0" font-family="'Inter', sans-serif" font-size="12" font-weight="600" fill="#0f172a" text-anchor="middle">semana (app móvil)</text>
+  <line x1="732" y1="340.0" x2="614" y2="330.0" stroke="#ea580c" stroke-width="1.4" stroke-dasharray="4,4" marker-end="url(#extendArrow)" />
+  <rect x="659.16" y="328.2" width="56" height="17" rx="8" fill="#ffffff" stroke="#fed7aa" stroke-width="1" />
+  <text x="687.16" y="340.2" font-family="'Inter', sans-serif" font-size="9" font-weight="700" fill="#c2410c" text-anchor="middle">«extend»</text>
+  <g filter="url(#pillShadow)"><ellipse cx="820" cy="403.33333333333337" rx="88" ry="26" fill="url(#ucGrad)" stroke="#0f172a" stroke-width="1.6" />
+  <text x="820" y="400.33333333333337" font-family="'Inter', sans-serif" font-size="12" font-weight="600" fill="#0f172a" text-anchor="middle">Consultar menú de la</text>
+  <text x="820" y="414.33333333333337" font-family="'Inter', sans-serif" font-size="12" font-weight="600" fill="#0f172a" text-anchor="middle">semana (app móvil)</text>
   </g>
-  <line x1="732" y1="454.0" x2="614" y2="330.0" stroke="#ea580c" stroke-width="1.4" stroke-dasharray="4,4" marker-end="url(#extendArrow)" />
-  <rect x="659.16" y="398.88" width="56" height="17" rx="8" fill="#ffffff" stroke="#fed7aa" stroke-width="1" />
-  <text x="687.16" y="410.88" font-family="'Inter', sans-serif" font-size="9" font-weight="700" fill="#c2410c" text-anchor="middle">«extend»</text>
+  <line x1="732" y1="403.33333333333337" x2="614" y2="330.0" stroke="#ea580c" stroke-width="1.4" stroke-dasharray="4,4" marker-end="url(#extendArrow)" />
+  <rect x="659.16" y="367.4666666666667" width="56" height="17" rx="8" fill="#ffffff" stroke="#fed7aa" stroke-width="1" />
+  <text x="687.16" y="379.4666666666667" font-family="'Inter', sans-serif" font-size="9" font-weight="700" fill="#c2410c" text-anchor="middle">«extend»</text>
+  <g filter="url(#pillShadow)"><ellipse cx="820" cy="466.6666666666667" rx="88" ry="26" fill="url(#ucGrad)" stroke="#0f172a" stroke-width="1.6" />
+  <text x="820" y="456.6666666666667" font-family="'Inter', sans-serif" font-size="12" font-weight="600" fill="#0f172a" text-anchor="middle">Ver detalle del</text>
+  <text x="820" y="470.6666666666667" font-family="'Inter', sans-serif" font-size="12" font-weight="600" fill="#0f172a" text-anchor="middle">almuerzo del día (app</text>
+  <text x="820" y="484.6666666666667" font-family="'Inter', sans-serif" font-size="12" font-weight="600" fill="#0f172a" text-anchor="middle">móvil)</text>
+  </g>
+  <line x1="732" y1="466.6666666666667" x2="614" y2="330.0" stroke="#ea580c" stroke-width="1.4" stroke-dasharray="4,4" marker-end="url(#extendArrow)" />
+  <rect x="659.16" y="406.73333333333335" width="56" height="17" rx="8" fill="#ffffff" stroke="#fed7aa" stroke-width="1" />
+  <text x="687.16" y="418.73333333333335" font-family="'Inter', sans-serif" font-size="9" font-weight="700" fill="#c2410c" text-anchor="middle">«extend»</text>
   <g filter="url(#pillShadow)"><ellipse cx="820" cy="530.0" rx="88" ry="26" fill="url(#ucGrad)" stroke="#0f172a" stroke-width="1.6" />
-  <text x="820" y="520.0" font-family="'Inter', sans-serif" font-size="12" font-weight="600" fill="#0f172a" text-anchor="middle">Ver detalle del</text>
-  <text x="820" y="534.0" font-family="'Inter', sans-serif" font-size="12" font-weight="600" fill="#0f172a" text-anchor="middle">almuerzo del día (app</text>
-  <text x="820" y="548.0" font-family="'Inter', sans-serif" font-size="12" font-weight="600" fill="#0f172a" text-anchor="middle">móvil)</text>
+  <text x="820" y="527.0" font-family="'Inter', sans-serif" font-size="12" font-weight="600" fill="#0f172a" text-anchor="middle">Definir proteína</text>
+  <text x="820" y="541.0" font-family="'Inter', sans-serif" font-size="12" font-weight="600" fill="#0f172a" text-anchor="middle">alterna del seco</text>
   </g>
   <line x1="732" y1="530.0" x2="614" y2="330.0" stroke="#ea580c" stroke-width="1.4" stroke-dasharray="4,4" marker-end="url(#extendArrow)" />
   <rect x="659.16" y="446.0" width="56" height="17" rx="8" fill="#ffffff" stroke="#fed7aa" stroke-width="1" />

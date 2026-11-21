@@ -19,7 +19,7 @@ canonical_subprocesses = [
         "macro": "Configuración y Seguridad",
         "macro_full": "SEGURIDAD Y ACCESO",
         "actor": "Administrador",
-        "hub": "Gestión de permisos",
+        "hub": "Permisos en Roles",
         "actions": [
             "Listar permisos",
             "Ver detalle del permiso",
@@ -88,14 +88,9 @@ canonical_subprocesses = [
         "actor": "Administrador",
         "hub": "Gestión de configuraciones",
         "actions": [
-            "Registrar configuración",
             "Listar configuraciones",
-            "Ver detalle de la configuración",
             "Editar valor de configuración",
-            "Activar/desactivar funcionalidad",
-            "Consultar historial de cambios",
-            "Restablecer valor por defecto",
-            "Buscar/Filtrar configuraciones"
+            "Activar/desactivar funcionalidad"
         ]
     },
     {
@@ -205,13 +200,15 @@ canonical_subprocesses = [
         "actor": "Jefe de Cocina",
         "hub": "Gestión de producción",
         "actions": [
-            "Crear orden de producción",
+            "Generar orden de producción desde el menú publicado",
             "Listar órdenes de producción",
             "Ver detalle de la orden de producción",
             "Editar orden de producción",
             "Cambiar estado de la orden de producción",
             "Programar producción",
-            "Buscar producción"
+            "Buscar producción",
+            "Reportar faltantes de insumos",
+            "Reporte de producción por período"
         ]
     },
     {
@@ -238,10 +235,10 @@ canonical_subprocesses = [
         "actor": "Jefe de Cocina",
         "hub": "Gestión de producto terminado",
         "actions": [
-            "Registrar producto terminado",
+            "Registrar producto terminado desde la orden",
             "Listar productos terminados",
             "Ver detalle del producto terminado",
-            "Editar producto terminado",
+            "Corregir cantidad producida desde la orden",
             "Buscar productos terminados",
             "Generar reporte de producto terminado"
         ]
@@ -324,7 +321,9 @@ canonical_subprocesses = [
             "Subir comprobante de suscripción",
             "Consultar comprobante de suscripción",
             "Buscar/Filtrar suscripciones",
-            "Gestionar suscripciones con pago vencido"
+            "Gestionar suscripciones con pago vencido",
+            "Gestionar lista de espera por cupo",
+            "Elegir preferencia de proteína"
         ]
     },
     {
@@ -343,7 +342,8 @@ canonical_subprocesses = [
             "Programar menú semanal",
             "Buscar/Filtrar menús",
             "Consultar menú de la semana (app móvil)",
-            "Ver detalle del almuerzo del día (app móvil)"
+            "Ver detalle del almuerzo del día (app móvil)",
+            "Definir proteína alterna del seco"
         ]
     },
     {
@@ -386,7 +386,7 @@ canonical_subprocesses = [
         "actor": "Logística",
         "hub": "Gestión de incidencias",
         "actions": [
-            "Registrar incidencia",
+            "Responder incidencia",
             "Listar incidencias",
             "Ver detalle de la incidencia",
             "Editar incidencia",
@@ -405,7 +405,9 @@ canonical_subprocesses = [
             "Consultar indicadores del dashboard",
             "Visualizar gráficos del dashboard",
             "Filtrar datos del dashboard",
-            "Generar reporte del dashboard"
+            "Generar reporte del dashboard",
+            "Proyección de demanda frente al cupo",
+            "Costo-beneficio logístico por zona"
         ]
     }
 ]

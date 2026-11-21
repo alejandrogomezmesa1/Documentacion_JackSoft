@@ -27,7 +27,7 @@ Gestión de permisos (matriz módulo × acción por rol), roles, usuarios, mecan
 
 ### Subproceso 1: PERMISOS (8 Casos de Uso)
 * **Actor Principal:** `Administrador`
-* **Nodo Principal:** `Gestión de permisos`
+* **Nodo Principal:** `Permisos en Roles`
 
 ![Diagrama de Casos de Uso - PERMISOS](../Diagramas_PNG/PERMISOS.png)
 
@@ -92,20 +92,15 @@ Gestión de permisos (matriz módulo × acción por rol), roles, usuarios, mecan
 
 ---
 
-### Subproceso 5: CONFIGURACIONES DEL SISTEMA (8 Casos de Uso)
+### Subproceso 5: CONFIGURACIONES DEL SISTEMA (3 Casos de Uso)
 * **Actor Principal:** `Administrador`
 * **Nodo Principal:** `Gestión de configuraciones`
 
 ![Diagrama de Casos de Uso - CONFIGURACIONES DEL SISTEMA](../Diagramas_PNG/CONFIGURACIONES_DEL_SISTEMA.png)
 
 #### Casos de Uso Oficiales:
-1. **Registrar configuración**
-2. **Listar configuraciones**
-3. **Ver detalle de la configuración**
-4. **Editar valor de configuración**
-5. **Activar/desactivar funcionalidad**
-6. **Consultar historial de cambios**
-7. **Restablecer valor por defecto**
-8. **Buscar/Filtrar configuraciones**
+1. **Listar configuraciones**
+2. **Editar valor de configuración**
+3. **Activar/desactivar funcionalidad**
 
 ---

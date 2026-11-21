@@ -2441,7 +2441,7 @@ A continuación se presenta el código completo del diagrama SVG vectorial e int
   <line x1="360" y1="325.0" x2="430" y2="325.0" class="dashed-line" />
   <text x="400.0" y="315.0" class="rel-text">&lt;&lt;include&gt;&gt;</text>
   <ellipse cx="520" cy="110" rx="85" ry="25" class="oval" />
-  <text x="520" y="110.0" class="uc-text">Registrar incidencia</text>
+  <text x="520" y="110.0" class="uc-text">Responder incidencia</text>
   <line x1="460" y1="130" x2="320" y2="300.0" class="dashed-line" />
   <text x="390.0" y="207.5" class="rel-text">&lt;&lt;extends&gt;&gt;</text>
   <line x1="520" y1="135" x2="520" y2="297.0" class="dashed-line" />

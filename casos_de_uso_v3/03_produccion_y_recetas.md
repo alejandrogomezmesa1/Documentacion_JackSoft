@@ -135,18 +135,20 @@ UC_R3 ..> UC_Central : <<extend>>
 ---
 
 ### Subproceso: PRODUCCION
-- **Total de Casos de Uso / Acciones:** 7
+- **Total de Casos de Uso / Acciones:** 9
 - **Actor Principal:** Jefe de Cocina
 - **Nodo Principal:** Gestión de producción
 
 #### Listado de Casos de Uso
-1. Crear orden de producción
+1. Generar orden de producción desde el menú publicado
 2. Listar órdenes de producción
 3. Ver detalle de la orden de producción
 4. Editar orden de producción
 5. Cambiar estado de la orden de producción
 6. Programar producción
 7. Buscar producción
+8. Reportar faltantes de insumos
+9. Reporte de producción por período
 
 #### Diagrama PlantUML
 ```plantuml
@@ -179,12 +181,14 @@ actor "Jefe de Cocina" as actor_user
 rectangle "SISTEMA JACKSOFT — PRODUCCIÓN Y RECETAS (PRODUCCION)" {
   usecase "Gestión de producción" as UC_Hub <<hub>>
   usecase "Listar órdenes de producción" as UC_Central <<hub>>
-  usecase "Crear orden de producción" as UC_Top1
+  usecase "Reporte de producción por período" as UC_Top1
   usecase "Buscar producción" as UC_Bot1
-  usecase "Ver detalle de la orden de producción" as UC_R1
-  usecase "Editar orden de producción" as UC_R2
-  usecase "Cambiar estado de la orden de producción" as UC_R3
-  usecase "Programar producción" as UC_R4
+  usecase "Generar orden de producción desde el menú publicado" as UC_R1
+  usecase "Ver detalle de la orden de producción" as UC_R2
+  usecase "Editar orden de producción" as UC_R3
+  usecase "Cambiar estado de la orden de producción" as UC_R4
+  usecase "Programar producción" as UC_R5
+  usecase "Reportar faltantes de insumos" as UC_R6
 }
 
 actor_user --> UC_Hub
@@ -197,6 +201,8 @@ UC_R1 ..> UC_Central : <<extend>>
 UC_R2 ..> UC_Central : <<extend>>
 UC_R3 ..> UC_Central : <<extend>>
 UC_R4 ..> UC_Central : <<extend>>
+UC_R5 ..> UC_Central : <<extend>>
+UC_R6 ..> UC_Central : <<extend>>
 @enduml
 ```
 
@@ -273,10 +279,10 @@ UC_R2 ..> UC_Central : <<extend>>
 - **Nodo Principal:** Gestión de producto terminado
 
 #### Listado de Casos de Uso
-1. Registrar producto terminado
+1. Registrar producto terminado desde la orden
 2. Listar productos terminados
 3. Ver detalle del producto terminado
-4. Editar producto terminado
+4. Corregir cantidad producida desde la orden
 5. Buscar productos terminados
 6. Generar reporte de producto terminado
 
@@ -311,11 +317,11 @@ actor "Jefe de Cocina" as actor_user
 rectangle "SISTEMA JACKSOFT — PRODUCCIÓN Y RECETAS (PRODUCTO TERMINADO)" {
   usecase "Gestión de producto terminado" as UC_Hub <<hub>>
   usecase "Listar productos terminados" as UC_Central <<hub>>
-  usecase "Registrar producto terminado" as UC_Top1
+  usecase "Registrar producto terminado desde la orden" as UC_Top1
   usecase "Generar reporte de producto terminado" as UC_Top2
   usecase "Buscar productos terminados" as UC_Bot1
   usecase "Ver detalle del producto terminado" as UC_R1
-  usecase "Editar producto terminado" as UC_R2
+  usecase "Corregir cantidad producida desde la orden" as UC_R2
 }
 
 actor_user --> UC_Hub

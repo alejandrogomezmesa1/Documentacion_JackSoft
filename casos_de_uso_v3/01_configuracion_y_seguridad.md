@@ -7,7 +7,7 @@ Gestión de permisos (matriz módulo × acción por rol), roles, usuarios, mecan
 ### Subproceso: PERMISOS
 - **Total de Casos de Uso / Acciones:** 8
 - **Actor Principal:** Administrador
-- **Nodo Principal:** Gestión de permisos
+- **Nodo Principal:** Permisos en Roles
 
 #### Listado de Casos de Uso
 1. Listar permisos
@@ -48,7 +48,7 @@ skinparam usecase<<hub>> {
 actor "Administrador" as actor_user
 
 rectangle "SISTEMA JACKSOFT — SEGURIDAD Y ACCESO (PERMISOS)" {
-  usecase "Gestión de permisos" as UC_Hub <<hub>>
+  usecase "Permisos en Roles" as UC_Hub <<hub>>
   usecase "Listar permisos" as UC_Central <<hub>>
   usecase "Generar reporte de permisos por rol" as UC_Top1
   usecase "Buscar/Filtrar permisos" as UC_Bot1
@@ -272,19 +272,14 @@ UC_Codigo ..> UC_Login : <<extend>>
 ---
 
 ### Subproceso: CONFIGURACIONES DEL SISTEMA
-- **Total de Casos de Uso / Acciones:** 8
+- **Total de Casos de Uso / Acciones:** 3
 - **Actor Principal:** Administrador
 - **Nodo Principal:** Gestión de configuraciones
 
 #### Listado de Casos de Uso
-1. Registrar configuración
-2. Listar configuraciones
-3. Ver detalle de la configuración
-4. Editar valor de configuración
-5. Activar/desactivar funcionalidad
-6. Consultar historial de cambios
-7. Restablecer valor por defecto
-8. Buscar/Filtrar configuraciones
+1. Listar configuraciones
+2. Editar valor de configuración
+3. Activar/desactivar funcionalidad
 
 #### Diagrama PlantUML
 ```plantuml
@@ -317,26 +312,14 @@ actor "Administrador" as actor_user
 rectangle "SISTEMA JACKSOFT — SEGURIDAD Y ACCESO (CONFIGURACIONES DEL SISTEMA)" {
   usecase "Gestión de configuraciones" as UC_Hub <<hub>>
   usecase "Listar configuraciones" as UC_Central <<hub>>
-  usecase "Registrar configuración" as UC_Top1
-  usecase "Buscar/Filtrar configuraciones" as UC_Bot1
-  usecase "Ver detalle de la configuración" as UC_R1
-  usecase "Editar valor de configuración" as UC_R2
-  usecase "Activar/desactivar funcionalidad" as UC_R3
-  usecase "Consultar historial de cambios" as UC_R4
-  usecase "Restablecer valor por defecto" as UC_R5
+  usecase "Editar valor de configuración" as UC_R1
+  usecase "Activar/desactivar funcionalidad" as UC_R2
 }
 
 actor_user --> UC_Hub
 UC_Hub .> UC_Central : <<include>>
-UC_Top1 ..> UC_Hub : <<extend>>
-UC_Top1 .> UC_Central : <<include>>
-UC_Bot1 ..> UC_Hub : <<extend>>
-UC_Bot1 .> UC_Central : <<include>>
 UC_R1 ..> UC_Central : <<extend>>
 UC_R2 ..> UC_Central : <<extend>>
-UC_R3 ..> UC_Central : <<extend>>
-UC_R4 ..> UC_Central : <<extend>>
-UC_R5 ..> UC_Central : <<extend>>
 @enduml
 ```
 

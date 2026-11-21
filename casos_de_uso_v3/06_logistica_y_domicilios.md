@@ -140,7 +140,7 @@ UC_R3 ..> UC_Central : <<extend>>
 - **Nodo Principal:** Gestión de incidencias
 
 #### Listado de Casos de Uso
-1. Registrar incidencia
+1. Responder incidencia
 2. Listar incidencias
 3. Ver detalle de la incidencia
 4. Editar incidencia
@@ -178,22 +178,21 @@ actor "Logística" as actor_user
 rectangle "SISTEMA JACKSOFT — LOGÍSTICA Y DOMICILIOS (INCIDENCIAS)" {
   usecase "Gestión de incidencias" as UC_Hub <<hub>>
   usecase "Listar incidencias" as UC_Central <<hub>>
-  usecase "Registrar incidencia" as UC_Top1
   usecase "Filtrar incidencias" as UC_Bot1
-  usecase "Ver detalle de la incidencia" as UC_R1
-  usecase "Editar incidencia" as UC_R2
-  usecase "Gestionar incidencia" as UC_R3
+  usecase "Responder incidencia" as UC_R1
+  usecase "Ver detalle de la incidencia" as UC_R2
+  usecase "Editar incidencia" as UC_R3
+  usecase "Gestionar incidencia" as UC_R4
 }
 
 actor_user --> UC_Hub
 UC_Hub .> UC_Central : <<include>>
-UC_Top1 ..> UC_Hub : <<extend>>
-UC_Top1 .> UC_Central : <<include>>
 UC_Bot1 ..> UC_Hub : <<extend>>
 UC_Bot1 .> UC_Central : <<include>>
 UC_R1 ..> UC_Central : <<extend>>
 UC_R2 ..> UC_Central : <<extend>>
 UC_R3 ..> UC_Central : <<extend>>
+UC_R4 ..> UC_Central : <<extend>>
 @enduml
 ```
 

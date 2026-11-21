@@ -73,7 +73,7 @@ UC_R3 ..> UC_Central : <<extend>>
 ---
 
 ### Subproceso: SUSCRIPCIONES
-- **Total de Casos de Uso / Acciones:** 10
+- **Total de Casos de Uso / Acciones:** 12
 - **Actor Principal:** Gestor Comercial
 - **Nodo Principal:** Gestión de suscripciones
 
@@ -88,6 +88,8 @@ UC_R3 ..> UC_Central : <<extend>>
 8. Consultar comprobante de suscripción
 9. Buscar/Filtrar suscripciones
 10. Gestionar suscripciones con pago vencido
+11. Gestionar lista de espera por cupo
+12. Elegir preferencia de proteína
 
 #### Diagrama PlantUML
 ```plantuml
@@ -129,6 +131,8 @@ rectangle "SISTEMA JACKSOFT — CLIENTES Y VENTAS (SUSCRIPCIONES)" {
   usecase "Subir comprobante de suscripción" as UC_R4
   usecase "Consultar comprobante de suscripción" as UC_R5
   usecase "Gestionar suscripciones con pago vencido" as UC_R6
+  usecase "Gestionar lista de espera por cupo" as UC_R7
+  usecase "Elegir preferencia de proteína" as UC_R8
 }
 
 actor_user --> UC_Hub
@@ -144,13 +148,15 @@ UC_R3 ..> UC_Central : <<extend>>
 UC_R4 ..> UC_Central : <<extend>>
 UC_R5 ..> UC_Central : <<extend>>
 UC_R6 ..> UC_Central : <<extend>>
+UC_R7 ..> UC_Central : <<extend>>
+UC_R8 ..> UC_Central : <<extend>>
 @enduml
 ```
 
 ---
 
 ### Subproceso: MENU
-- **Total de Casos de Uso / Acciones:** 9
+- **Total de Casos de Uso / Acciones:** 10
 - **Actor Principal:** Administrador / Cliente
 - **Nodo Principal:** Gestión de menú
 
@@ -164,6 +170,7 @@ UC_R6 ..> UC_Central : <<extend>>
 7. Buscar/Filtrar menús
 8. Consultar menú de la semana (app móvil)
 9. Ver detalle del almuerzo del día (app móvil)
+10. Definir proteína alterna del seco
 
 #### Diagrama PlantUML
 ```plantuml
@@ -204,6 +211,7 @@ rectangle "SISTEMA JACKSOFT — CLIENTES Y VENTAS (MENU)" {
   usecase "Programar menú semanal" as UC_R4
   usecase "Consultar menú de la semana (app móvil)" as UC_R5
   usecase "Ver detalle del almuerzo del día (app móvil)" as UC_R6
+  usecase "Definir proteína alterna del seco" as UC_R7
 }
 
 actor_user --> UC_Hub
@@ -218,6 +226,7 @@ UC_R3 ..> UC_Central : <<extend>>
 UC_R4 ..> UC_Central : <<extend>>
 UC_R5 ..> UC_Central : <<extend>>
 UC_R6 ..> UC_Central : <<extend>>
+UC_R7 ..> UC_Central : <<extend>>
 @enduml
 ```
 

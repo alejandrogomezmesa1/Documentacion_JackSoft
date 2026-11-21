@@ -57,20 +57,22 @@ Categorías y catálogo de productos, fichas técnicas (recetas), órdenes de pr
 
 ---
 
-### Subproceso 3: PRODUCCION (7 Casos de Uso)
+### Subproceso 3: PRODUCCION (9 Casos de Uso)
 * **Actor Principal:** `Jefe de Cocina`
 * **Nodo Principal:** `Gestión de producción`
 
 ![Diagrama de Casos de Uso - PRODUCCION](../Diagramas_PNG/PRODUCCION.png)
 
 #### Casos de Uso Oficiales:
-1. **Crear orden de producción**
+1. **Generar orden de producción desde el menú publicado**
 2. **Listar órdenes de producción**
 3. **Ver detalle de la orden de producción**
 4. **Editar orden de producción**
 5. **Cambiar estado de la orden de producción**
 6. **Programar producción**
 7. **Buscar producción**
+8. **Reportar faltantes de insumos**
+9. **Reporte de producción por período**
 
 ---
 
@@ -97,10 +99,10 @@ Categorías y catálogo de productos, fichas técnicas (recetas), órdenes de pr
 ![Diagrama de Casos de Uso - PRODUCTO TERMINADO](../Diagramas_PNG/PRODUCTO_TERMINADO.png)
 
 #### Casos de Uso Oficiales:
-1. **Registrar producto terminado**
+1. **Registrar producto terminado desde la orden**
 2. **Listar productos terminados**
 3. **Ver detalle del producto terminado**
-4. **Editar producto terminado**
+4. **Corregir cantidad producida desde la orden**
 5. **Buscar productos terminados**
 6. **Generar reporte de producto terminado**
 

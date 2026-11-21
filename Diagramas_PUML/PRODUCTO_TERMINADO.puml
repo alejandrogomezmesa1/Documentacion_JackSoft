@@ -27,11 +27,11 @@ actor "Jefe de Cocina" as actor_user
 rectangle "SISTEMA JACKSOFT — PRODUCCIÓN Y RECETAS (PRODUCTO TERMINADO)" {
   usecase "Gestión de producto terminado" as UC_Hub <<hub>>
   usecase "Listar productos terminados" as UC_Central <<hub>>
-  usecase "Registrar producto terminado" as UC_Top1
+  usecase "Registrar producto terminado desde la orden" as UC_Top1
   usecase "Generar reporte de producto terminado" as UC_Top2
   usecase "Buscar productos terminados" as UC_Bot1
   usecase "Ver detalle del producto terminado" as UC_R1
-  usecase "Editar producto terminado" as UC_R2
+  usecase "Corregir cantidad producida desde la orden" as UC_R2
 }
 
 actor_user --> UC_Hub

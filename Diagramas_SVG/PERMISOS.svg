@@ -54,7 +54,7 @@
   </text>
 
   <g filter="url(#pillShadow)"><ellipse cx="320" cy="330.0" rx="88" ry="30" fill="url(#hubUcGrad)" stroke="#ea580c" stroke-width="2.2" />
-  <text x="320" y="334.0" font-family="'Inter', sans-serif" font-size="12" font-weight="700" fill="#0f172a" text-anchor="middle">Gestión de permisos</text>
+  <text x="320" y="334.0" font-family="'Inter', sans-serif" font-size="12" font-weight="700" fill="#0f172a" text-anchor="middle">Permisos en Roles</text>
   </g>
   <line x1="175" y1="330.0" x2="232" y2="330.0" stroke="#0f172a" stroke-width="2" />
   <g filter="url(#pillShadow)"><ellipse cx="530" cy="330.0" rx="84" ry="28" fill="url(#hubUcGrad)" stroke="#ea580c" stroke-width="2.2" />

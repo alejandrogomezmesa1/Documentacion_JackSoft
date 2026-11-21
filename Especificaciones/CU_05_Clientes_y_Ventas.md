@@ -44,7 +44,7 @@ Gestión de clientes, cotización, registro y administración de suscripciones, 
 
 ---
 
-### Subproceso 2: SUSCRIPCIONES (10 Casos de Uso)
+### Subproceso 2: SUSCRIPCIONES (12 Casos de Uso)
 * **Actor Principal:** `Gestor Comercial`
 * **Nodo Principal:** `Gestión de suscripciones`
 
@@ -61,10 +61,12 @@ Gestión de clientes, cotización, registro y administración de suscripciones, 
 8. **Consultar comprobante de suscripción**
 9. **Buscar/Filtrar suscripciones**
 10. **Gestionar suscripciones con pago vencido**
+11. **Gestionar lista de espera por cupo**
+12. **Elegir preferencia de proteína**
 
 ---
 
-### Subproceso 3: MENU (9 Casos de Uso)
+### Subproceso 3: MENU (10 Casos de Uso)
 * **Actor Principal:** `Administrador / Cliente`
 * **Nodo Principal:** `Gestión de menú`
 
@@ -80,5 +82,6 @@ Gestión de clientes, cotización, registro y administración de suscripciones, 
 7. **Buscar/Filtrar menús**
 8. **Consultar menú de la semana (app móvil)**
 9. **Ver detalle del almuerzo del día (app móvil)**
+10. **Definir proteína alterna del seco**
 
 ---

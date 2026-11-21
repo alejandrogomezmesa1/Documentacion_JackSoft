@@ -5,7 +5,7 @@ Consulta de indicadores clave de rendimiento (KPIs), visualización gráfica de 
 ## Subprocesos Integrados
 
 ### Subproceso: DASHBOARD
-- **Total de Casos de Uso / Acciones:** 4
+- **Total de Casos de Uso / Acciones:** 6
 - **Actor Principal:** Administrador
 - **Nodo Principal:** Dashboard
 
@@ -14,6 +14,8 @@ Consulta de indicadores clave de rendimiento (KPIs), visualización gráfica de 
 2. Visualizar gráficos del dashboard
 3. Filtrar datos del dashboard
 4. Generar reporte del dashboard
+5. Proyección de demanda frente al cupo
+6. Costo-beneficio logístico por zona
 
 #### Diagrama PlantUML
 ```plantuml
@@ -49,6 +51,8 @@ rectangle "SISTEMA JACKSOFT — ANALÍTICA Y MÉTRICAS (DASHBOARD)" {
   usecase "Visualizar gráficos del dashboard" as UC_Top1
   usecase "Generar reporte del dashboard" as UC_Top2
   usecase "Filtrar datos del dashboard" as UC_Bot1
+  usecase "Proyección de demanda frente al cupo" as UC_R1
+  usecase "Costo-beneficio logístico por zona" as UC_R2
 }
 
 actor_user --> UC_Hub
@@ -58,6 +62,8 @@ UC_Top1 .> UC_Central : <<include>>
 UC_Top2 .> UC_Central : <<include>>
 UC_Bot1 ..> UC_Hub : <<extend>>
 UC_Bot1 .> UC_Central : <<include>>
+UC_R1 ..> UC_Central : <<extend>>
+UC_R2 ..> UC_Central : <<extend>>
 @enduml
 ```
 

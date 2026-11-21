@@ -25,7 +25,7 @@ Consulta de indicadores clave de rendimiento (KPIs), visualización gráfica de 
 
 ## 📋 Subprocesos y Especificación Funcional
 
-### Subproceso 1: DASHBOARD (4 Casos de Uso)
+### Subproceso 1: DASHBOARD (6 Casos de Uso)
 * **Actor Principal:** `Administrador`
 * **Nodo Principal:** `Dashboard`
 
@@ -36,5 +36,7 @@ Consulta de indicadores clave de rendimiento (KPIs), visualización gráfica de 
 2. **Visualizar gráficos del dashboard**
 3. **Filtrar datos del dashboard**
 4. **Generar reporte del dashboard**
+5. **Proyección de demanda frente al cupo**
+6. **Costo-beneficio logístico por zona**
 
 ---

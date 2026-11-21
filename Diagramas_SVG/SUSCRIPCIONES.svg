@@ -1,4 +1,4 @@
-<svg width="1000" height="660" viewBox="0 0 1000 660" xmlns="http://www.w3.org/2000/svg">
+<svg width="1000" height="666" viewBox="0 0 1000 666" xmlns="http://www.w3.org/2000/svg">
   <defs>
     <linearGradient id="headerGrad" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" stop-color="#0f172a" />
@@ -27,7 +27,7 @@
   </defs>
 
   <rect width="100%" height="100%" fill="#f8fafc" />
-  <rect x="195" y="20" width="785" height="620" rx="16" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.8" filter="url(#cardShadow)" />
+  <rect x="195" y="20" width="785" height="626" rx="16" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.8" filter="url(#cardShadow)" />
   <path d="M 195 36 Q 195 20 211 20 L 964 20 Q 980 20 980 36 L 980 72 L 195 72 Z" fill="url(#headerGrad)" />
   <text x="220" y="52" font-family="'Inter', -apple-system, sans-serif" font-size="15" font-weight="700" fill="#f8fafc" letter-spacing="0.5">
     SISTEMA JACKSOFT — CLIENTES Y VENTAS
@@ -38,97 +38,111 @@
   </text>
 
   <!-- Actor -->
-  <rect x="20" y="210.0" width="155" height="240" rx="12" fill="#ffffff" stroke="#e2e8f0" stroke-width="1.5" filter="url(#cardShadow)" />
-  <rect x="20" y="210.0" width="155" height="30" rx="12" fill="#f8fafc" />
-  <text x="97" y="230.0" font-family="'Inter', -apple-system, sans-serif" font-size="10.5" font-weight="700" fill="#475569" text-anchor="middle" letter-spacing="0.5">
+  <rect x="20" y="213.0" width="155" height="240" rx="12" fill="#ffffff" stroke="#e2e8f0" stroke-width="1.5" filter="url(#cardShadow)" />
+  <rect x="20" y="213.0" width="155" height="30" rx="12" fill="#f8fafc" />
+  <text x="97" y="233.0" font-family="'Inter', -apple-system, sans-serif" font-size="10.5" font-weight="700" fill="#475569" text-anchor="middle" letter-spacing="0.5">
     ACTOR PRINCIPAL
   </text>
-  <circle cx="97" cy="275.0" r="18" fill="#fff7ed" stroke="#ea580c" stroke-width="2.2" />
-  <line x1="97" y1="293.0" x2="97" y2="345.0" stroke="#0f172a" stroke-width="2.2" />
-  <line x1="62" y1="312.0" x2="132" y2="312.0" stroke="#0f172a" stroke-width="2.2" stroke-linecap="round" />
-  <line x1="97" y1="345.0" x2="72" y2="395.0" stroke="#0f172a" stroke-width="2.2" stroke-linecap="round" />
-  <line x1="97" y1="345.0" x2="122" y2="395.0" stroke="#0f172a" stroke-width="2.2" stroke-linecap="round" />
-  <rect x="28" y="408.0" width="139" height="26" rx="13" fill="#ea580c" />
-  <text x="97" y="425.0" font-family="'Inter', -apple-system, sans-serif" font-size="11.5" font-weight="700" fill="#ffffff" text-anchor="middle">
+  <circle cx="97" cy="278.0" r="18" fill="#fff7ed" stroke="#ea580c" stroke-width="2.2" />
+  <line x1="97" y1="296.0" x2="97" y2="348.0" stroke="#0f172a" stroke-width="2.2" />
+  <line x1="62" y1="315.0" x2="132" y2="315.0" stroke="#0f172a" stroke-width="2.2" stroke-linecap="round" />
+  <line x1="97" y1="348.0" x2="72" y2="398.0" stroke="#0f172a" stroke-width="2.2" stroke-linecap="round" />
+  <line x1="97" y1="348.0" x2="122" y2="398.0" stroke="#0f172a" stroke-width="2.2" stroke-linecap="round" />
+  <rect x="28" y="411.0" width="139" height="26" rx="13" fill="#ea580c" />
+  <text x="97" y="428.0" font-family="'Inter', -apple-system, sans-serif" font-size="11.5" font-weight="700" fill="#ffffff" text-anchor="middle">
     Gestor Comercial
   </text>
 
-  <g filter="url(#pillShadow)"><ellipse cx="320" cy="330.0" rx="88" ry="30" fill="url(#hubUcGrad)" stroke="#ea580c" stroke-width="2.2" />
-  <text x="320" y="327.0" font-family="'Inter', sans-serif" font-size="12" font-weight="700" fill="#0f172a" text-anchor="middle">Gestión de</text>
-  <text x="320" y="341.0" font-family="'Inter', sans-serif" font-size="12" font-weight="700" fill="#0f172a" text-anchor="middle">suscripciones</text>
+  <g filter="url(#pillShadow)"><ellipse cx="320" cy="333.0" rx="88" ry="30" fill="url(#hubUcGrad)" stroke="#ea580c" stroke-width="2.2" />
+  <text x="320" y="330.0" font-family="'Inter', sans-serif" font-size="12" font-weight="700" fill="#0f172a" text-anchor="middle">Gestión de</text>
+  <text x="320" y="344.0" font-family="'Inter', sans-serif" font-size="12" font-weight="700" fill="#0f172a" text-anchor="middle">suscripciones</text>
   </g>
-  <line x1="175" y1="330.0" x2="232" y2="330.0" stroke="#0f172a" stroke-width="2" />
-  <g filter="url(#pillShadow)"><ellipse cx="530" cy="330.0" rx="84" ry="28" fill="url(#hubUcGrad)" stroke="#ea580c" stroke-width="2.2" />
-  <text x="530" y="334.0" font-family="'Inter', sans-serif" font-size="12" font-weight="700" fill="#0f172a" text-anchor="middle">Listar suscripciones</text>
+  <line x1="175" y1="333.0" x2="232" y2="333.0" stroke="#0f172a" stroke-width="2" />
+  <g filter="url(#pillShadow)"><ellipse cx="530" cy="333.0" rx="84" ry="28" fill="url(#hubUcGrad)" stroke="#ea580c" stroke-width="2.2" />
+  <text x="530" y="337.0" font-family="'Inter', sans-serif" font-size="12" font-weight="700" fill="#0f172a" text-anchor="middle">Listar suscripciones</text>
   </g>
-  <line x1="408" y1="330.0" x2="446" y2="330.0" stroke="#2563eb" stroke-width="1.5" stroke-dasharray="4,4" marker-end="url(#includeArrow)" />
-  <rect x="398.0" y="306.0" width="54" height="17" rx="8" fill="#ffffff" stroke="#bfdbfe" stroke-width="1" />
-  <text x="425.0" y="318.0" font-family="'Inter', sans-serif" font-size="9" font-weight="700" fill="#1d4ed8" text-anchor="middle">«include»</text>
+  <line x1="408" y1="333.0" x2="446" y2="333.0" stroke="#2563eb" stroke-width="1.5" stroke-dasharray="4,4" marker-end="url(#includeArrow)" />
+  <rect x="398.0" y="309.0" width="54" height="17" rx="8" fill="#ffffff" stroke="#bfdbfe" stroke-width="1" />
+  <text x="425.0" y="321.0" font-family="'Inter', sans-serif" font-size="9" font-weight="700" fill="#1d4ed8" text-anchor="middle">«include»</text>
   <g filter="url(#pillShadow)"><ellipse cx="440" cy="130" rx="82" ry="26" fill="url(#ucGrad)" stroke="#0f172a" stroke-width="1.6" />
   <text x="440" y="134.0" font-family="'Inter', sans-serif" font-size="12" font-weight="600" fill="#0f172a" text-anchor="middle">Cotizar suscripción</text>
   </g>
   <g filter="url(#pillShadow)"><ellipse cx="625" cy="130" rx="82" ry="26" fill="url(#ucGrad)" stroke="#0f172a" stroke-width="1.6" />
   <text x="625" y="134.0" font-family="'Inter', sans-serif" font-size="12" font-weight="600" fill="#0f172a" text-anchor="middle">Registrar suscripción</text>
   </g>
-  <line x1="385" y1="146" x2="360" y2="304.0" stroke="#ea580c" stroke-width="1.4" stroke-dasharray="4,4" marker-end="url(#extendArrow)" />
-  <rect x="356.0" y="206.0" width="56" height="17" rx="8" fill="#ffffff" stroke="#fed7aa" stroke-width="1" />
-  <text x="384.0" y="218.0" font-family="'Inter', sans-serif" font-size="9" font-weight="700" fill="#c2410c" text-anchor="middle">«extend»</text>
-  <line x1="465" y1="154" x2="510" y2="304.0" stroke="#2563eb" stroke-width="1.4" stroke-dasharray="4,4" marker-end="url(#includeArrow)" />
-  <rect x="458.0" y="222.0" width="54" height="17" rx="8" fill="#ffffff" stroke="#bfdbfe" stroke-width="1" />
-  <text x="485.0" y="234.0" font-family="'Inter', sans-serif" font-size="9" font-weight="700" fill="#1d4ed8" text-anchor="middle">«include»</text>
-  <line x1="600" y1="154" x2="550" y2="304.0" stroke="#2563eb" stroke-width="1.4" stroke-dasharray="4,4" marker-end="url(#includeArrow)" />
-  <rect x="550.5" y="222.0" width="54" height="17" rx="8" fill="#ffffff" stroke="#bfdbfe" stroke-width="1" />
-  <text x="577.5" y="234.0" font-family="'Inter', sans-serif" font-size="9" font-weight="700" fill="#1d4ed8" text-anchor="middle">«include»</text>
-  <g filter="url(#pillShadow)"><ellipse cx="530" cy="530" rx="88" ry="26" fill="url(#ucGrad)" stroke="#0f172a" stroke-width="1.6" />
-  <text x="530" y="527.0" font-family="'Inter', sans-serif" font-size="12" font-weight="600" fill="#0f172a" text-anchor="middle">Buscar/Filtrar</text>
-  <text x="530" y="541.0" font-family="'Inter', sans-serif" font-size="12" font-weight="600" fill="#0f172a" text-anchor="middle">suscripciones</text>
+  <line x1="385" y1="146" x2="360" y2="307.0" stroke="#ea580c" stroke-width="1.4" stroke-dasharray="4,4" marker-end="url(#extendArrow)" />
+  <rect x="356.0" y="207.5" width="56" height="17" rx="8" fill="#ffffff" stroke="#fed7aa" stroke-width="1" />
+  <text x="384.0" y="219.5" font-family="'Inter', sans-serif" font-size="9" font-weight="700" fill="#c2410c" text-anchor="middle">«extend»</text>
+  <line x1="465" y1="154" x2="510" y2="307.0" stroke="#2563eb" stroke-width="1.4" stroke-dasharray="4,4" marker-end="url(#includeArrow)" />
+  <rect x="458.0" y="223.5" width="54" height="17" rx="8" fill="#ffffff" stroke="#bfdbfe" stroke-width="1" />
+  <text x="485.0" y="235.5" font-family="'Inter', sans-serif" font-size="9" font-weight="700" fill="#1d4ed8" text-anchor="middle">«include»</text>
+  <line x1="600" y1="154" x2="550" y2="307.0" stroke="#2563eb" stroke-width="1.4" stroke-dasharray="4,4" marker-end="url(#includeArrow)" />
+  <rect x="550.5" y="223.5" width="54" height="17" rx="8" fill="#ffffff" stroke="#bfdbfe" stroke-width="1" />
+  <text x="577.5" y="235.5" font-family="'Inter', sans-serif" font-size="9" font-weight="700" fill="#1d4ed8" text-anchor="middle">«include»</text>
+  <g filter="url(#pillShadow)"><ellipse cx="530" cy="536" rx="88" ry="26" fill="url(#ucGrad)" stroke="#0f172a" stroke-width="1.6" />
+  <text x="530" y="533.0" font-family="'Inter', sans-serif" font-size="12" font-weight="600" fill="#0f172a" text-anchor="middle">Buscar/Filtrar</text>
+  <text x="530" y="547.0" font-family="'Inter', sans-serif" font-size="12" font-weight="600" fill="#0f172a" text-anchor="middle">suscripciones</text>
   </g>
-  <line x1="465" y1="514" x2="365" y2="356.0" stroke="#ea580c" stroke-width="1.4" stroke-dasharray="4,4" marker-end="url(#extendArrow)" />
-  <rect x="403.0" y="438.0" width="56" height="17" rx="8" fill="#ffffff" stroke="#fed7aa" stroke-width="1" />
-  <text x="431.0" y="450.0" font-family="'Inter', sans-serif" font-size="9" font-weight="700" fill="#c2410c" text-anchor="middle">«extend»</text>
-  <line x1="530" y1="504" x2="530" y2="358.0" stroke="#2563eb" stroke-width="1.4" stroke-dasharray="4,4" marker-end="url(#includeArrow)" />
-  <rect x="540" y="422.0" width="54" height="17" rx="8" fill="#ffffff" stroke="#bfdbfe" stroke-width="1" />
-  <text x="567" y="434.0" font-family="'Inter', sans-serif" font-size="9" font-weight="700" fill="#1d4ed8" text-anchor="middle">«include»</text>
+  <line x1="465" y1="520" x2="365" y2="359.0" stroke="#ea580c" stroke-width="1.4" stroke-dasharray="4,4" marker-end="url(#extendArrow)" />
+  <rect x="403.0" y="442.5" width="56" height="17" rx="8" fill="#ffffff" stroke="#fed7aa" stroke-width="1" />
+  <text x="431.0" y="454.5" font-family="'Inter', sans-serif" font-size="9" font-weight="700" fill="#c2410c" text-anchor="middle">«extend»</text>
+  <line x1="530" y1="510" x2="530" y2="361.0" stroke="#2563eb" stroke-width="1.4" stroke-dasharray="4,4" marker-end="url(#includeArrow)" />
+  <rect x="540" y="426.5" width="54" height="17" rx="8" fill="#ffffff" stroke="#bfdbfe" stroke-width="1" />
+  <text x="567" y="438.5" font-family="'Inter', sans-serif" font-size="9" font-weight="700" fill="#1d4ed8" text-anchor="middle">«include»</text>
   <g filter="url(#pillShadow)"><ellipse cx="820" cy="150.0" rx="88" ry="26" fill="url(#ucGrad)" stroke="#0f172a" stroke-width="1.6" />
   <text x="820" y="147.0" font-family="'Inter', sans-serif" font-size="12" font-weight="600" fill="#0f172a" text-anchor="middle">Ver detalle de la</text>
   <text x="820" y="161.0" font-family="'Inter', sans-serif" font-size="12" font-weight="600" fill="#0f172a" text-anchor="middle">suscripción</text>
   </g>
-  <line x1="732" y1="150.0" x2="614" y2="330.0" stroke="#ea580c" stroke-width="1.4" stroke-dasharray="4,4" marker-end="url(#extendArrow)" />
-  <rect x="659.16" y="210.4" width="56" height="17" rx="8" fill="#ffffff" stroke="#fed7aa" stroke-width="1" />
-  <text x="687.16" y="222.4" font-family="'Inter', sans-serif" font-size="9" font-weight="700" fill="#c2410c" text-anchor="middle">«extend»</text>
-  <g filter="url(#pillShadow)"><ellipse cx="820" cy="226.0" rx="88" ry="26" fill="url(#ucGrad)" stroke="#0f172a" stroke-width="1.6" />
-  <text x="820" y="230.0" font-family="'Inter', sans-serif" font-size="12" font-weight="600" fill="#0f172a" text-anchor="middle">Editar suscripción</text>
+  <line x1="732" y1="150.0" x2="614" y2="333.0" stroke="#ea580c" stroke-width="1.4" stroke-dasharray="4,4" marker-end="url(#extendArrow)" />
+  <rect x="659.16" y="211.54000000000002" width="56" height="17" rx="8" fill="#ffffff" stroke="#fed7aa" stroke-width="1" />
+  <text x="687.16" y="223.54000000000002" font-family="'Inter', sans-serif" font-size="9" font-weight="700" fill="#c2410c" text-anchor="middle">«extend»</text>
+  <g filter="url(#pillShadow)"><ellipse cx="820" cy="205.14285714285714" rx="88" ry="26" fill="url(#ucGrad)" stroke="#0f172a" stroke-width="1.6" />
+  <text x="820" y="209.14285714285714" font-family="'Inter', sans-serif" font-size="12" font-weight="600" fill="#0f172a" text-anchor="middle">Editar suscripción</text>
   </g>
-  <line x1="732" y1="226.0" x2="614" y2="330.0" stroke="#ea580c" stroke-width="1.4" stroke-dasharray="4,4" marker-end="url(#extendArrow)" />
-  <rect x="659.16" y="257.52" width="56" height="17" rx="8" fill="#ffffff" stroke="#fed7aa" stroke-width="1" />
-  <text x="687.16" y="269.52" font-family="'Inter', sans-serif" font-size="9" font-weight="700" fill="#c2410c" text-anchor="middle">«extend»</text>
-  <g filter="url(#pillShadow)"><ellipse cx="820" cy="302.0" rx="88" ry="26" fill="url(#ucGrad)" stroke="#0f172a" stroke-width="1.6" />
-  <text x="820" y="299.0" font-family="'Inter', sans-serif" font-size="12" font-weight="600" fill="#0f172a" text-anchor="middle">Cambiar estado de la</text>
-  <text x="820" y="313.0" font-family="'Inter', sans-serif" font-size="12" font-weight="600" fill="#0f172a" text-anchor="middle">suscripción</text>
+  <line x1="732" y1="205.14285714285714" x2="614" y2="333.0" stroke="#ea580c" stroke-width="1.4" stroke-dasharray="4,4" marker-end="url(#extendArrow)" />
+  <rect x="659.16" y="245.72857142857143" width="56" height="17" rx="8" fill="#ffffff" stroke="#fed7aa" stroke-width="1" />
+  <text x="687.16" y="257.7285714285714" font-family="'Inter', sans-serif" font-size="9" font-weight="700" fill="#c2410c" text-anchor="middle">«extend»</text>
+  <g filter="url(#pillShadow)"><ellipse cx="820" cy="260.2857142857143" rx="88" ry="26" fill="url(#ucGrad)" stroke="#0f172a" stroke-width="1.6" />
+  <text x="820" y="257.2857142857143" font-family="'Inter', sans-serif" font-size="12" font-weight="600" fill="#0f172a" text-anchor="middle">Cambiar estado de la</text>
+  <text x="820" y="271.2857142857143" font-family="'Inter', sans-serif" font-size="12" font-weight="600" fill="#0f172a" text-anchor="middle">suscripción</text>
   </g>
-  <line x1="732" y1="302.0" x2="614" y2="330.0" stroke="#ea580c" stroke-width="1.4" stroke-dasharray="4,4" marker-end="url(#extendArrow)" />
-  <rect x="659.16" y="304.64" width="56" height="17" rx="8" fill="#ffffff" stroke="#fed7aa" stroke-width="1" />
-  <text x="687.16" y="316.64" font-family="'Inter', sans-serif" font-size="9" font-weight="700" fill="#c2410c" text-anchor="middle">«extend»</text>
-  <g filter="url(#pillShadow)"><ellipse cx="820" cy="378.0" rx="88" ry="26" fill="url(#ucGrad)" stroke="#0f172a" stroke-width="1.6" />
-  <text x="820" y="375.0" font-family="'Inter', sans-serif" font-size="12" font-weight="600" fill="#0f172a" text-anchor="middle">Subir comprobante de</text>
-  <text x="820" y="389.0" font-family="'Inter', sans-serif" font-size="12" font-weight="600" fill="#0f172a" text-anchor="middle">suscripción</text>
+  <line x1="732" y1="260.2857142857143" x2="614" y2="333.0" stroke="#ea580c" stroke-width="1.4" stroke-dasharray="4,4" marker-end="url(#extendArrow)" />
+  <rect x="659.16" y="279.91714285714284" width="56" height="17" rx="8" fill="#ffffff" stroke="#fed7aa" stroke-width="1" />
+  <text x="687.16" y="291.91714285714284" font-family="'Inter', sans-serif" font-size="9" font-weight="700" fill="#c2410c" text-anchor="middle">«extend»</text>
+  <g filter="url(#pillShadow)"><ellipse cx="820" cy="315.42857142857144" rx="88" ry="26" fill="url(#ucGrad)" stroke="#0f172a" stroke-width="1.6" />
+  <text x="820" y="312.42857142857144" font-family="'Inter', sans-serif" font-size="12" font-weight="600" fill="#0f172a" text-anchor="middle">Subir comprobante de</text>
+  <text x="820" y="326.42857142857144" font-family="'Inter', sans-serif" font-size="12" font-weight="600" fill="#0f172a" text-anchor="middle">suscripción</text>
   </g>
-  <line x1="732" y1="378.0" x2="614" y2="330.0" stroke="#ea580c" stroke-width="1.4" stroke-dasharray="4,4" marker-end="url(#extendArrow)" />
-  <rect x="659.16" y="351.76" width="56" height="17" rx="8" fill="#ffffff" stroke="#fed7aa" stroke-width="1" />
-  <text x="687.16" y="363.76" font-family="'Inter', sans-serif" font-size="9" font-weight="700" fill="#c2410c" text-anchor="middle">«extend»</text>
-  <g filter="url(#pillShadow)"><ellipse cx="820" cy="454.0" rx="88" ry="26" fill="url(#ucGrad)" stroke="#0f172a" stroke-width="1.6" />
-  <text x="820" y="451.0" font-family="'Inter', sans-serif" font-size="12" font-weight="600" fill="#0f172a" text-anchor="middle">Consultar comprobante</text>
-  <text x="820" y="465.0" font-family="'Inter', sans-serif" font-size="12" font-weight="600" fill="#0f172a" text-anchor="middle">de suscripción</text>
+  <line x1="732" y1="315.42857142857144" x2="614" y2="333.0" stroke="#ea580c" stroke-width="1.4" stroke-dasharray="4,4" marker-end="url(#extendArrow)" />
+  <rect x="659.16" y="314.10571428571427" width="56" height="17" rx="8" fill="#ffffff" stroke="#fed7aa" stroke-width="1" />
+  <text x="687.16" y="326.10571428571427" font-family="'Inter', sans-serif" font-size="9" font-weight="700" fill="#c2410c" text-anchor="middle">«extend»</text>
+  <g filter="url(#pillShadow)"><ellipse cx="820" cy="370.57142857142856" rx="88" ry="26" fill="url(#ucGrad)" stroke="#0f172a" stroke-width="1.6" />
+  <text x="820" y="367.57142857142856" font-family="'Inter', sans-serif" font-size="12" font-weight="600" fill="#0f172a" text-anchor="middle">Consultar comprobante</text>
+  <text x="820" y="381.57142857142856" font-family="'Inter', sans-serif" font-size="12" font-weight="600" fill="#0f172a" text-anchor="middle">de suscripción</text>
   </g>
-  <line x1="732" y1="454.0" x2="614" y2="330.0" stroke="#ea580c" stroke-width="1.4" stroke-dasharray="4,4" marker-end="url(#extendArrow)" />
-  <rect x="659.16" y="398.88" width="56" height="17" rx="8" fill="#ffffff" stroke="#fed7aa" stroke-width="1" />
-  <text x="687.16" y="410.88" font-family="'Inter', sans-serif" font-size="9" font-weight="700" fill="#c2410c" text-anchor="middle">«extend»</text>
-  <g filter="url(#pillShadow)"><ellipse cx="820" cy="530.0" rx="88" ry="26" fill="url(#ucGrad)" stroke="#0f172a" stroke-width="1.6" />
-  <text x="820" y="520.0" font-family="'Inter', sans-serif" font-size="12" font-weight="600" fill="#0f172a" text-anchor="middle">Gestionar</text>
-  <text x="820" y="534.0" font-family="'Inter', sans-serif" font-size="12" font-weight="600" fill="#0f172a" text-anchor="middle">suscripciones con pago</text>
-  <text x="820" y="548.0" font-family="'Inter', sans-serif" font-size="12" font-weight="600" fill="#0f172a" text-anchor="middle">vencido</text>
+  <line x1="732" y1="370.57142857142856" x2="614" y2="333.0" stroke="#ea580c" stroke-width="1.4" stroke-dasharray="4,4" marker-end="url(#extendArrow)" />
+  <rect x="659.16" y="348.2942857142857" width="56" height="17" rx="8" fill="#ffffff" stroke="#fed7aa" stroke-width="1" />
+  <text x="687.16" y="360.2942857142857" font-family="'Inter', sans-serif" font-size="9" font-weight="700" fill="#c2410c" text-anchor="middle">«extend»</text>
+  <g filter="url(#pillShadow)"><ellipse cx="820" cy="425.7142857142857" rx="88" ry="26" fill="url(#ucGrad)" stroke="#0f172a" stroke-width="1.6" />
+  <text x="820" y="415.7142857142857" font-family="'Inter', sans-serif" font-size="12" font-weight="600" fill="#0f172a" text-anchor="middle">Gestionar</text>
+  <text x="820" y="429.7142857142857" font-family="'Inter', sans-serif" font-size="12" font-weight="600" fill="#0f172a" text-anchor="middle">suscripciones con pago</text>
+  <text x="820" y="443.7142857142857" font-family="'Inter', sans-serif" font-size="12" font-weight="600" fill="#0f172a" text-anchor="middle">vencido</text>
   </g>
-  <line x1="732" y1="530.0" x2="614" y2="330.0" stroke="#ea580c" stroke-width="1.4" stroke-dasharray="4,4" marker-end="url(#extendArrow)" />
-  <rect x="659.16" y="446.0" width="56" height="17" rx="8" fill="#ffffff" stroke="#fed7aa" stroke-width="1" />
-  <text x="687.16" y="458.0" font-family="'Inter', sans-serif" font-size="9" font-weight="700" fill="#c2410c" text-anchor="middle">«extend»</text>
+  <line x1="732" y1="425.7142857142857" x2="614" y2="333.0" stroke="#ea580c" stroke-width="1.4" stroke-dasharray="4,4" marker-end="url(#extendArrow)" />
+  <rect x="659.16" y="382.48285714285714" width="56" height="17" rx="8" fill="#ffffff" stroke="#fed7aa" stroke-width="1" />
+  <text x="687.16" y="394.48285714285714" font-family="'Inter', sans-serif" font-size="9" font-weight="700" fill="#c2410c" text-anchor="middle">«extend»</text>
+  <g filter="url(#pillShadow)"><ellipse cx="820" cy="480.8571428571429" rx="88" ry="26" fill="url(#ucGrad)" stroke="#0f172a" stroke-width="1.6" />
+  <text x="820" y="477.8571428571429" font-family="'Inter', sans-serif" font-size="12" font-weight="600" fill="#0f172a" text-anchor="middle">Gestionar lista de</text>
+  <text x="820" y="491.8571428571429" font-family="'Inter', sans-serif" font-size="12" font-weight="600" fill="#0f172a" text-anchor="middle">espera por cupo</text>
+  </g>
+  <line x1="732" y1="480.8571428571429" x2="614" y2="333.0" stroke="#ea580c" stroke-width="1.4" stroke-dasharray="4,4" marker-end="url(#extendArrow)" />
+  <rect x="659.16" y="416.6714285714286" width="56" height="17" rx="8" fill="#ffffff" stroke="#fed7aa" stroke-width="1" />
+  <text x="687.16" y="428.6714285714286" font-family="'Inter', sans-serif" font-size="9" font-weight="700" fill="#c2410c" text-anchor="middle">«extend»</text>
+  <g filter="url(#pillShadow)"><ellipse cx="820" cy="536.0" rx="88" ry="26" fill="url(#ucGrad)" stroke="#0f172a" stroke-width="1.6" />
+  <text x="820" y="533.0" font-family="'Inter', sans-serif" font-size="12" font-weight="600" fill="#0f172a" text-anchor="middle">Elegir preferencia de</text>
+  <text x="820" y="547.0" font-family="'Inter', sans-serif" font-size="12" font-weight="600" fill="#0f172a" text-anchor="middle">proteína</text>
+  </g>
+  <line x1="732" y1="536.0" x2="614" y2="333.0" stroke="#ea580c" stroke-width="1.4" stroke-dasharray="4,4" marker-end="url(#extendArrow)" />
+  <rect x="659.16" y="450.86" width="56" height="17" rx="8" fill="#ffffff" stroke="#fed7aa" stroke-width="1" />
+  <text x="687.16" y="462.86" font-family="'Inter', sans-serif" font-size="9" font-weight="700" fill="#c2410c" text-anchor="middle">«extend»</text>
 </svg>

@@ -35,6 +35,7 @@ rectangle "SISTEMA JACKSOFT — CLIENTES Y VENTAS (MENU)" {
   usecase "Programar menú semanal" as UC_R4
   usecase "Consultar menú de la semana (app móvil)" as UC_R5
   usecase "Ver detalle del almuerzo del día (app móvil)" as UC_R6
+  usecase "Definir proteína alterna del seco" as UC_R7
 }
 
 actor_user --> UC_Hub
@@ -49,4 +50,5 @@ UC_R3 ..> UC_Central : <<extend>>
 UC_R4 ..> UC_Central : <<extend>>
 UC_R5 ..> UC_Central : <<extend>>
 UC_R6 ..> UC_Central : <<extend>>
+UC_R7 ..> UC_Central : <<extend>>
 @enduml

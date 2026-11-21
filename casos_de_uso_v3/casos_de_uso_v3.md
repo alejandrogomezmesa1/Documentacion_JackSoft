@@ -1,7 +1,7 @@
 # Especificación General de Casos de Uso - JackSoft (Versión Canónica v3)
 
 **Total de Subprocesos:** 24  
-**Total de Casos de Uso Oficiales:** 155  
+**Total de Casos de Uso Oficiales:** 157  
 **Diseño y Estandarización:** Sistema de Diseño Corporativo JackSoft (La Coca de Jacks)
 
 | Nº | Subproceso | Macro-Proceso | Actor Principal | Cantidad de Casos de Uso |
@@ -10,33 +10,33 @@
 | 2 | **ROLES** | Configuración y Seguridad | `Administrador` | 5 |
 | 3 | **USUARIOS** | Configuración y Seguridad | `Administrador` | 7 |
 | 4 | **ACCESO** | Configuración y Seguridad | `Usuario / Admin` | 7 |
-| 5 | **CONFIGURACIONES DEL SISTEMA** | Configuración y Seguridad | `Administrador` | 8 |
+| 5 | **CONFIGURACIONES DEL SISTEMA** | Configuración y Seguridad | `Administrador` | 3 |
 | 6 | **CATEGORIA DE INSUMOS** | Compras e Inventario | `Administrador` | 6 |
 | 7 | **INSUMOS** | Compras e Inventario | `Administrador` | 7 |
 | 8 | **CATEGORIA PRODUCTOS** | Producción y Recetas | `Jefe de Cocina` | 6 |
 | 9 | **PRODUCTOS** | Producción y Recetas | `Jefe de Cocina` | 6 |
 | 10 | **PROVEEDORES** | Compras e Inventario | `Administrador` | 6 |
 | 11 | **COMPRAS** | Compras e Inventario | `Administrador` | 8 |
-| 12 | **PRODUCCION** | Producción y Recetas | `Jefe de Cocina` | 7 |
+| 12 | **PRODUCCION** | Producción y Recetas | `Jefe de Cocina` | 9 |
 | 13 | **FICHA TECNICA "PRODUCTO"** | Producción y Recetas | `Jefe de Cocina` | 6 |
 | 14 | **PRODUCTO TERMINADO** | Producción y Recetas | `Jefe de Cocina` | 6 |
 | 15 | **CATEGORIA DE SERVICIOS** | Servicios y Operación | `Gestor Comercial` | 4 |
 | 16 | **SERVICIO** | Servicios y Operación | `Gestor Comercial` | 6 |
 | 17 | **CALENDARIO** | Servicios y Operación | `Administrador` | 4 |
 | 18 | **CLIENTES** | Clientes y Ventas | `Gestor Comercial` | 7 |
-| 19 | **SUSCRIPCIONES** | Clientes y Ventas | `Gestor Comercial` | 10 |
-| 20 | **MENU** | Clientes y Ventas | `Administrador / Cliente` | 9 |
+| 19 | **SUSCRIPCIONES** | Clientes y Ventas | `Gestor Comercial` | 12 |
+| 20 | **MENU** | Clientes y Ventas | `Administrador / Cliente` | 10 |
 | 21 | **RUTA Y DOMICILIARIOS** | Logística y Domicilios | `Domiciliario` | 5 |
 | 22 | **MONITOREO DE ENTREGA "TIEMPO REAL"** | Logística y Domicilios | `Logística` | 7 |
 | 23 | **INCIDENCIAS** | Logística y Domicilios | `Logística` | 6 |
-| 24 | **DASHBOARD** | Analítica y Métricas | `Administrador` | 4 |
+| 24 | **DASHBOARD** | Analítica y Métricas | `Administrador` | 6 |
 
 ---
 
 ## Subproceso: PERMISOS
 * **Macro-Proceso:** Configuración y Seguridad (SEGURIDAD Y ACCESO)
 * **Actor:** Administrador
-* **Nodo Principal:** Gestión de permisos
+* **Nodo Principal:** Permisos en Roles
 
 ### Casos de Uso:
 1. Listar permisos
@@ -102,14 +102,9 @@
 * **Nodo Principal:** Gestión de configuraciones
 
 ### Casos de Uso:
-1. Registrar configuración
-2. Listar configuraciones
-3. Ver detalle de la configuración
-4. Editar valor de configuración
-5. Activar/desactivar funcionalidad
-6. Consultar historial de cambios
-7. Restablecer valor por defecto
-8. Buscar/Filtrar configuraciones
+1. Listar configuraciones
+2. Editar valor de configuración
+3. Activar/desactivar funcionalidad
 
 ---
 
@@ -212,13 +207,15 @@
 * **Nodo Principal:** Gestión de producción
 
 ### Casos de Uso:
-1. Crear orden de producción
+1. Generar orden de producción desde el menú publicado
 2. Listar órdenes de producción
 3. Ver detalle de la orden de producción
 4. Editar orden de producción
 5. Cambiar estado de la orden de producción
 6. Programar producción
 7. Buscar producción
+8. Reportar faltantes de insumos
+9. Reporte de producción por período
 
 ---
 
@@ -243,10 +240,10 @@
 * **Nodo Principal:** Gestión de producto terminado
 
 ### Casos de Uso:
-1. Registrar producto terminado
+1. Registrar producto terminado desde la orden
 2. Listar productos terminados
 3. Ver detalle del producto terminado
-4. Editar producto terminado
+4. Corregir cantidad producida desde la orden
 5. Buscar productos terminados
 6. Generar reporte de producto terminado
 
@@ -325,6 +322,8 @@
 8. Consultar comprobante de suscripción
 9. Buscar/Filtrar suscripciones
 10. Gestionar suscripciones con pago vencido
+11. Gestionar lista de espera por cupo
+12. Elegir preferencia de proteína
 
 ---
 
@@ -343,6 +342,7 @@
 7. Buscar/Filtrar menús
 8. Consultar menú de la semana (app móvil)
 9. Ver detalle del almuerzo del día (app móvil)
+10. Definir proteína alterna del seco
 
 ---
 
@@ -382,7 +382,7 @@
 * **Nodo Principal:** Gestión de incidencias
 
 ### Casos de Uso:
-1. Registrar incidencia
+1. Responder incidencia
 2. Listar incidencias
 3. Ver detalle de la incidencia
 4. Editar incidencia
@@ -401,5 +401,7 @@
 2. Visualizar gráficos del dashboard
 3. Filtrar datos del dashboard
 4. Generar reporte del dashboard
+5. Proyección de demanda frente al cupo
+6. Costo-beneficio logístico por zona
 
 ---

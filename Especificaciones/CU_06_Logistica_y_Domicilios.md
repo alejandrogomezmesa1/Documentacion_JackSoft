@@ -69,7 +69,7 @@ Asignación de zonas de reparto, gestión de domiciliarios, monitoreo en tiempo 
 ![Diagrama de Casos de Uso - INCIDENCIAS](../Diagramas_PNG/INCIDENCIAS.png)
 
 #### Casos de Uso Oficiales:
-1. **Registrar incidencia**
+1. **Responder incidencia**
 2. **Listar incidencias**
 3. **Ver detalle de la incidencia**
 4. **Editar incidencia**

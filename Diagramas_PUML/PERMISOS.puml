@@ -25,7 +25,7 @@ skinparam usecase<<hub>> {
 actor "Administrador" as actor_user
 
 rectangle "SISTEMA JACKSOFT — SEGURIDAD Y ACCESO (PERMISOS)" {
-  usecase "Gestión de permisos" as UC_Hub <<hub>>
+  usecase "Permisos en Roles" as UC_Hub <<hub>>
   usecase "Listar permisos" as UC_Central <<hub>>
   usecase "Generar reporte de permisos por rol" as UC_Top1
   usecase "Buscar/Filtrar permisos" as UC_Bot1
